@@ -293,9 +293,9 @@ dependencies:
 - **  Feedback:** Invia suggerimenti via email
 
 ###
-- **🛡️ Privacy Policy:** [privacy-policy.html](https://r00kie7.github.io/calcolo-straordinario-website/privacy-policy.html)
-- **⚖️ Terms of Service:** [terms-of-service.html](https://r00kie7.github.io/calcolo-straordinario-website/terms-of-service.html)
-- **🗑️ Account Deletion:** [account_deletion.html](https://r00kie.github.io/calcolo-straordinario-website/account_deletion.html)
+- **🛡️ Privacy Policy:** [privacy-policy.html](https://r00kie7.github.io/calcolostraordinario/privacy-policy.html)
+- **⚖️ Terms of Service:** [terms-of-service.html](https://r00kie7.github.io/calcolostraordinario/terms-of-service.html)
+- **🗑️ Account Deletion:** [account_deletion.html](https://r00kie7.github.io/calcolostraordinario/account_deletion.html)
 
 ## 📜 Licenza e Copyright
 
