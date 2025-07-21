@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminazione Account e Dati - Calcolo Straordinario</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+        }
+        
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 20px;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: #667eea;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        h3 {
+            color: #764ba2;
+            font-size: 1.4em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        .important {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .warning {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .steps {
+            counter-reset: step-counter;
+        }
+        
+        .step {
+            counter-increment: step-counter;
+            position: relative;
+            padding: 15px 15px 15px 60px;
+            margin: 15px 0;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .step::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 20px;
+            top: 15px;
+            background: #667eea;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .data-table th,
+        .data-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .data-table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: bold;
+        }
+        
+        .data-table tr:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        .contact-info {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .app-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 30px;
+            }
+            
+            .step {
+                padding-left: 50px;
+            }
+            
+            .step::before {
+                width: 25px;
+                height: 25px;
+                left: 15px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="app-icon">📊</div>
+            <h1>Eliminazione Account e Dati</h1>
+            <div class="subtitle">Calcolo Straordinario - App per il tracciamento orari di lavoro</div>
+        </div>
+
+        <div class="important">
+            <strong>🛡️ La tua privacy è importante per noi!</strong><br>
+            Questa pagina ti spiega come richiedere l'eliminazione completa del tuo account e di tutti i dati associati dalla nostra app <strong>"Calcolo Straordinario"</strong>.
+        </div>
+
+        <div class="warning">
+            <strong>⚠️ INFORMAZIONE IMPORTANTE:</strong><br>
+            <strong>Se non hai mai effettuato il backup su Google Drive, NON è necessario eliminare nulla!</strong><br><br>
+            L'app <strong>"Calcolo Straordinario"</strong> funziona completamente in locale sul tuo dispositivo. I tuoi dati vengono salvati solo sul server Google quando:<br>
+            • ✅ Hai attivato manualmente il backup su Google Drive<br>
+            • ✅ Hai effettuato almeno un backup dei tuoi dati<br><br>
+            <strong>📱 Se usi l'app solo localmente, tutti i tuoi dati sono già privati e sicuri sul tuo dispositivo!</strong>
+        </div>
+
+        <div class="section">
+            <h2>📱 Come Richiedere l'Eliminazione dell'Account</h2>
+            
+            <p><strong>Questa procedura è necessaria SOLO se hai utilizzato il backup su Google Drive.</strong></p>
+            <p>Puoi eliminare il tuo account e tutti i dati associati direttamente dall'app seguendo questi semplici passaggi:</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <strong>Apri l'app "Calcolo Straordinario"</strong><br>
+                    Assicurati di avere installato l'ultima versione dell'app sul tuo dispositivo.
+                </div>
+                
+                <div class="step">
+                    <strong>Vai su "Opzioni"</strong><br>
+                    Tocca l'icona delle impostazioni (⚙️) nella barra di navigazione in basso.
+                </div>
+                
+                <div class="step">
+                    <strong>Espandi "Backup Google Drive"</strong><br>
+                    Scorri fino alla sezione "Backup Google Drive" e toccala per espanderla. <em>(Il tuo account Google dovrebbe essere già connesso se hai fatto backup)</em>
+                </div>
+                
+                <div class="step">
+                    <strong>Tocca "Cancella i miei dati dal database"</strong><br>
+                    Troverai questo pulsante rosso nella sezione backup. Toccalo per iniziare il processo di eliminazione.
+                </div>
+                
+                <div class="step">
+                    <strong>Conferma l'eliminazione</strong><br>
+                    Leggi attentamente le informazioni nel dialog di conferma e tocca "Cancella i Miei Dati" per procedere.
+                </div>
+                
+                <div class="step">
+                    <strong>Ricevi conferma</strong><br>
+                    L'app ti mostrerà un messaggio di conferma che l'eliminazione è stata completata con successo.
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🗑️ Tipi di Dati Eliminati</h2>
+            
+            <p>Quando richiedi l'eliminazione del tuo account, i seguenti dati vengono <strong>completamente eliminati</strong>:</p>
+            
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Tipo di Dato</th>
+                        <th>Descrizione</th>
+                        <th>Eliminazione</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>🔍 Dati Analytics</strong></td>
+                        <td>Interazioni con l'app, navigazione, click sui pulsanti</td>
+                        <td><span class="highlight">Immediata</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>📊 Metriche Performance</strong></td>
+                        <td>Tempi di caricamento, crash reports, statistiche utilizzo</td>
+                        <td><span class="highlight">Immediata</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>📱 Device Advertising ID</strong></td>
+                        <td>Identificatore anonimo del dispositivo per pubblicità</td>
+                        <td><span class="highlight">Immediata</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>🆔 Identificatore Utente</strong></td>
+                        <td>ID univoco generato per associare i dati al tuo account</td>
+                        <td><span class="highlight">Immediata</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>⚙️ Preferenze Sistema</strong></td>
+                        <td>Impostazioni app, configurazioni personali</td>
+                        <td><span class="highlight">Immediata</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>⏱️ Tempi di Eliminazione</h2>
+            
+            <div class="important">
+                <strong>📱 Eliminazione dall'App:</strong> <span class="highlight">Immediata (0-5 minuti)</span><br>
+                I dati vengono eliminati immediatamente dai nostri server attivi quando usi la funzione nell'app.
+            </div>
+            
+            <p><strong>🗄️ Eliminazione Completa dai Server:</strong></p>
+            <ul>
+                <li><strong>Server di produzione:</strong> Immediata</li>
+                <li><strong>Server di backup:</strong> Entro 14 mesi (secondo standard Google)</li>
+                <li><strong>Crash reports:</strong> Entro 90 giorni</li>
+                <li><strong>Cache temporanee:</strong> Entro 24 ore</li>
+            </ul>
+            
+            <div class="warning">
+                <strong>⚠️ Attenzione:</strong> L'eliminazione è <strong>irreversibile</strong>. Una volta confermata, non sarà possibile recuperare i dati eliminati.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📧 Metodo Alternativo: Richiesta via Email</h2>
+            
+            <p>Se non riesci ad utilizzare la funzione nell'app, puoi richiedere l'eliminazione via email:</p>
+            
+            <div class="contact-info">
+                <h3>📬 Invia una richiesta a:</h3>
+                <p><strong>Email:</strong> <a href="mailto:appdevmond@gmail.com">appdevmond@gmail.com</a></p>
+                <p><strong>Oggetto:</strong> "ELIMINAZIONE DATI - Calcolo Straordinario"</p>
+                
+                <h3>📝 Includi nella richiesta:</h3>
+                <ul>
+                    <li>Il tuo <strong>indirizzo email Google</strong> utilizzato per il backup</li>
+                    <li><strong>Conferma esplicita</strong> che desideri eliminare tutti i dati</li>
+                    <li><strong>Motivazione</strong> della richiesta (opzionale)</li>
+                </ul>
+                
+                <p><strong>⏱️ Tempo di risposta:</strong> Entro 7 giorni lavorativi</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🛡️ I Tuoi Diritti Privacy</h2>
+            
+            <p>Secondo il GDPR e le normative sulla privacy, hai i seguenti diritti:</p>
+            
+            <ul>
+                <li><strong>🔍 Diritto di Accesso:</strong> Puoi richiedere informazioni sui dati che raccogliamo</li>
+                <li><strong>🗑️ Diritto alla Cancellazione:</strong> Puoi richiedere l'eliminazione dei tuoi dati (questa pagina)</li>
+                <li><strong>✏️ Diritto di Rettifica:</strong> Puoi correggere dati inesatti</li>
+                <li><strong>🚫 Diritto di Opposizione:</strong> Puoi opporti al trattamento dei tuoi dati</li>
+                <li><strong>📤 Diritto alla Portabilità:</strong> Puoi richiedere una copia dei tuoi dati</li>
+                <li><strong>⏸️ Diritto di Limitazione:</strong> Puoi limitare l'uso dei tuoi dati</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>❓ Domande Frequenti</h2>
+            
+            <h3>Q: Ho bisogno di eliminare i miei dati se non uso Google Drive?</h3>
+            <p><strong>A:</strong> <strong>NO!</strong> Se non hai mai attivato il backup su Google Drive, tutti i tuoi dati sono salvati <strong>solo localmente</strong> sul tuo dispositivo. Non c'è nulla da eliminare sui nostri server perché non abbiamo mai ricevuto i tuoi dati. L'app funziona completamente offline in questo caso.</p>
+            
+            <h3>Q: Come faccio a sapere se ho mai fatto il backup?</h3>
+            <p><strong>A:</strong> Vai su <strong>Opzioni → Backup Google Drive</strong>. Se non hai mai connesso un account Google o se vedi "Nessun backup effettuato", allora non hai mai inviato dati ai nostri server.</p>
+            
+            <h3>Q: L'eliminazione è reversibile?</h3>
+            <p><strong>A:</strong> No, l'eliminazione dei dati è <strong>permanente e irreversibile</strong>. Una volta confermata, non sarà possibile recuperare i dati eliminati.</p>
+            
+            <h3>Q: Posso eliminare solo alcuni tipi di dati?</h3>
+            <p><strong>A:</strong> Attualmente l'eliminazione è "tutto o niente". Tuttavia, puoi disattivare la raccolta futura di specifici tipi di dati dalle impostazioni dell'app.</p>
+            
+            <h3>Q: Cosa succede ai miei backup su Google Drive?</h3>
+            <p><strong>A:</strong> I tuoi backup personali su Google Drive <strong>NON vengono toccati</strong> perché sono nel tuo spazio di archiviazione personale. Puoi eliminarli manualmente se desideri.</p>
+            
+            <h3>Q: L'app continuerà a funzionare dopo l'eliminazione?</h3>
+            <p><strong>A:</strong> Sì, l'app continuerà a funzionare normalmente. Verrà generato un nuovo identificatore utente e la raccolta dati ripartirà da zero (se consentita).</p>
+            
+            <h3>Q: Quanto tempo richiede il processo?</h3>
+            <p><strong>A:</strong> L'eliminazione tramite app richiede circa <strong>2-5 minuti</strong>. L'eliminazione tramite email richiede fino a <strong>7 giorni lavorativi</strong>.</p>
+        </div>
+
+        <div class="section">
+            <h2>📞 Link Utili</h2>
+            
+            <div style="text-align: center;">
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
+                    <a href="https://r00kie7.github.io/calcolostraordinario/" style="color: #667eea; text-decoration: none; font-weight: bold;">🏠 Home</a>
+                    <a href="https://r00kie7.github.io/calcolostraordinario/privacy-policy.html" style="color: #667eea; text-decoration: none; font-weight: bold;">🛡️ Privacy Policy</a>
+                    <a href="https://r00kie7.github.io/calcolostraordinario/terms-of-service.html" style="color: #667eea; text-decoration: none; font-weight: bold;">⚖️ Termini di Servizio</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📞 Supporto e Contatti</h2>
+            
+            <p>Per qualsiasi domanda o problema relativo all'eliminazione dei dati:</p>
+            
+            <div class="contact-info">
+                <p><strong>📧 Email Supporto:</strong> <a href="mailto:appdevmond@gmail.com">appdevmond@gmail.com</a></p>
+                <p><strong>🛡️ Email Privacy:</strong> <a href="mailto:appdevmond@gmail.com">appdevmond@gmail.com</a></p>
+                <p><strong>🌐 Sito Web:</strong> <a href="https://r00kie7.github.io/calcolostraordinario/">https://r00kie7.github.io/calcolostraordinario/</a></p>
+                <p><strong>📱 Nome App:</strong> Calcolo Straordinario</p>
+                <p><strong>👨‍💻 Sviluppatore:</strong> R00kie7</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px; padding: 20px; background-color: #f8f9fa; border-radius: 10px;">
+            <p style="color: #666;">
+                📧 <strong>Supporto Privacy:</strong> <a href="mailto:appdevmond@gmail.com" style="color: #667eea;">appdevmond@gmail.com</a>
+            </p>
+            <p style="color: #888; margin-top: 10px;">
+                © 2024 Calcolo Straordinario. Eliminazione dati conforme al GDPR.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
