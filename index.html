@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcolo Straordinario - App per Gestione Orari di Lavoro</title>
-    <meta name="description" content="App Flutter gratuita per il calcolo automatico degli straordinari e la gestione orari di lavoro. Backup Google Drive, calcoli precisi, interfaccia intuitiva.">
-    <meta name="keywords" content="calcolo straordinari, orari lavoro, flutter app, timesheet, gestione tempo">
-    
+    <title>Calcolo Straordinario - App Flutter per la Gestione Orari di Lavoro</title>
+    <meta name="description" content="App Flutter gratuita per il tracciamento professionale degli orari di lavoro e il calcolo automatico degli straordinari. Disponibile su Google Play Store.">
+    <meta name="keywords" content="calcolo straordinari, orari lavoro, flutter app, tracciamento ore, android app">
     <style>
         * {
             margin: 0;
@@ -28,12 +27,12 @@
             padding: 20px;
         }
 
-        .header {
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             border-radius: 20px;
-            padding: 40px;
-            text-align: center;
             margin-bottom: 30px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
@@ -43,7 +42,7 @@
             height: 120px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border-radius: 30px;
-            margin: 0 auto 20px;
+            margin: 0 auto 30px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -53,9 +52,9 @@
         }
 
         .hero-title {
-            font-size: 3em;
+            font-size: 3.5em;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -65,7 +64,10 @@
         .hero-subtitle {
             font-size: 1.3em;
             color: #666;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .download-buttons {
@@ -73,7 +75,6 @@
             gap: 20px;
             justify-content: center;
             flex-wrap: wrap;
-            margin-top: 30px;
         }
 
         .download-btn {
@@ -84,15 +85,20 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             text-decoration: none;
-            border-radius: 15px;
+            border-radius: 50px;
             font-weight: bold;
+            font-size: 1.1em;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
         .download-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .download-btn span {
+            font-size: 1.3em;
         }
 
         .features-grid {
@@ -153,27 +159,78 @@
         .section h2 {
             font-size: 2.5em;
             margin-bottom: 20px;
-            color: #333;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .tech-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .tech-item:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+        }
+
+        .tech-icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(255, 107, 107, 0.3);
+        }
+
+        .warning-box h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
             text-align: center;
         }
 
-        .tech-stack {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            justify-content: center;
-            margin: 30px 0;
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            display: block;
         }
 
-        .tech-badge {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
         }
 
         .footer {
@@ -183,14 +240,15 @@
             padding: 40px;
             text-align: center;
             margin-top: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
 
         .footer-links {
             display: flex;
-            gap: 30px;
             justify-content: center;
+            gap: 30px;
             flex-wrap: wrap;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
         .footer-links a {
@@ -204,48 +262,37 @@
             color: #764ba2;
         }
 
-        .screenshots {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 40px 0;
-        }
-
-        .screenshot {
-            background: #f8f9fa;
-            border-radius: 15px;
-            padding: 20px;
-            text-align: center;
-            border: 2px solid #e9ecef;
-        }
-
-        .screenshot-placeholder {
-            width: 100%;
-            height: 400px;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 60px;
-            color: #adb5bd;
-            margin-bottom: 15px;
-        }
-
         @media (max-width: 768px) {
             .hero-title {
-                font-size: 2em;
+                font-size: 2.5em;
             }
-            
+
             .hero-subtitle {
                 font-size: 1.1em;
             }
-            
+
             .download-buttons {
                 flex-direction: column;
                 align-items: center;
             }
-            
+
+            .download-btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section {
+                padding: 25px;
+            }
+
+            .section h2 {
+                font-size: 2em;
+            }
+
             .footer-links {
                 flex-direction: column;
                 gap: 15px;
@@ -255,8 +302,8 @@
 </head>
 <body>
     <div class="container">
-        <!-- Header Hero Section -->
-        <div class="header">
+        <!-- Hero Section -->
+        <div class="hero">
             <div class="app-icon">📊</div>
             <h1 class="hero-title">Calcolo Straordinario</h1>
             <p class="hero-subtitle">La tua app Flutter gratuita per la gestione professionale degli orari di lavoro</p>
@@ -265,8 +312,8 @@
                 <a href="#download" class="download-btn">
                     <span>📱</span> Scarica da Google Play
                 </a>
-                <a href="https://github.com/R00kie7/calcolostraordinario" class="download-btn">
-                    <span>⚡</span> Codice Sorgente
+                <a href="mailto:appdevmond@gmail.com" class="download-btn">
+                    <span>📧</span> Contatta Supporto
                 </a>
             </div>
         </div>
@@ -275,142 +322,125 @@
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon">⏰</div>
-                <h3 class="feature-title">Calcolo Automatico Straordinari</h3>
-                <p class="feature-description">Calcola automaticamente ore normali, straordinari festivi e feriali con algoritmi precisi e conformi alle normative del lavoro.</p>
+                <h3 class="feature-title">Gestione Orari Avanzata</h3>
+                <p class="feature-description">Registrazione precisa di entrate, uscite e pause con supporto per turni notturni e orari flessibili personalizzabili.</p>
             </div>
-
+            
             <div class="feature-card">
-                <div class="feature-icon">☁️</div>
-                <h3 class="feature-title">Backup Google Drive</h3>
-                <p class="feature-description">Sincronizza i tuoi dati in sicurezza con Google Drive. Backup automatico e ripristino con un click.</p>
+                <div class="feature-icon">💼</div>
+                <h3 class="feature-title">Calcolo Straordinari Intelligente</h3>
+                <p class="feature-description">Algoritmi automatici per straordinari feriali e festivi con maggiorazioni personalizzabili secondo contratto.</p>
             </div>
-
+            
             <div class="feature-card">
                 <div class="feature-icon">📊</div>
-                <h3 class="feature-title">Reportistica Avanzata</h3>
-                <p class="feature-description">Esporta i tuoi dati in Excel o PDF. Visualizza statistiche dettagliate e grafici delle tue ore lavorative.</p>
+                <h3 class="feature-title">Reportistica Professionale</h3>
+                <p class="feature-description">Esportazione Excel/PDF con template professionali, grafici statistiche e riepiloghi dettagliati per periodo.</p>
             </div>
-
+            
             <div class="feature-card">
-                <div class="feature-icon">🌙</div>
-                <h3 class="feature-title">Modalità Scura</h3>
-                <p class="feature-description">Interfaccia elegante con supporto per modalità scura/chiara. Design moderno e facile da usare.</p>
+                <div class="feature-icon">☁️</div>
+                <h3 class="feature-title">Backup e Sincronizzazione</h3>
+                <p class="feature-description">Google Drive integrato con crittografia end-to-end e sincronizzazione automatica multi-dispositivo.</p>
             </div>
-
+            
             <div class="feature-card">
-                <div class="feature-icon">🔒</div>
+                <div class="feature-icon">🎨</div>
+                <h3 class="feature-title">Esperienza Utente</h3>
+                <p class="feature-description">Modalità scura/chiara con cambio automatico, design responsive e performance elevate con Flutter.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
                 <h3 class="feature-title">Privacy e Sicurezza</h3>
-                <p class="feature-description">I tuoi dati sono al sicuro. Funziona completamente offline, backup opzionale su Google Drive con crittografia.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">⚙️</div>
-                <h3 class="feature-title">Personalizzazione Completa</h3>
-                <p class="feature-description">Configura orari di lavoro, pause, festivi e straordinari secondo le tue esigenze lavorative specifiche.</p>
+                <p class="feature-description">Dati locali per default, crittografia avanzata e conformità GDPR per la massima protezione.</p>
             </div>
         </div>
 
-        <!-- Technology Stack -->
-        <div class="section">
-            <h2>🚀 Tecnologie Utilizzate</h2>
-            <div class="tech-stack">
-                <div class="tech-badge">🎯 Flutter</div>
-                <div class="tech-badge">🎨 Dart</div>
-                <div class="tech-badge">☁️ Firebase</div>
-                <div class="tech-badge">📱 Android</div>
-                <div class="tech-badge">🔐 Google Auth</div>
-                <div class="tech-badge">📊 Material Design</div>
-            </div>
-            <p style="text-align: center; color: #666; margin-top: 20px;">
-                Sviluppata con le tecnologie più moderne per garantire performance, sicurezza e un'esperienza utente eccezionale.
-            </p>
+        <!-- Avviso Importante -->
+        <div class="warning-box">
+            <h3>⚠️ IMPORTANTE - Solo Uso Autorizzato</h3>
+            <p><strong>Questa app è protetta da copyright.</strong><br>
+            Utilizzare SOLO la versione ufficiale dal Google Play Store.<br>
+            È VIETATO modificare, redistribuire o creare versioni alternative.<br>
+            Tutti i diritti riservati allo sviluppatore.</p>
         </div>
 
-        <!-- Screenshots Section -->
+        <!-- Stack Tecnologico -->
         <div class="section">
-            <h2>📱 Anteprima App</h2>
-            <div class="screenshots">
-                <div class="screenshot">
-                    <div class="screenshot-placeholder">📊</div>
-                    <h4>Dashboard Principale</h4>
-                    <p>Visualizzazione chiara delle ore lavorate e straordinari</p>
+            <h2>🛠️ Stack Tecnologico</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-icon">📱</div>
+                    <h4>Flutter</h4>
+                    <p>Framework UI cross-platform</p>
                 </div>
-                <div class="screenshot">
-                    <div class="screenshot-placeholder">⚙️</div>
-                    <h4>Configurazione</h4>
-                    <p>Imposta i tuoi orari e preferenze di lavoro</p>
+                <div class="tech-item">
+                    <div class="tech-icon">🎯</div>
+                    <h4>Dart</h4>
+                    <p>Linguaggio di programmazione</p>
                 </div>
-                <div class="screenshot">
-                    <div class="screenshot-placeholder">📈</div>
-                    <h4>Statistiche</h4>
-                    <p>Grafici e reportistica dettagliata</p>
+                <div class="tech-item">
+                    <div class="tech-icon">🔥</div>
+                    <h4>Firebase</h4>
+                    <p>Backend as a Service</p>
                 </div>
-                <div class="screenshot">
-                    <div class="screenshot-placeholder">☁️</div>
-                    <h4>Backup Cloud</h4>
-                    <p>Sincronizzazione sicura con Google Drive</p>
+                <div class="tech-item">
+                    <div class="tech-icon">☁️</div>
+                    <h4>Google Drive</h4>
+                    <p>Sincronizzazione cloud</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🎨</div>
+                    <h4>Material Design</h4>
+                    <p>Design system Google</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🤖</div>
+                    <h4>Android</h4>
+                    <p>Piattaforma mobile</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistiche -->
+        <div class="section">
+            <h2>📈 Performance e Compatibilità</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">< 2s</span>
+                    <span class="stat-label">Avvio App</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">~30MB</span>
+                    <span class="stat-label">Dimensione APK</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">Android 5.0+</span>
+                    <span class="stat-label">Compatibilità</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Gratuita</span>
                 </div>
             </div>
         </div>
 
         <!-- Download Section -->
         <div class="section" id="download">
-            <h2>📲 Scarica Ora</h2>
+            <h2>📱 Scarica l'App</h2>
             <div style="text-align: center;">
                 <p style="font-size: 1.2em; margin-bottom: 30px; color: #666;">
                     Disponibile gratuitamente su Google Play Store
                 </p>
                 <div class="download-buttons">
                     <a href="#" class="download-btn" style="font-size: 1.2em; padding: 20px 40px;">
-                        <span>📱</span> Scarica da Google Play
+                        <span>📱</span> Scarica da Google Play Store
                     </a>
                 </div>
-                <p style="margin-top: 20px; color: #888;">
-                    🔓 <strong>Completamente gratuito</strong> • 🚫 <strong>Nessuna pubblicità invasiva</strong> • 🔒 <strong>Privacy garantita</strong>
+                <p style="margin-top: 20px; color: #888; font-size: 0.9em;">
+                    ⚠️ Scarica solo dalla fonte ufficiale per garantire sicurezza e aggiornamenti
                 </p>
-            </div>
-        </div>
-
-        <!-- Features Details -->
-        <div class="section">
-            <h2>✨ Funzionalità Dettagliate</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px;">
-                <div>
-                    <h3>📅 Gestione Orari</h3>
-                    <ul style="color: #666; line-height: 2;">
-                        <li>✅ Registrazione entrate/uscite</li>
-                        <li>✅ Calcolo pause automatico</li>
-                        <li>✅ Gestione orari flessibili</li>
-                        <li>✅ Supporto turni notturni</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>💼 Straordinari</h3>
-                    <ul style="color: #666; line-height: 2;">
-                        <li>✅ Calcolo automatico straordinari</li>
-                        <li>✅ Distinzione feriali/festivi</li>
-                        <li>✅ Maggiorazioni personalizzabili</li>
-                        <li>✅ Soglie straordinario configurabili</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>📊 Reportistica</h3>
-                    <ul style="color: #666; line-height: 2;">
-                        <li>✅ Esportazione Excel/PDF</li>
-                        <li>✅ Grafici statistiche mensili</li>
-                        <li>✅ Riepiloghi personalizzati</li>
-                        <li>✅ Storico completo dati</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>🔧 Personalizzazione</h3>
-                    <ul style="color: #666; line-height: 2;">
-                        <li>✅ Temi scuro/chiaro</li>
-                        <li>✅ Configurazione festivi</li>
-                        <li>✅ Impostazioni aziendali</li>
-                        <li>✅ Interfaccia adattiva</li>
-                    </ul>
-                </div>
             </div>
         </div>
 
@@ -421,7 +451,6 @@
                 <a href="https://r00kie7.github.io/calcolostraordinario/terms-of-service.html">Termini di Servizio</a>
                 <a href="https://r00kie7.github.io/calcolostraordinario/account_deletion.html">Eliminazione Account</a>
                 <a href="mailto:appdevmond@gmail.com">Supporto</a>
-                <a href="https://github.com/R00kie7/calcolostraordinario">GitHub</a>
             </div>
             
             <div style="border-top: 1px solid #e9ecef; padding-top: 20px; margin-top: 20px;">
@@ -432,7 +461,7 @@
                     © 2024 Calcolo Straordinario. Sviluppato con ❤️ usando Flutter.
                 </p>
                 <p style="color: #aaa; font-size: 0.9em; margin-top: 10px;">
-                    🚀 Open Source • 🔒 Privacy First • 📱 Made with Flutter
+                    🛡️ App Proprietaria • 🔒 Privacy First • 📱 Made with Flutter
                 </p>
             </div>
         </div>
