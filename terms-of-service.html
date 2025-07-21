@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termini di Servizio - Calcolo Straordinario</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+        }
+        
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 20px;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: #667eea;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        h3 {
+            color: #764ba2;
+            font-size: 1.4em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        .important {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .warning {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .info {
+            background-color: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .danger {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .data-table th,
+        .data-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .data-table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: bold;
+        }
+        
+        .data-table tr:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        .contact-info {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .last-updated {
+            background-color: #e7f3ff;
+            border: 1px solid #b8daff;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .app-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="app-icon">📊</div>
+            <h1>Termini di Servizio</h1>
+            <div class="subtitle">Calcolo Straordinario - App per il tracciamento orari di lavoro</div>
+        </div>
+
+        <div class="last-updated">
+            <strong>📅 Ultimo aggiornamento:</strong> 18 Gennaio 2025<br>
+            <strong>📱 Versione App:</strong> 1.0.0<br>
+            <strong>⚖️ Versione Termini:</strong> 1.0
+        </div>
+
+        <div class="important">
+            <strong>⚖️ Benvenuto nei Termini di Servizio!</strong><br>
+            Questi Termini regolano l'utilizzo dell'app <strong>"Calcolo Straordinario"</strong>. Utilizzando la nostra app, accetti automaticamente tutti i termini descritti in questo documento.
+        </div>
+
+        <div class="section">
+            <h2>📱 Informazioni Generali</h2>
+            
+            <table class="data-table">
+                <tbody>
+                    <tr>
+                        <td><strong>📱 Nome Servizio</strong></td>
+                        <td>Calcolo Straordinario</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🏢 Fornitore del Servizio</strong></td>
+                        <td>R00kie7 (Sviluppatore Indipendente)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>📧 Contatto Legale</strong></td>
+                        <td><a href="mailto:appdevmond@gmail.com">appdevmond@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>🌐 Sito Web Ufficiale</strong></td>
+                        <td><a href="https://r00kie7.github.io/calcolostraordinario/">https://r00kie7.github.io/calcolostraordinario/</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>🏪 Distribuzione</strong></td>
+                        <td>Google Play Store</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🌍 Giurisdizione</strong></td>
+                        <td>Italia / Unione Europea</td>
+                    </tr>
+                    <tr>
+                        <td><strong>⚖️ Legge Applicabile</strong></td>
+                        <td>Legge Italiana e Normative UE</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>✅ Accettazione dei Termini</h2>
+            
+            <p>Utilizzando l'app "Calcolo Straordinario", confermi di:</p>
+            
+            <ul>
+                <li>📖 <strong>Aver letto</strong> interamente questi Termini di Servizio</li>
+                <li>🤝 <strong>Accettare completamente</strong> tutti i termini e condizioni</li>
+                <li>⚖️ <strong>Essere legalmente capace</strong> di stipulare contratti</li>
+                <li>🔞 <strong>Avere almeno 16 anni</strong> di età</li>
+                <li>🇮🇹 <strong>Rispettare le leggi</strong> italiane ed europee</li>
+            </ul>
+            
+            <div class="warning">
+                <strong>⚠️ Importante:</strong> Se non accetti uno o più di questi termini, <strong>NON utilizzare l'app</strong>. La semplice installazione e utilizzo dell'app costituisce accettazione automatica di tutti i termini.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📝 Descrizione del Servizio</h2>
+            
+            <p><strong>"Calcolo Straordinario"</strong> è un'applicazione mobile gratuita progettata per:</p>
+            
+            <h3>🎯 Funzionalità Principali</h3>
+            <ul>
+                <li>📊 <strong>Tracciamento orari:</strong> Registrazione ore di lavoro ordinarie e straordinarie</li>
+                <li>🧮 <strong>Calcoli automatici:</strong> Calcolo stipendi, maggiorazioni e compensi</li>
+                <li>📈 <strong>Statistiche avanzate:</strong> Grafici e analisi delle ore lavorate</li>
+                <li>👥 <strong>Profili multipli:</strong> Gestione turni diurni e notturni</li>
+                <li>📄 <strong>Export dati:</strong> Esportazione in PDF e Excel</li>
+                <li>☁️ <strong>Backup cloud:</strong> Sincronizzazione con Google Drive (opzionale)</li>
+                <li>🔧 <strong>Personalizzazione:</strong> Impostazioni orari, tariffe e preferenze</li>
+            </ul>
+
+            <h3>💰 Modello di Business</h3>
+            <ul>
+                <li>🆓 <strong>App gratuita:</strong> Download e funzionalità base senza costi</li>
+                <li>📢 <strong>Pubblicità non invasiva:</strong> Banner pubblicitari per sostenere lo sviluppo</li>
+                <li>🚫 <strong>Nessun abbonamento:</strong> Tutte le funzionalità sono sempre gratuite</li>
+                <li>💎 <strong>Nessun acquisto in-app:</strong> Non vendiamo funzionalità premium</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Uso Consentito dell'App</h2>
+            
+            <h3>✅ Usi Permessi</h3>
+            <ul>
+                <li>📊 <strong>Tracciamento personale:</strong> Monitorare le tue ore di lavoro</li>
+                <li>🧮 <strong>Calcoli stipendi:</strong> Calcolare i tuoi compensi lavorativi</li>
+                <li>📈 <strong>Analisi produttività:</strong> Studiare le tue abitudini lavorative</li>
+                <li>📱 <strong>Uso professionale:</strong> Utilizzare l'app per scopi lavorativi legittimi</li>
+                <li>💾 <strong>Backup personale:</strong> Salvare i tuoi dati su Google Drive</li>
+                <li>🔗 <strong>Condivisione risultati:</strong> Esportare e condividere i tuoi report</li>
+            </ul>
+
+            <h3>🚫 Usi Vietati</h3>
+            <div class="danger">
+                <strong>🚨 È SEVERAMENTE VIETATO:</strong>
+                <ul>
+                    <li>🏴‍☠️ <strong>Reverse engineering:</strong> Decompilare, disassemblare o modificare l'app</li>
+                    <li>🎭 <strong>Aggiramento sistemi:</strong> Bypassare pubblicità, analytics o sistemi di sicurezza</li>
+                    <li>🤖 <strong>Uso automatizzato:</strong> Utilizzare bot, script o automazioni</li>
+                    <li>💰 <strong>Commercializzazione:</strong> Rivendere, distribuire o monetizzare l'app</li>
+                    <li>🎪 <strong>Contenuti illeciti:</strong> Inserire dati falsi, illegali o dannosi</li>
+                    <li>🔨 <strong>Sovraccarico sistemi:</strong> Fare un uso eccessivo che danneggi i server</li>
+                    <li>👤 <strong>Impersonificazione:</strong> Fingersi altri utenti o sviluppatori</li>
+                    <li>📊 <strong>Data scraping:</strong> Estrarre dati in massa senza autorizzazione</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔐 Account e Responsabilità Utente</h2>
+            
+            <h3>📱 Responsabilità del Dispositivo</h3>
+            <ul>
+                <li>🔒 <strong>Sicurezza dispositivo:</strong> Mantenere il tuo telefono protetto e aggiornato</li>
+                <li>🔑 <strong>Accesso sicuro:</strong> Proteggere l'accesso all'app con PIN/password</li>
+                <li>🛡️ <strong>Antivirus:</strong> Utilizzare software di sicurezza affidabile</li>
+                <li>📱 <strong>Sistema operativo:</strong> Mantenere Android aggiornato alle ultime versioni</li>
+            </ul>
+
+            <h3>☁️ Account Google Drive (Opzionale)</h3>
+            <ul>
+                <li>🔐 <strong>Credenziali sicure:</strong> Proteggere username e password Google</li>
+                <li>🔄 <strong>Autorizzazioni:</strong> Concedere solo le autorizzazioni necessarie</li>
+                <li>🚫 <strong>Condivisione account:</strong> Non condividere le tue credenziali Google</li>
+                <li>📊 <strong>Dati backup:</strong> Sei responsabile dei dati che scegli di sincronizzare</li>
+            </ul>
+
+            <h3>⚖️ Responsabilità Legale</h3>
+            <div class="warning">
+                <strong>⚠️ Importante:</strong> Sei l'unico responsabile per:
+                <ul>
+                    <li>📊 <strong>Accuratezza dati:</strong> I dati che inserisci nell'app</li>
+                    <li>🧮 <strong>Calcoli finali:</strong> Verificare che i calcoli siano corretti per il tuo caso</li>
+                    <li>⚖️ <strong>Conformità legale:</strong> Rispettare le leggi del lavoro del tuo paese</li>
+                    <li>🏢 <strong>Accordi lavorativi:</strong> Rispettare i contratti con il tuo datore di lavoro</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>💰 Aspetti Finanziari e Commerciali</h2>
+            
+            <h3>🆓 Servizio Gratuito</h3>
+            <div class="important">
+                <strong>💝 Promessa di Gratuità:</strong><br>
+                L'app "Calcolo Straordinario" è e rimarrà sempre <strong>completamente gratuita</strong>. Non introdurremo mai:
+                <ul>
+                    <li>💎 Versioni premium a pagamento</li>
+                    <li>💳 Abbonamenti mensili o annuali</li>
+                    <li>🔒 Funzionalità bloccate dietro pagamento</li>
+                    <li>🎪 Acquisti in-app di qualsiasi tipo</li>
+                </ul>
+            </div>
+
+            <h3>📢 Pubblicità</h3>
+            <ul>
+                <li>🎯 <strong>Ads non invasivi:</strong> Pubblicità posizionate in modo discreto</li>
+                <li>🔄 <strong>Rotazione intelligente:</strong> Ads pertinenti e rispettosi</li>
+                <li>⚙️ <strong>Controllo utente:</strong> Puoi disattivare ads personalizzati dalle impostazioni Android</li>
+                <li>💰 <strong>Sostenibilità:</strong> Le ads ci permettono di mantenere l'app gratuita</li>
+            </ul>
+
+            <h3>🚫 Esclusioni di Responsabilità Finanziaria</h3>
+            <div class="danger">
+                <strong>⚠️ DISCLAIMER IMPORTANTE:</strong><br>
+                L'app è fornita "così com'è" per scopi informativi. NON siamo responsabili per:
+                <ul>
+                    <li>🧮 <strong>Errori di calcolo:</strong> Verificare sempre i risultati dell'app</li>
+                    <li>💰 <strong>Perdite finanziarie:</strong> Danni economici derivanti dall'uso dell'app</li>
+                    <li>⚖️ <strong>Questioni legali:</strong> Controversie lavorative o fiscali</li>
+                    <li>🏢 <strong>Rapporti di lavoro:</strong> Problemi con datori di lavoro</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🛡️ Privacy e Protezione Dati</h2>
+            
+            <p>La protezione dei tuoi dati è fondamentale. Ti invitiamo a leggere la nostra Privacy Policy completa:</p>
+            
+            <div class="info">
+                <strong>🔗 Privacy Policy Completa:</strong><br>
+                <a href="https://r00kie7.github.io/calcolostraordinario/privacy-policy.html"><strong>Leggi la Privacy Policy →</strong></a>
+            </div>
+
+            <h3>📊 Riassunto Dati Raccolti</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Tipo di Dato</th>
+                        <th>Scopo</th>
+                        <th>Opzionale</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>📱 Analytics anonimi</strong></td>
+                        <td>Migliorare l'app e risolvere bugs</td>
+                        <td>❌ No</td>
+                    </tr>
+                    <tr>
+                        <td><strong>📧 Email Google</strong></td>
+                        <td>Backup e sincronizzazione</td>
+                        <td>✅ Sì</td>
+                    </tr>
+                    <tr>
+                        <td><strong>📊 Dati lavoro locali</strong></td>
+                        <td>Funzionamento app</td>
+                        <td>❌ No (locali)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>📢 Advertising ID</strong></td>
+                        <td>Pubblicità personalizzate</td>
+                        <td>⚙️ Configurabile</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>🗑️ Diritti dell'Utente</h3>
+            <ul>
+                <li>👁️ <strong>Accesso ai dati:</strong> Richiedere copia dei tuoi dati</li>
+                <li>✏️ <strong>Correzione:</strong> Modificare dati inesatti</li>
+                <li>🗑️ <strong>Cancellazione:</strong> Eliminare completamente i tuoi dati</li>
+                <li>📤 <strong>Portabilità:</strong> Ottenere i dati in formato leggibile</li>
+                <li>⏸️ <strong>Limitazione:</strong> Limitare l'uso dei tuoi dati</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🔧 Disponibilità del Servizio</h2>
+            
+            <h3>⏱️ Uptime e Disponibilità</h3>
+            <ul>
+                <li>📱 <strong>App locale:</strong> Funziona sempre offline, indipendentemente dalla connessione</li>
+                <li>☁️ <strong>Servizi cloud:</strong> Disponibilità del 99%+ per backup e sincronizzazione</li>
+                <li>🔧 <strong>Manutenzione:</strong> Possibili interruzioni programmate con preavviso</li>
+                <li>🌐 <strong>Dipendenze esterne:</strong> Funzionalità che dipendono da Google potrebbero avere limitazioni</li>
+            </ul>
+
+            <h3>🚨 Interruzioni del Servizio</h3>
+            <div class="warning">
+                <strong>⚠️ Possibili Interruzioni:</strong>
+                <ul>
+                    <li>🔧 <strong>Manutenzione programmata:</strong> Notificata con almeno 24 ore di anticipo</li>
+                    <li>🚨 <strong>Emergenze tecniche:</strong> Problemi imprevisti ai server</li>
+                    <li>⚖️ <strong>Questioni legali:</strong> Richieste delle autorità</li>
+                    <li>🌊 <strong>Forza maggiore:</strong> Eventi naturali, guerre, pandemie</li>
+                </ul>
+            </div>
+
+            <h3>🔄 Aggiornamenti e Modifiche</h3>
+            <ul>
+                <li>📱 <strong>Aggiornamenti app:</strong> Distribuiti tramite Google Play Store</li>
+                <li>🆕 <strong>Nuove funzionalità:</strong> Aggiunte regolarmente senza costi aggiuntivi</li>
+                <li>🐛 <strong>Bug fixes:</strong> Correzioni tempestive per problemi segnalati</li>
+                <li>🔒 <strong>Patch sicurezza:</strong> Aggiornamenti di sicurezza prioritari</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>⚖️ Limitazioni di Responsabilità</h2>
+            
+            <div class="danger">
+                <strong>🚨 IMPORTANTE - LIMITAZIONI LEGALI:</strong><br>
+                
+                <h3>🚫 Esclusioni di Garanzia</h3>
+                <p>L'app viene fornita "COSÌ COM'È" e "COME DISPONIBILE" senza garanzie di alcun tipo, incluse ma non limitate a:</p>
+                <ul>
+                    <li>✅ <strong>Funzionamento perfetto:</strong> Non garantiamo che l'app sia sempre priva di errori</li>
+                    <li>🧮 <strong>Accuratezza calcoli:</strong> I risultati potrebbero contenere errori</li>
+                    <li>⏱️ <strong>Disponibilità continua:</strong> Il servizio potrebbe essere temporaneamente non disponibile</li>
+                    <li>🔒 <strong>Sicurezza assoluta:</strong> Nessun sistema è sicuro al 100%</li>
+                    <li>💰 <strong>Risultati finanziari:</strong> Non garantiamo vantaggi economici</li>
+                </ul>
+
+                <h3>💰 Limitazione Danni</h3>
+                <p>In nessun caso saremo responsabili per:</p>
+                <ul>
+                    <li>💸 <strong>Danni diretti:</strong> Perdite economiche immediate</li>
+                    <li>🔄 <strong>Danni indiretti:</strong> Perdite consequenziali o collaterali</li>
+                    <li>⭐ <strong>Danni speciali:</strong> Perdite eccezionali o punitive</li>
+                    <li>🎯 <strong>Danni incidentali:</strong> Perdite accessorie o correlate</li>
+                    <li>💼 <strong>Lucro cessante:</strong> Mancati guadagni o opportunità perse</li>
+                </ul>
+
+                <h3>💰 Massimale di Responsabilità</h3>
+                <p>Qualsiasi responsabilità è limitata a: <strong>€0 (ZERO EURO)</strong> considerando che l'app è completamente gratuita.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔚 Risoluzione e Termine del Servizio</h2>
+            
+            <h3>👤 Termine da Parte dell'Utente</h3>
+            <ul>
+                <li>📱 <strong>Disinstallazione:</strong> Puoi disinstallare l'app in qualsiasi momento</li>
+                <li>🗑️ <strong>Eliminazione dati:</strong> Puoi richiedere la cancellazione completa dei tuoi dati</li>
+                <li>☁️ <strong>Disconnessione backup:</strong> Puoi disconnettere il tuo account Google Drive</li>
+                <li>⚙️ <strong>Disattivazione analytics:</strong> Puoi limitare la raccolta dati dalle impostazioni</li>
+            </ul>
+
+            <h3>🏢 Termine da Parte dello Sviluppatore</h3>
+            <div class="warning">
+                <strong>⚠️ Possibili Motivi di Sospensione:</strong>
+                <ul>
+                    <li>🚫 <strong>Violazione termini:</strong> Uso non conforme dell'app</li>
+                    <li>🤖 <strong>Attività sospette:</strong> Comportamenti automatizzati o dannosi</li>
+                    <li>⚖️ <strong>Questioni legali:</strong> Richieste delle autorità competenti</li>
+                    <li>🔧 <strong>Problemi tecnici gravi:</strong> Situazioni che compromettono la sicurezza</li>
+                </ul>
+                
+                <p><strong>📢 Preavviso:</strong> Cercheremo di fornire almeno 30 giorni di preavviso quando possibile.</p>
+            </div>
+
+            <h3>🔄 Effetti della Risoluzione</h3>
+            <ul>
+                <li>📱 <strong>App locale:</strong> Continua a funzionare fino alla disinstallazione</li>
+                <li>☁️ <strong>Servizi cloud:</strong> Backup e sincronizzazione interrotti</li>
+                <li>🗑️ <strong>Dati server:</strong> Eliminati secondo la nostra Privacy Policy</li>
+                <li>📊 <strong>Dati locali:</strong> Rimangono sul tuo dispositivo fino alla disinstallazione</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>⚖️ Risoluzione Controversie</h2>
+            
+            <h3>🤝 Risoluzione Amichevole</h3>
+            <div class="important">
+                <strong>📞 Prima di Tutto:</strong><br>
+                Prima di intraprendere azioni legali, ti invitiamo a contattarci per una risoluzione amichevole:
+                <ul>
+                    <li>📧 <strong>Email:</strong> <a href="mailto:appdevmond@gmail.com">appdevmond@gmail.com</a></li>
+                    <li>⏱️ <strong>Risposta:</strong> Entro 7 giorni lavorativi</li>
+                    <li>🔄 <strong>Dialogo:</strong> Cercheremo sempre una soluzione condivisa</li>
+                </ul>
+            </div>
+
+            <h3>⚖️ Giurisdizione e Legge Applicabile</h3>
+            <ul>
+                <li>🇮🇹 <strong>Legge applicabile:</strong> Legge italiana</li>
+                <li>🇪🇺 <strong>Normative UE:</strong> GDPR e direttive europee</li>
+                <li>🏛️ <strong>Foro competente:</strong> Tribunali italiani</li>
+                <li>🌐 <strong>Mediazione:</strong> Preferenza per mediazione civile quando possibile</li>
+            </ul>
+
+            <h3>👥 Procedure per Consumatori</h3>
+            <div class="info">
+                <strong>🛡️ Diritti del Consumatore:</strong><br>
+                Se sei un consumatore, mantieni tutti i diritti previsti dal Codice del Consumo italiano e dalle normative UE, inclusi:
+                <ul>
+                    <li>🔄 <strong>Risoluzione controversie online:</strong> Piattaforma ODR europea</li>
+                    <li>👥 <strong>Associazioni consumatori:</strong> Diritto di essere rappresentato</li>
+                    <li>⚖️ <strong>Foro del consumatore:</strong> Possibilità di ricorrere al tuo tribunale locale</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔄 Modifiche ai Termini di Servizio</h2>
+            
+            <h3>📝 Quando Modifichiamo i Termini</h3>
+            <ul>
+                <li>🆕 <strong>Nuove funzionalità:</strong> Aggiornamenti per supportare nuove caratteristiche</li>
+                <li>⚖️ <strong>Cambiamenti normativi:</strong> Adeguamento a nuove leggi</li>
+                <li>🔧 <strong>Miglioramenti:</strong> Chiarimenti e semplificazioni</li>
+                <li>🛡️ <strong>Sicurezza:</strong> Nuove misure di protezione</li>
+            </ul>
+
+            <h3>📢 Come Ti Informiamo</h3>
+            <div class="important">
+                <strong>📬 Metodi di Notifica:</strong>
+                <ul>
+                    <li>📱 <strong>Notifica in-app:</strong> Alert al prossimo avvio dell'app</li>
+                    <li>📧 <strong>Email:</strong> Se hai attivato il backup Google Drive</li>
+                    <li>🌐 <strong>Sito web:</strong> Banner informativo per 30 giorni</li>
+                    <li>⏱️ <strong>Preavviso:</strong> Almeno 15 giorni per modifiche sostanziali</li>
+                </ul>
+            </div>
+
+            <h3>✅ Accettazione Modifiche</h3>
+            <ul>
+                <li>📱 <strong>Uso continuato:</strong> Continuare a usare l'app significa accettazione</li>
+                <li>🚫 <strong>Non accettazione:</strong> Puoi disinstallare l'app</li>
+                <li>🗑️ <strong>Eliminazione dati:</strong> Puoi richiedere la cancellazione completa</li>
+                <li>⏱️ <strong>Periodo di grazia:</strong> 30 giorni per decidere</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🌐 Disposizioni Generali</h2>
+            
+            <h3>📄 Validità del Contratto</h3>
+            <ul>
+                <li>⚖️ <strong>Severabilità:</strong> Se una clausola è invalida, le altre rimangono valide</li>
+                <li>🔄 <strong>Integrazione:</strong> Questi termini sostituiscono accordi precedenti</li>
+                <li>📝 <strong>Modifiche:</strong> Solo per iscritto e con le procedure descritte</li>
+                <li>🚫 <strong>Rinuncia:</strong> Il mancato esercizio di un diritto non costituisce rinuncia</li>
+            </ul>
+
+            <h3>🌍 Applicazione Internazionale</h3>
+            <div class="info">
+                <strong>🌐 Utenti Internazionali:</strong><br>
+                L'app può essere utilizzata in tutto il mondo, ma:
+                <ul>
+                    <li>⚖️ <strong>Legge italiana:</strong> Rimane sempre applicabile</li>
+                    <li>🏛️ <strong>Conformità locale:</strong> Gli utenti devono rispettare le proprie leggi</li>
+                    <li>🚫 <strong>Restrizioni export:</strong> Rispetto delle normative commerciali internazionali</li>
+                </ul>
+            </div>
+
+            <h3>📞 Contatti Legali</h3>
+            <div class="contact-info">
+                <h3>⚖️ Questioni Legali</h3>
+                <p><strong>📧 Email Legale:</strong> <a href="mailto:appdevmond@gmail.com">appdevmond@gmail.com</a></p>
+                <p><strong>📝 Oggetto:</strong> "QUESTIONE LEGALE - Termini di Servizio"</p>
+                <p><strong>⏱️ Tempo di Risposta:</strong> Entro 15 giorni lavorativi</p>
+                
+                <h3>🛡️ Violazioni dei Termini</h3>
+                <p><strong>📧 Segnalazioni:</strong> <a href="mailto:appdevmond@gmail.com">appdevmond@gmail.com</a></p>
+                <p><strong>📝 Oggetto:</strong> "SEGNALAZIONE VIOLAZIONE - Calcolo Straordinario"</p>
+                <p><strong>📋 Informazioni necessarie:</strong> Descrizione dettagliata della violazione</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📞 Link di Navigazione</h2>
+            
+            <div style="text-align: center;">
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
+                    <a href="https://r00kie7.github.io/calcolostraordinario/" style="color: #667eea; text-decoration: none; font-weight: bold;">🏠 Home</a>
+                    <a href="https://r00kie7.github.io/calcolostraordinario/privacy-policy.html" style="color: #667eea; text-decoration: none; font-weight: bold;">🛡️ Privacy Policy</a>
+                    <a href="https://r00kie7.github.io/calcolostraordinario/account_deletion.html" style="color: #667eea; text-decoration: none; font-weight: bold;">🗑️ Eliminazione Dati</a>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px; padding: 20px; background-color: #f8f9fa; border-radius: 10px;">
+            <p style="color: #666;">
+                📧 <strong>Contatti Legali:</strong> <a href="mailto:appdevmond@gmail.com" style="color: #667eea;">appdevmond@gmail.com</a>
+            </p>
+            <p style="color: #888; margin-top: 10px;">
+                © 2024 Calcolo Straordinario. Termini di Servizio conformi alla legge italiana e UE.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
