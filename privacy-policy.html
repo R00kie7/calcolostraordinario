@@ -4,180 +4,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Calcolo Straordinario</title>
+    <meta name="description" content="Privacy Policy per l'app Calcolo Straordinario. Informazioni sulla raccolta, uso e protezione dei dati degli utenti.">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f5f5f5;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
         }
-        
+
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
-        
+
         .header {
             text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .last-updated {
+            color: #666;
+            font-style: italic;
+        }
+
+        .section {
             margin-bottom: 30px;
-            padding: 20px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #f8f9fa;
+        }
+
+        .section h3 {
+            color: #764ba2;
+            font-size: 1.2em;
+            margin: 20px 0 10px 0;
+        }
+
+        .section p, .section li {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        .section ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
+            padding: 20px;
             border-radius: 10px;
-        }
-        
-        .app-icon {
-            width: 80px;
-            height: 80px;
-            background: white;
-            border-radius: 20px;
-            margin: 0 auto 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 40px;
-            color: #667eea;
-        }
-        
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        
-        .subtitle {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-        
-        h2 {
-            color: #667eea;
-            font-size: 1.8em;
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-        
-        h3 {
-            color: #764ba2;
-            font-size: 1.4em;
-            margin-top: 25px;
-            margin-bottom: 10px;
-        }
-        
-        p {
-            margin-bottom: 15px;
-        }
-        
-        ul, ol {
-            margin-left: 30px;
-            margin-bottom: 15px;
-        }
-        
-        li {
-            margin-bottom: 5px;
-        }
-        
-        .important {
-            background-color: #d4edda;
-            border-left: 4px solid #28a745;
-            padding: 15px;
             margin: 20px 0;
-            border-radius: 5px;
         }
-        
+
         .warning {
-            background-color: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 15px;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
             margin: 20px 0;
-            border-radius: 5px;
         }
-        
-        .info {
-            background-color: #d1ecf1;
-            border-left: 4px solid #17a2b8;
-            padding: 15px;
+
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
             margin: 20px 0;
-            border-radius: 5px;
         }
-        
+
+        .back-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+        }
+
+        .gdpr-section {
+            background: #e8f4fd;
+            border: 2px solid #2196F3;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .gdpr-section h3 {
+            color: #1976D2;
+        }
+
         .data-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
+            margin: 15px 0;
             background: white;
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        
+
         .data-table th,
         .data-table td {
-            padding: 12px 15px;
+            padding: 12px;
             text-align: left;
             border-bottom: 1px solid #e9ecef;
         }
-        
+
         .data-table th {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             font-weight: bold;
         }
-        
+
         .data-table tr:hover {
-            background-color: #f8f9fa;
+            background: #f8f9fa;
         }
-        
-        .highlight {
-            background-color: #fff3cd;
-            padding: 2px 6px;
-            border-radius: 3px;
-            font-weight: bold;
-        }
-        
-        .contact-info {
-            background-color: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
-        }
-        
-        .section {
-            margin-bottom: 30px;
-        }
-        
-        .last-updated {
-            background-color: #e7f3ff;
-            border: 1px solid #b8daff;
-            border-radius: 8px;
-            padding: 15px;
-            margin: 20px 0;
-            text-align: center;
-        }
-        
-        @media (max-width: 600px) {
+
+        @media (max-width: 768px) {
             .container {
+                padding: 20px;
                 margin: 10px;
-                padding: 15px;
             }
-            
-            h1 {
-                font-size: 1.8em;
+
+            .header h1 {
+                font-size: 2em;
             }
-            
-            .app-icon {
-                width: 60px;
-                height: 60px;
-                font-size: 30px;
+
+            .section h2 {
+                font-size: 1.3em;
             }
         }
     </style>
@@ -185,472 +177,239 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="app-icon">📊</div>
-            <h1>Privacy Policy</h1>
-            <div class="subtitle">Calcolo Straordinario - App per il tracciamento orari di lavoro</div>
+            <h1>🔒 Privacy Policy</h1>
+            <p class="last-updated">Ultimo aggiornamento: Dicembre 2024</p>
+            <p><strong>Calcolo Straordinario - App Flutter</strong></p>
         </div>
 
-        <div class="last-updated">
-            <strong>📅 Ultimo aggiornamento:</strong> 18 Gennaio 2025<br>
-            <strong>📱 Versione App:</strong> 1.0.0<br>
-            <strong>⚖️ Versione Policy:</strong> 1.0
-        </div>
-
-        <div class="important">
-            <strong>🛡️ La tua privacy è la nostra priorità!</strong><br>
-            Questa Privacy Policy spiega come raccogliamo, utilizziamo e proteggiamo le tue informazioni quando utilizzi l'app <strong>"Calcolo Straordinario"</strong>.
+        <div class="highlight">
+            <h3>📱 Informazioni Generali</h3>
+            <p><strong>Calcolo Straordinario</strong> è un'applicazione proprietaria per la gestione degli orari di lavoro, sviluppata con Flutter per dispositivi Android. La tua privacy è fondamentale per noi.</p>
         </div>
 
         <div class="section">
-            <h2>📱 Informazioni Generali sull'App</h2>
+            <h2>1. Dati Raccolti</h2>
             
+            <h3>📊 Dati Personali</h3>
             <table class="data-table">
-                <tbody>
-                    <tr>
-                        <td><strong>📱 Nome App</strong></td>
-                        <td>Calcolo Straordinario</td>
-                    </tr>
-                    <tr>
-                        <td><strong>👨‍💻 Sviluppatore</strong></td>
-                        <td>R00kie7</td>
-                    </tr>
-                    <tr>
-                        <td><strong>📧 Email Contatto</strong></td>
-                        <td><a href="mailto:appdevmond@gmail.com">appdevmond@gmail.com</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>🌐 Sito Web</strong></td>
-                        <td><a href="https://r00kie7.github.io/calcolostraordinario/">https://r00kie7.github.io/calcolostraordinario/</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>🏪 Store</strong></td>
-                        <td>Google Play Store</td>
-                    </tr>
-                    <tr>
-                        <td><strong>🎯 Categoria</strong></td>
-                        <td>Produttività / Business</td>
-                    </tr>
-                </tbody>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Tipo di Dato</th>
+                    <th>Finalità</th>
+                    <th>Base Legale</th>
+                </tr>
+                <tr>
+                    <td>Orari di Lavoro</td>
+                    <td>Entrate, uscite, pause</td>
+                    <td>Funzionalità app</td>
+                    <td>Consenso</td>
+                </tr>
+                <tr>
+                    <td>Impostazioni</td>
+                    <td>Configurazioni utente</td>
+                    <td>Personalizzazione</td>
+                    <td>Consenso</td>
+                </tr>
+                <tr>
+                    <td>Backup</td>
+                    <td>File esportazione</td>
+                    <td>Sincronizzazione</td>
+                    <td>Consenso</td>
+                </tr>
+                <tr>
+                    <td>Identificativo</td>
+                    <td>ID anonimo dispositivo</td>
+                    <td>Analytics</td>
+                    <td>Consenso</td>
+                </tr>
+            </table>
+
+            <h3>📈 Dati Analytics (Firebase)</h3>
+            <ul>
+                <li><strong>Identificativo utente anonimo</strong> - Generato automaticamente</li>
+                <li><strong>Dati di utilizzo</strong> - Apertura app, funzioni utilizzate</li>
+                <li><strong>Informazioni dispositivo</strong> - Modello, versione OS (anonimi)</li>
+                <li><strong>Prestazioni app</strong> - Crash report, performance</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>2. Archiviazione Dati</h2>
+            
+            <h3>📱 Archiviazione Locale (Predefinita)</h3>
+            <p>Per impostazione predefinita, tutti i tuoi dati vengono salvati <strong>ESCLUSIVAMENTE</strong> sul tuo dispositivo:</p>
+            <ul>
+                <li>SharedPreferences Android per impostazioni</li>
+                <li>Database SQLite locale per orari di lavoro</li>
+                <li>Nessuna trasmissione automatica di dati</li>
+                <li>Accesso offline completo alle funzionalità</li>
+            </ul>
+
+            <h3>☁️ Backup Google Drive (Opzionale)</h3>
+            <p>Il backup su Google Drive è <strong>COMPLETAMENTE OPZIONALE</strong>:</p>
+            <ul>
+                <li>Devi autorizzare esplicitamente l'accesso</li>
+                <li>Dati crittografati end-to-end prima del caricamento</li>
+                <li>Solo il tuo account Google può accedere ai file</li>
+                <li>Puoi disattivare il backup in qualsiasi momento</li>
+            </ul>
+        </div>
+
+        <div class="gdpr-section">
+            <h2>3. 🇪🇺 Diritti GDPR</h2>
+            
+            <h3>I Tuoi Diritti</h3>
+            <ul>
+                <li><strong>Diritto di Accesso</strong> - Visualizza tutti i dati archiviati</li>
+                <li><strong>Diritto di Rettifica</strong> - Modifica dati non corretti</li>
+                <li><strong>Diritto alla Cancellazione</strong> - Elimina tutti i dati</li>
+                <li><strong>Diritto alla Portabilità</strong> - Esporta i tuoi dati</li>
+                <li><strong>Diritto di Opposizione</strong> - Rifiuta il trattamento</li>
+                <li><strong>Diritto di Limitazione</strong> - Limita l'uso dei dati</li>
+            </ul>
+
+            <h3>🗑️ Eliminazione Dati</h3>
+            <p>Hai il controllo completo sui tuoi dati:</p>
+            <ul>
+                <li><strong>Eliminazione Locale:</strong> Disinstalla l'app o usa la funzione "Elimina tutti i dati"</li>
+                <li><strong>Eliminazione Analytics:</strong> Richiesta tramite supporto per eliminazione da Firebase</li>
+                <li><strong>Eliminazione Google Drive:</strong> Elimina i file backup dal tuo account Google Drive</li>
+                <li><strong>Eliminazione Completa:</strong> Contatta il supporto per eliminazione totale</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>4. Sicurezza e Protezione</h2>
+            
+            <h3>🔐 Misure di Sicurezza</h3>
+            <ul>
+                <li><strong>Crittografia End-to-End</strong> per backup cloud</li>
+                <li><strong>Archiviazione locale sicura</strong> con Android Keystore</li>
+                <li><strong>Nessuna trasmissione non autorizzata</strong> di dati</li>
+                <li><strong>Accesso limitato</strong> solo alle funzionalità necessarie</li>
+                <li><strong>Aggiornamenti di sicurezza</strong> regolari</li>
+            </ul>
+
+            <h3>🛡️ Protezione Privacy</h3>
+            <ul>
+                <li>Nessuna vendita di dati a terze parti</li>
+                <li>Nessun tracciamento pubblicitario</li>
+                <li>Analytics anonimi e aggregati</li>
+                <li>Conformità GDPR e normative privacy</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>5. Conservazione Dati</h2>
+            
+            <h3>⏱️ Periodi di Conservazione</h3>
+            <table class="data-table">
+                <tr>
+                    <th>Tipo di Dato</th>
+                    <th>Periodo Conservazione</th>
+                    <th>Azione Automatica</th>
+                </tr>
+                <tr>
+                    <td>Dati locali app</td>
+                    <td>Fino a disinstallazione</td>
+                    <td>Eliminazione automatica</td>
+                </tr>
+                <tr>
+                    <td>Backup Google Drive</td>
+                    <td>Fino a eliminazione manuale</td>
+                    <td>Controllo utente</td>
+                </tr>
+                <tr>
+                    <td>Analytics Firebase</td>
+                    <td>14 mesi</td>
+                    <td>Eliminazione automatica</td>
+                </tr>
+                <tr>
+                    <td>Crash reports</td>
+                    <td>90 giorni</td>
+                    <td>Eliminazione automatica</td>
+                </tr>
             </table>
         </div>
 
         <div class="section">
-            <h2>🎯 Scopo dell'App</h2>
+            <h2>6. Servizi Terze Parti</h2>
             
-            <p><strong>"Calcolo Straordinario"</strong> è un'app gratuita progettata per aiutare i lavoratori a:</p>
-            
+            <h3>🔥 Firebase Analytics (Google)</h3>
             <ul>
-                <li>📊 <strong>Tracciare</strong> ore di lavoro ordinarie e straordinarie</li>
-                <li>🧮 <strong>Calcolare</strong> automaticamente compensi e maggiorazioni</li>
-                <li>📈 <strong>Analizzare</strong> le statistiche del lavoro con grafici</li>
-                <li>📱 <strong>Gestire</strong> profili di lavoro multipli (diurno/notturno)</li>
-                <li>💾 <strong>Esportare</strong> dati in PDF e Excel</li>
-                <li>☁️ <strong>Sincronizzare</strong> dati con Google Drive (opzionale)</li>
+                <li><strong>Finalità:</strong> Miglioramento app e correzione bug</li>
+                <li><strong>Dati:</strong> Eventi anonimi, prestazioni, crash</li>
+                <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+                <li><strong>Controllo:</strong> Puoi disattivare analytics dalle impostazioni</li>
+            </ul>
+
+            <h3>☁️ Google Drive API</h3>
+            <ul>
+                <li><strong>Finalità:</strong> Backup opzionale dati utente</li>
+                <li><strong>Accesso:</strong> Solo file creati dall'app</li>
+                <li><strong>Autorizzazione:</strong> Esplicita da parte dell'utente</li>
+                <li><strong>Controllo:</strong> Revocabile in qualsiasi momento</li>
             </ul>
         </div>
 
         <div class="warning">
-            <strong>⚠️ INFORMAZIONE IMPORTANTE:</strong><br>
-            L'app <strong>"Calcolo Straordinario"</strong> funziona principalmente <strong>in locale</strong> sul tuo dispositivo. I tuoi dati di lavoro (ore, stipendi, calcoli) vengono salvati <strong>solo sul tuo telefono</strong> e non vengono mai inviati ai nostri server, <strong>a meno che tu non attivi manualmente il backup su Google Drive</strong>.
-        </div>
-
-        <div class="section">
-            <h2>📊 Dati che Raccogliamo</h2>
-            
-            <h3>1. 📱 Dati Raccolti Automaticamente (Analytics)</h3>
-            
-            <p>Per migliorare l'app e fornire supporto tecnico, raccogliamo automaticamente alcuni dati anonimi tramite <strong>Firebase Analytics</strong>:</p>
-            
-            <table class="data-table">
-                <thead>
-                    <tr>
-                        <th>Tipo di Dato</th>
-                        <th>Esempi</th>
-                        <th>Scopo</th>
-                        <th>Anonimo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>🖱️ Interazioni UI</strong></td>
-                        <td>Pulsanti premuti, schermate visitate, menu aperti</td>
-                        <td>Migliorare usabilità</td>
-                        <td>✅ Sì</td>
-                    </tr>
-                    <tr>
-                        <td><strong>📱 Info Dispositivo</strong></td>
-                        <td>Modello telefono, versione Android, risoluzione schermo</td>
-                        <td>Compatibilità</td>
-                        <td>✅ Sì</td>
-                    </tr>
-                    <tr>
-                        <td><strong>💥 Crash Reports</strong></td>
-                        <td>Errori app, stack traces, memoria utilizzata</td>
-                        <td>Fix bugs</td>
-                        <td>✅ Sì</td>
-                    </tr>
-                    <tr>
-                        <td><strong>⚡ Performance</strong></td>
-                        <td>Tempi caricamento, uso CPU, frame rate</td>
-                        <td>Ottimizzazione</td>
-                        <td>✅ Sì</td>
-                    </tr>
-                    <tr>
-                        <td><strong>🌍 Geolocalizzazione</strong></td>
-                        <td>Paese di utilizzo (solo paese, non posizione precisa)</td>
-                        <td>Statistiche globali</td>
-                        <td>✅ Sì</td>
-                    </tr>
-                    <tr>
-                        <td><strong>📈 Advertising ID</strong></td>
-                        <td>ID anonimo per pubblicità personalizzate</td>
-                        <td>Pubblicità pertinenti</td>
-                        <td>✅ Sì</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <div class="info">
-                <strong>🔒 Importante:</strong> Tutti questi dati sono <strong>completamente anonimi</strong> e non possono essere ricondotti alla tua persona. Non raccogliamo nome, email, numero di telefono o altre informazioni personali identificabili <strong>a meno che tu non attivi manualmente il backup su Google Drive</strong>.
-            </div>
-
-            <h3>2. ☁️ Dati Raccolti con il Tuo Consenso (Google Drive Backup)</h3>
-            
-            <p>Se decidi di attivare il backup su Google Drive, raccogliamo:</p>
-            
-            <table class="data-table">
-                <thead>
-                    <tr>
-                        <th>Tipo di Dato</th>
-                        <th>Descrizione</th>
-                        <th>Dove Viene Salvato</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>📧 Email Google</strong></td>
-                        <td>Il tuo indirizzo email Google per autenticazione</td>
-                        <td>Server Google (non nostri)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>🆔 User ID</strong></td>
-                        <td>Identificatore univoco per associare i backup</td>
-                        <td>Nostri server (criptato)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>💾 Dati Backup</strong></td>
-                        <td>I tuoi dati di lavoro che scegli di sincronizzare</td>
-                        <td>Google Drive (tuo spazio privato)</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <div class="important">
-                <strong>✅ Importante:</strong> Il backup su Google Drive è <strong>completamente opzionale</strong>. L'app funziona perfettamente anche senza attivarlo. I tuoi dati di backup vengono salvati nel <strong>tuo spazio Google Drive privato</strong>, non sui nostri server.
-            </div>
-
-            <h3>3. 🚫 Dati che NON Raccogliamo</h3>
-            
+            <h3>⚠️ IMPORTANTE - App Proprietaria</h3>
+            <p><strong>Calcolo Straordinario è un'applicazione proprietaria protetta da copyright.</strong></p>
             <ul>
-                <li>❌ <strong>Dati di lavoro locali</strong> (ore, stipendi, calcoli) - rimangono solo sul tuo dispositivo</li>
-                <li>❌ <strong>Contatti</strong> dalla tua rubrica</li>
-                <li>❌ <strong>SMS</strong> o messaggi</li>
-                <li>❌ <strong>Foto/video</strong> dal tuo dispositivo</li>
-                <li>❌ <strong>Posizione GPS precisa</strong> (solo paese per statistiche)</li>
-                <li>❌ <strong>Cronologia browser</strong></li>
-                <li>❌ <strong>Password</strong> o credenziali</li>
-                <li>❌ <strong>Dati biometrici</strong> (impronte, riconoscimento facciale)</li>
-                <li>❌ <strong>Registrazioni audio/video</strong></li>
+                <li>È VIETATO modificare, decompilare o effettuare reverse engineering</li>
+                <li>È VIETATO redistribuire o creare versioni alternative</li>
+                <li>Utilizzare SOLO la versione ufficiale dal Google Play Store</li>
+                <li>Violazioni saranno perseguite legalmente</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>🎯 Come Utilizziamo i Tuoi Dati</h2>
-            
-            <h3>1. 📊 Dati Analytics (Anonimi)</h3>
-            
-            <ul>
-                <li>🔧 <strong>Migliorare l'app:</strong> Identificare funzioni più/meno utilizzate</li>
-                <li>🐛 <strong>Risolvere bugs:</strong> Analizzare crash e errori per rilasciare fix</li>
-                <li>⚡ <strong>Ottimizzare performance:</strong> Rendere l'app più veloce e fluida</li>
-                <li>📱 <strong>Compatibilità:</strong> Supportare nuovi dispositivi e versioni Android</li>
-                <li>📈 <strong>Statistiche sviluppo:</strong> Capire l'uso globale dell'app</li>
-            </ul>
-
-            <h3>2. ☁️ Dati Google Drive Backup</h3>
-            
-            <ul>
-                <li>🔄 <strong>Sincronizzazione:</strong> Permetterti di recuperare dati su nuovi dispositivi</li>
-                <li>💾 <strong>Backup automatico:</strong> Proteggere i tuoi dati da perdite accidentali</li>
-                <li>🔗 <strong>Multi-device:</strong> Usare l'app su più dispositivi con gli stessi dati</li>
-            </ul>
-
-            <h3>3. 📢 Pubblicità (Google AdMob)</h3>
-            
-            <ul>
-                <li>🎯 <strong>Ads personalizzati:</strong> Mostrarti pubblicità più pertinenti ai tuoi interessi</li>
-                <li>📊 <strong>Analytics ads:</strong> Misurare efficacia delle campagne pubblicitarie</li>
-                <li>💰 <strong>Sostenibilità app:</strong> Permetterci di mantenere l'app gratuita</li>
-            </ul>
-            
-            <div class="info">
-                <strong>📢 Informazione sulla Pubblicità:</strong><br>
-                Utilizziamo <strong>Google AdMob</strong> per mostrare pubblicità nell'app. Google può utilizzare il tuo <strong>Advertising ID</strong> per personalizzare gli annunci. Puoi sempre disattivare gli annunci personalizzati dalle impostazioni Android: <strong>Impostazioni → Google → Annunci → Disattiva personalizzazione annunci</strong>.
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>🔄 Condivisione Dati con Terze Parti</h2>
-            
-            <p>Condividiamo i tuoi dati solo con questi servizi trusted per far funzionare l'app:</p>
-            
-            <table class="data-table">
-                <thead>
-                    <tr>
-                        <th>Servizio</th>
-                        <th>Scopo</th>
-                        <th>Dati Condivisi</th>
-                        <th>Privacy Policy</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>🔥 Firebase Analytics</strong></td>
-                        <td>Analytics e crash reports</td>
-                        <td>Dati anonimi di utilizzo</td>
-                        <td><a href="https://firebase.google.com/policies/analytics">Leggi qui</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>☁️ Google Drive API</strong></td>
-                        <td>Backup e sincronizzazione</td>
-                        <td>Dati backup (se attivato)</td>
-                        <td><a href="https://policies.google.com/privacy">Leggi qui</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>📢 Google AdMob</strong></td>
-                        <td>Pubblicità nell'app</td>
-                        <td>Advertising ID, interazioni ads</td>
-                        <td><a href="https://policies.google.com/privacy">Leggi qui</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>🔐 Google Sign-In</strong></td>
-                        <td>Autenticazione per backup</td>
-                        <td>Email e profilo base (se attivato)</td>
-                        <td><a href="https://policies.google.com/privacy">Leggi qui</a></td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <div class="warning">
-                <strong>⚠️ Importante:</strong> Non vendiamo, affittiamo o condividiamo i tuoi dati personali con aziende per scopi commerciali. Tutti i servizi elencati sopra sono utilizzati esclusivamente per fornire le funzionalità dell'app.
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>🔒 Sicurezza e Protezione Dati</h2>
-            
-            <h3>🛡️ Misure di Sicurezza</h3>
-            
-            <ul>
-                <li>🔐 <strong>Crittografia in transito:</strong> Tutti i dati sono trasmessi con protocollo HTTPS/TLS</li>
-                <li>🗄️ <strong>Archiviazione sicura:</strong> I dati sui nostri server sono crittografati</li>
-                <li>📱 <strong>Archiviazione locale:</strong> I dati sul tuo dispositivo usano la protezione Android</li>
-                <li>🔑 <strong>Accesso limitato:</strong> Solo personale autorizzato può accedere ai server</li>
-                <li>🕵️ <strong>Monitoraggio sicurezza:</strong> Sistemi di rilevamento intrusioni attivi</li>
-                <li>🔄 <strong>Backup sicuri:</strong> Backup multipli e ridondanza dati</li>
-            </ul>
-
-            <h3>⚠️ Limitazioni di Sicurezza</h3>
-            
-            <div class="warning">
-                <strong>⚠️ Attenzione:</strong> Nonostante le nostre misure di sicurezza, nessun sistema è sicuro al 100%. Ti consigliamo di:
-                <ul>
-                    <li>🔒 Mantenere il tuo dispositivo protetto con PIN/password</li>
-                    <li>📱 Installare aggiornamenti di sicurezza Android</li>
-                    <li>☁️ Usare un account Google sicuro per il backup</li>
-                    <li>🚫 Non condividere le tue credenziali</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>⏱️ Conservazione Dati</h2>
-            
-            <table class="data-table">
-                <thead>
-                    <tr>
-                        <th>Tipo di Dato</th>
-                        <th>Periodo di Conservazione</th>
-                        <th>Dopo la Scadenza</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>📊 Analytics anonimi</strong></td>
-                        <td><span class="highlight">14 mesi</span></td>
-                        <td>Eliminazione automatica</td>
-                    </tr>
-                    <tr>
-                        <td><strong>💥 Crash reports</strong></td>
-                        <td><span class="highlight">90 giorni</span></td>
-                        <td>Eliminazione automatica</td>
-                    </tr>
-                    <tr>
-                        <td><strong>☁️ Dati backup Google Drive</strong></td>
-                        <td><span class="highlight">Fino a richiesta eliminazione</span></td>
-                        <td>Eliminazione su richiesta</td>
-                    </tr>
-                    <tr>
-                        <td><strong>📱 Dati locali app</strong></td>
-                        <td><span class="highlight">Fino a disinstallazione</span></td>
-                        <td>Eliminazione automatica</td>
-                    </tr>
-                    <tr>
-                        <td><strong>🆔 Identificatori utente</strong></td>
-                        <td><span class="highlight">14 mesi o richiesta eliminazione</span></td>
-                        <td>Eliminazione automatica/manuale</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <div class="info">
-                <strong>📅 Conservazione Automatica:</strong> I dati analytics vengono automaticamente eliminati dopo 14 mesi secondo gli standard di Google. I crash reports vengono eliminati dopo 90 giorni. Puoi richiedere l'eliminazione immediata in qualsiasi momento.
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>🛡️ I Tuoi Diritti Privacy (GDPR)</h2>
-            
-            <p>Secondo il Regolamento Generale sulla Protezione dei Dati (GDPR), hai i seguenti diritti:</p>
-            
-            <ul>
-                <li>🔍 <strong>Diritto di Accesso (Art. 15):</strong> Puoi richiedere una copia di tutti i dati che abbiamo su di te</li>
-                <li>✏️ <strong>Diritto di Rettifica (Art. 16):</strong> Puoi correggere dati inesatti o incompleti</li>
-                <li>🗑️ <strong>Diritto alla Cancellazione (Art. 17):</strong> Puoi richiedere l'eliminazione completa dei tuoi dati</li>
-                <li>⏸️ <strong>Diritto di Limitazione (Art. 18):</strong> Puoi limitare l'utilizzo dei tuoi dati</li>
-                <li>📤 <strong>Diritto alla Portabilità (Art. 20):</strong> Puoi ottenere i tuoi dati in formato leggibile</li>
-                <li>🚫 <strong>Diritto di Opposizione (Art. 21):</strong> Puoi opporti al trattamento dei tuoi dati</li>
-                <li>🔄 <strong>Revoca del Consenso (Art. 7):</strong> Puoi revocare il consenso in qualsiasi momento</li>
-            </ul>
-            
-            <div class="important">
-                <strong>📧 Come Esercitare i Tuoi Diritti:</strong><br>
-                Per esercitare qualsiasi di questi diritti, invia un'email a <strong><a href="mailto:appdevmond@gmail.com">appdevmond@gmail.com</a></strong> specificando quale diritto vuoi esercitare. Risponderemo entro <strong>30 giorni</strong> come richiesto dal GDPR.
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>🗑️ Eliminazione Account e Dati</h2>
-            
-            <p>Puoi richiedere l'eliminazione completa del tuo account e di tutti i dati associati in due modi:</p>
-            
-            <h3>1. 📱 Direttamente dall'App (Consigliato)</h3>
-            
-            <ol>
-                <li>Apri l'app "Calcolo Straordinario"</li>
-                <li>Vai su <strong>Opzioni → Backup Google Drive</strong></li>
-                <li>Tocca <strong>"Cancella i miei dati dal database"</strong></li>
-                <li>Conferma l'eliminazione</li>
-            </ol>
-            
-            <h3>2. 📧 Via Email</h3>
-            
-            <p>Invia una richiesta a <strong><a href="mailto:appdevmond@gmail.com">appdevmond@gmail.com</a></strong> con oggetto <strong>"ELIMINAZIONE DATI - Calcolo Straordinario"</strong></p>
-            
-            <div class="info">
-                <strong>🔗 Procedura Completa:</strong> Per istruzioni dettagliate sull'eliminazione account, visita la nostra pagina dedicata: <a href="https://r00kie7.github.io/calcolostraordinario/account_deletion.html"><strong>Eliminazione Account e Dati</strong></a>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>👶 Protezione Minori</h2>
-            
-            <div class="warning">
-                <strong>🚫 App non per Minori:</strong><br>
-                L'app <strong>"Calcolo Straordinario"</strong> è destinata a <strong>lavoratori adulti</strong> e non è progettata per minori di 16 anni. Non raccogliamo consapevolmente dati di minori. Se vieni a conoscenza che un minore ha fornito dati alla nostra app, contattaci immediatamente a <strong><a href="mailto:appdevmond@gmail.com">appdevmond@gmail.com</a></strong> per la rimozione immediata.
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>🌍 Trasferimenti Internazionali</h2>
-            
-            <p>I nostri server e quelli dei nostri partner si trovano principalmente in:</p>
-            
-            <ul>
-                <li>🇪🇺 <strong>Unione Europea</strong> (server principali)</li>
-                <li>🇺🇸 <strong>Stati Uniti</strong> (Google/Firebase - con clausole di adeguatezza)</li>
-            </ul>
-            
-            <div class="info">
-                <strong>🛡️ Protezione GDPR:</strong> Tutti i trasferimenti verso paesi extra-UE avvengono con adeguate garanzie di protezione secondo gli standard GDPR, incluse le Clausole Contrattuali Standard (SCC) approvate dalla Commissione Europea.
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>🔄 Modifiche alla Privacy Policy</h2>
-            
-            <p>Potremmo aggiornare questa Privacy Policy occasionalmente per:</p>
-            
-            <ul>
-                <li>📱 <strong>Nuove funzionalità</strong> dell'app</li>
-                <li>⚖️ <strong>Cambiamenti normativi</strong> (nuove leggi privacy)</li>
-                <li>🔧 <strong>Miglioramenti sicurezza</strong></li>
-                <li>🔄 <strong>Feedback utenti</strong></li>
-            </ul>
-            
-            <div class="important">
-                <strong>📢 Notifiche Aggiornamenti:</strong><br>
-                Ti notificheremo ogni modifica significativa tramite:
-                <ul>
-                    <li>📱 <strong>Notifica in-app</strong> al prossimo avvio</li>
-                    <li>📧 <strong>Email</strong> (se hai attivato il backup Google Drive)</li>
-                    <li>🌐 <strong>Banner sul sito web</strong> per 30 giorni</li>
-                </ul>
-                Continuando a usare l'app dopo le modifiche, accetti la nuova Privacy Policy.
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>📞 Contatti e Supporto</h2>
+            <h2>7. Contatti e Richieste</h2>
             
             <div class="contact-info">
-                <h3>📧 Contatti Privacy</h3>
-                <p><strong>Email Generale:</strong> <a href="mailto:appdevmond@gmail.com">appdevmond@gmail.com</a></p>
-                <p><strong>Email Privacy/GDPR:</strong> <a href="mailto:appdevmond@gmail.com">appdevmond@gmail.com</a></p>
-                <p><strong>Email Supporto Tecnico:</strong> <a href="mailto:appdevmond@gmail.com">appdevmond@gmail.com</a></p>
+                <h3>📧 Supporto Privacy</h3>
+                <p><strong>Email:</strong> <a href="mailto:appdevmond@gmail.com">appdevmond@gmail.com</a></p>
+                <p><strong>Oggetto:</strong> [PRIVACY] La tua richiesta</p>
                 
-                <h3>🌐 Link Utili</h3>
-                <p><strong>Sito Web:</strong> <a href="https://r00kie7.github.io/calcolostraordinario/">https://r00kie7.github.io/calcolostraordinario/</a></p>
-                <p><strong>GitHub Repository:</strong> <a href="https://github.com/R00kie7/calcolostraordinario">https://github.com/R00kie7/calcolostraordinario</a></p>
-                <p><strong>Eliminazione Dati:</strong> <a href="https://r00kie7.github.io/calcolostraordinario/account_deletion.html">Guida Eliminazione</a></p>
-                <p><strong>Termini di Servizio:</strong> <a href="https://r00kie7.github.io/calcolostraordinario/terms-of-service.html">Termini e Condizioni</a></p>
+                <h4>Richieste Supportate:</h4>
+                <ul>
+                    <li>Accesso ai dati personali</li>
+                    <li>Rettifica dati non corretti</li>
+                    <li>Eliminazione completa dati</li>
+                    <li>Esportazione dati (portabilità)</li>
+                    <li>Disattivazione analytics</li>
+                    <li>Revoca consensi</li>
+                </ul>
                 
-                <h3>⏱️ Tempi di Risposta</h3>
-                <p><strong>Richieste Privacy/GDPR:</strong> Entro 30 giorni (come da normativa)</p>
-                <p><strong>Supporto Tecnico:</strong> Entro 7 giorni lavorativi</p>
-                <p><strong>Segnalazione Bugs:</strong> Entro 48 ore (conferma ricezione)</p>
+                <p><strong>Tempo di Risposta:</strong> Entro 30 giorni dalla richiesta</p>
             </div>
         </div>
 
         <div class="section">
-            <h2>📞 Link di Navigazione</h2>
-            
-            <div style="text-align: center;">
-                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
-                    <a href="https://r00kie7.github.io/calcolostraordinario/" style="color: #667eea; text-decoration: none; font-weight: bold;">🏠 Home</a>
-                    <a href="https://r00kie7.github.io/calcolostraordinario/terms-of-service.html" style="color: #667eea; text-decoration: none; font-weight: bold;">⚖️ Termini di Servizio</a>
-                    <a href="https://r00kie7.github.io/calcolostraordinario/account_deletion.html" style="color: #667eea; text-decoration: none; font-weight: bold;">🗑️ Eliminazione Dati</a>
-                </div>
-            </div>
+            <h2>8. Aggiornamenti Policy</h2>
+            <p>Questa Privacy Policy può essere aggiornata periodicamente per riflettere:</p>
+            <ul>
+                <li>Nuove funzionalità dell'app</li>
+                <li>Modifiche normative</li>
+                <li>Miglioramenti sicurezza</li>
+                <li>Feedback degli utenti</li>
+            </ul>
+            <p>Gli aggiornamenti significativi saranno comunicati tramite notifica in-app.</p>
         </div>
-        
-        <div style="text-align: center; margin-top: 40px; padding: 20px; background-color: #f8f9fa; border-radius: 10px;">
-            <p style="color: #666;">
-                📧 <strong>Contatti Privacy:</strong> <a href="mailto:appdevmond@gmail.com" style="color: #667eea;">appdevmond@gmail.com</a>
-            </p>
-            <p style="color: #888; margin-top: 10px;">
-                © 2024 Calcolo Straordinario. Privacy Policy conforme al GDPR.
-            </p>
+
+        <div class="highlight">
+            <h3>🛡️ Riepilogo Impegni</h3>
+            <ul>
+                <li><strong>Privacy by Design:</strong> Dati locali per default</li>
+                <li><strong>Controllo Utente:</strong> Tu decidi cosa condividere</li>
+                <li><strong>Trasparenza:</strong> Comunicazione chiara su raccolta dati</li>
+                <li><strong>Sicurezza:</strong> Crittografia e protezioni avanzate</li>
+                <li><strong>Conformità:</strong> Rispetto GDPR e normative privacy</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="https://r00kie7.github.io/calcolostraordinario/" class="back-link">🏠 Torna alla Home</a>
         </div>
     </div>
 </body>
