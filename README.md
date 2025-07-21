@@ -1,7 +1,11 @@
 # 📊 Calcolo Straordinario
 
-> **App Flutter gratuita e open source per la gestione professionale degli orari di lavoro e il calcolo automatico degli straordinari**
+> **App Flutter gratuita per la gestione professionale degli orari di lavoro e il calcolo automatico degli straordinari**
 
+[![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)](https://flutter.dev)
+[![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
+[![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)](https://firebase.google.com)
+[![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](#)
 
 ## 🌟 Caratteristiche Principali
 
@@ -39,49 +43,18 @@
 
 ### 📱 **Download da Google Play Store**
 ```
-🔗 Link diretto: [Play Store - Calcolo Straordinario]
+🔗 Scarica l'app UFFICIALE dal Google Play Store
 💰 Completamente GRATUITO
 🚫 Nessuna pubblicità invasiva
+⚠️ ATTENZIONE: Scarica solo dalla fonte ufficiale per garantire sicurezza e aggiornamenti
 ```
 
-### 🛠️ **Build da Codice Sorgente**
-
-#### Prerequisiti
-- **Flutter SDK** ≥ 3.0.0
-- **Dart SDK** ≥ 3.0.0
-- **Android Studio** o **VS Code**
-- **Git** per clonare il repository
-
-#### Comandi di Setup
-```bash
-# Clone del repository
-git clone https://github.com/R00kie7/calcolostraordinario.git
-cd calcolostraordinario
-
-# Installazione dipendenze
-flutter pub get
-
-# Generazione codice (se necessario)
-flutter packages pub run build_runner build
-
-# Build APK di produzione
-flutter build apk --release
-
-# Build per debug/sviluppo
-flutter run
+### ⚠️ **Importante - Solo Uso Personale**
 ```
-
-#### Configurazione Firebase (Opzionale)
-```bash
-# 1. Installa Firebase CLI
-npm install -g firebase-tools
-
-# 2. Login Firebase
-firebase login
-
-# 3. Configura progetto Flutter
-dart pub global activate flutterfire_cli
-flutterfire configure
+🛡️ Questa app è protetta da copyright
+📱 Utilizzare SOLO la versione ufficiale dal Google Play Store  
+🚫 È VIETATO modificare, redistribuire o creare versioni alternative
+⚖️ Tutti i diritti riservati allo sviluppatore
 ```
 
 ## 📋 Funzionalità Dettagliate
@@ -207,30 +180,16 @@ flutter drive --target=test_driver/app.dart
 - [ ] 🔧 **Plugin system** - Estensibilità modulare
 - [ ] 📈 **Machine Learning** - Ottimizzazioni predittive
 
-## 🤝 Contribuire al Progetto
+## 🤝 Supporto e Segnalazioni
 
-### 👥 **Come Contribuire**
-```bash
-# 1. Fork del repository
-git clone https://github.com/TUO_USERNAME/calcolostraordinario.git
+###   **Supporto Tecnico**
+- **Email principale:** [appdevmond@gmail.com](mailto:appdevmond@gmail.com)
+- **Tempo risposta:** Entro 48h lavorative
+- **Lingue:** Italiano, Inglese
 
-# 2. Crea branch per feature
-git checkout -b feature/nuova-funzionalita
+### 🐛 **Segnalazione Bug e Suggerimenti**
+Se riscontri problemi o hai suggerimenti per migliorare l'app:
 
-# 3. Commit delle modifiche
-git commit -m "Aggiunta nuova funzionalità X"
-
-# 4. Push e Pull Request
-git push origin feature/nuova-funzionalita
-```
-
-### 📋 **Linee Guida**
-- **🔍 Code review** - Tutte le PR vengono revisionate
-- **🧪 Testing obbligatorio** - Nuovi test per nuove feature
-- **📚 Documentazione** - Commenta il codice e aggiorna README
-- **🎨 Code style** - Segui le convenzioni Dart/Flutter
-
-### 🐛 **Segnalazione Bug**
 ```markdown
 **Bug Report Template:**
 - 📱 Dispositivo e versione Android
@@ -240,12 +199,13 @@ git push origin feature/nuova-funzionalita
 - 📷 Screenshot (se applicabile)
 ```
 
+**Invia a:** [appdevmond@gmail.com](mailto:appdevmond@gmail.com)
+
 ### 💡 **Richiesta Funzionalità**
 ```markdown
 **Feature Request Template:**
 - 🎯 Descrizione funzionalità
 - 💪 Casi d'uso specifici
-- 🤔 Alternative considerate
 - 📊 Priorità e impatto stimato
 ```
 
@@ -315,63 +275,49 @@ dependencies:
 - **Orientamento** Portrait/Landscape
 
 ### 👥 **Community**
-- **⭐ Stars** su GitHub
-- **🍴 Forks** della community
-- **🐛 Issues** risolte
-- **📋 Pull Requests** accettate
+- **⭐ Utenti attivi** dell'app
+- **📧 Feedback** e suggerimenti ricevuti
+- **🐛 Bug report** risolti
+- **  Download** dal Google Play Store
 
 ## 📞 Supporto e Contatti
 
 ### 📧 **Supporto Tecnico**
 - **Email principale:** [appdevmond@gmail.com](mailto:appdevmond@gmail.com)
-- **Tempo risposta:** Entro 48h lavorative
-- **Lingue:** Italiano, Inglese
+- **Lingue:** Italiano
 
 ### 🌐 **Risorse Online**
-- **🏠 Sito Web:** [https://r00kie7.github.io/calcolostraordinario/](https://r00kie7.github.io/calcolostraordinario/)
-- **📚 Documentazione:** [GitHub Wiki](https://github.com/R00kie7/calcolostraordinario/wiki)
-- **💬 Community:** [GitHub Discussions](https://github.com/R00kie7/calcolostraordinario/discussions)
-- **🐛 Bug Reports:** [GitHub Issues](https://github.com/R00kie7/calcolostraordinario/issues)
+- **🏠 Sito Web:** [https://r00kie7.github.io/calcolo-straordinario-website/](https://fellowino.github.io/calcolo-straordinario-website/)
+- **  Google Play Store:** [Scarica l'app ufficiale](#)
+- **  Supporto:** [appdevmond@gmail.com](mailto:appdevmond@gmail.com)
+- **  Feedback:** Invia suggerimenti via email
 
-### 📋 **Link Legali**
-- **🛡️ Privacy Policy:** [privacy-policy.html](https://r00kie7.github.io/calcolostraordinario/privacy-policy.html)
-- **⚖️ Terms of Service:** [terms-of-service.html](https://r00kie7.github.io/calcolostraordinario/terms-of-service.html)
-- **🗑️ Account Deletion:** [account_deletion.html](https://r00kie7.github.io/calcolostraordinario/account_deletion.html)
+###
+- **🛡️ Privacy Policy:** [privacy-policy.html](https://r00kie7.github.io/calcolo-straordinario-website/privacy-policy.html)
+- **⚖️ Terms of Service:** [terms-of-service.html](https://r00kie7.github.io/calcolo-straordinario-website/terms-of-service.html)
+- **🗑️ Account Deletion:** [account_deletion.html](https://r00kie.github.io/calcolo-straordinario-website/account_deletion.html)
 
-## 📜 Licenza
+## 📜 Licenza e Copyright
 
 ```
-MIT License
+© 2024 App Dev Mond - Tutti i diritti riservati
 
-Copyright (c) 2024 R00kie7
+LICENZA D'USO PER UTENTI FINALI:
+- ✅ Permesso di utilizzo personale dell'app originale
+- ✅ Download solo dal Google Play Store ufficiale
+- ❌ VIETATA la modifica del codice sorgente
+- ❌ VIETATA la redistribuzione in qualsiasi forma
+- ❌ VIETATA la creazione di versioni derivate
+- ❌ VIETATO il reverse engineering
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+L'app è fornita "così com'è" senza garanzie di alcun tipo.
+Lo sviluppatore si riserva il diritto di modificare questi termini.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Per richieste commerciali o di licenza speciale:
+📧 Contatta: appdevmond@gmail.com
 ```
 
 ## 🙏 Ringraziamenti
-
-### 💖 **Contributors**
-Grazie a tutti coloro che hanno contribuito al progetto:
-- **👨‍💻 Sviluppatori** - Per codice e feature
-- **🐛 Beta Testers** - Per feedback e bug reports  
-- **🌍 Traduttori** - Per localizzazione
-- **📚 Documentatori** - Per guide e tutorial
 
 ### 🛠️ **Tecnologie Open Source**
 Questo progetto è possibile grazie a:
@@ -387,7 +333,6 @@ Questo progetto è possibile grazie a:
 **📱 Scarica ora Calcolo Straordinario e trasforma la gestione dei tuoi orari di lavoro!**
 
 [![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](#)
-[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/R00kie7/calcolostraordinario)
 
 
 </div>
