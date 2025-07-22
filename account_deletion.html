@@ -58,7 +58,7 @@
 
         .section h2 {
             color: #667eea;
-            font-size: 1.5em;
+            font-size: 1.8em;
             margin-bottom: 15px;
             padding-bottom: 5px;
             border-bottom: 2px solid #f8f9fa;
@@ -66,32 +66,104 @@
 
         .section h3 {
             color: #764ba2;
-            font-size: 1.2em;
+            font-size: 1.3em;
             margin: 20px 0 10px 0;
         }
 
-        .section p, .section li {
-            margin-bottom: 10px;
-            text-align: justify;
+        .gdpr-badge {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
 
-        .section ul, .section ol {
-            margin-left: 20px;
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .option-card {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .option-card:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+        }
+
+        .option-icon {
+            font-size: 3em;
             margin-bottom: 15px;
         }
 
-        .step-by-step {
+        .option-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .option-description {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .data-table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .data-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .data-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .status-immediate {
+            background: #28a745;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        .step-container {
             background: #f8f9fa;
             border-left: 4px solid #667eea;
             padding: 20px;
             margin: 20px 0;
             border-radius: 0 10px 10px 0;
-        }
-
-        .step-by-step h4 {
-            color: #667eea;
-            margin-bottom: 15px;
-            font-size: 1.1em;
         }
 
         .step-number {
@@ -104,94 +176,52 @@
             text-align: center;
             line-height: 30px;
             font-weight: bold;
-            margin-right: 10px;
+            margin-right: 15px;
+        }
+
+        .step-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .step-content {
+            margin-left: 45px;
+        }
+
+        .step-content ol {
+            margin-left: 20px;
+        }
+
+        .step-content li {
+            margin-bottom: 8px;
         }
 
         .warning {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            background: linear-gradient(135deg, #ffc107 0%, #fd7e14 100%);
             color: white;
             padding: 20px;
             border-radius: 10px;
             margin: 20px 0;
+        }
+
+        .warning h3 {
+            margin-bottom: 10px;
+            color: white;
         }
 
         .success {
-            background: linear-gradient(135deg, #51cf66 0%, #40c057 100%);
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
             color: white;
             padding: 20px;
             border-radius: 10px;
             margin: 20px 0;
         }
 
-        .info-box {
-            background: #e3f2fd;
-            border: 2px solid #2196F3;
-            color: #1976D2;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-
-        .deletion-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .deletion-table th,
-        .deletion-table td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #e9ecef;
-        }
-
-        .deletion-table th {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        .success h3 {
+            margin-bottom: 10px;
             color: white;
-            font-weight: bold;
-        }
-
-        .deletion-table tr:hover {
-            background: #f8f9fa;
-        }
-
-        .quick-actions {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
-        }
-
-        .action-card {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-            border: 2px solid transparent;
-        }
-
-        .action-card:hover {
-            transform: translateY(-5px);
-            border-color: #667eea;
-        }
-
-        .action-icon {
-            font-size: 3em;
-            margin-bottom: 15px;
-        }
-
-        .contact-info {
-            background: #f8f9fa;
-            padding: 25px;
-            border-radius: 10px;
-            border-left: 4px solid #667eea;
-            margin: 20px 0;
         }
 
         .contact-button {
@@ -200,64 +230,41 @@
             color: white;
             padding: 15px 30px;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 50px;
             font-weight: bold;
-            margin: 10px 5px;
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
         .contact-button:hover {
             transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            color: white;
         }
 
         .back-link {
             display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #6c757d;
             color: white;
-            padding: 12px 25px;
+            padding: 10px 20px;
             text-decoration: none;
             border-radius: 25px;
-            margin-top: 30px;
-            transition: transform 0.3s ease;
+            margin: 0 10px;
+            transition: all 0.3s ease;
         }
 
         .back-link:hover {
-            transform: translateY(-2px);
+            background: #5a6268;
+            transform: translateY(-1px);
+            color: white;
         }
 
-        .timeline {
-            position: relative;
-            padding-left: 30px;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 15px;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-
-        .timeline-item {
-            position: relative;
-            margin-bottom: 30px;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -37px;
-            top: 20px;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: #667eea;
+        .notice {
+            background: #e8f4fd;
+            border: 1px solid #2196F3;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
         }
 
         @media (max-width: 768px) {
@@ -270,16 +277,17 @@
                 font-size: 2em;
             }
 
-            .quick-actions {
+            .options-grid {
                 grid-template-columns: 1fr;
             }
 
-            .timeline {
-                padding-left: 20px;
+            .data-table {
+                font-size: 0.9em;
             }
 
-            .timeline-item::before {
-                left: -27px;
+            .data-table th,
+            .data-table td {
+                padding: 8px;
             }
         }
     </style>
@@ -289,221 +297,145 @@
         <div class="header">
             <div class="header-icon">🗑️</div>
             <h1>Eliminazione Account e Dati</h1>
-            <p><strong>Guida completa per l'eliminazione dei tuoi dati</strong></p>
-            <p style="color: #666; font-style: italic;">Conformità GDPR - Diritto all'Oblio</p>
+            <p><em>Guida completa per l'eliminazione dei tuoi dati</em></p>
+            <div class="gdpr-badge">Conformità GDPR - Diritto all'Oblio</div>
         </div>
 
-        <div class="info-box">
-            <h3>🇪🇺 I Tuoi Diritti GDPR</h3>
+        <div class="section">
+            <h2>🇪🇺 I Tuoi Diritti GDPR</h2>
             <p>Hai il <strong>diritto all'oblio</strong> e puoi richiedere l'eliminazione completa di tutti i tuoi dati in qualsiasi momento, senza dover fornire motivazioni. Questo processo è <strong>gratuito</strong> e <strong>irreversibile</strong>.</p>
-        </div>
-
-        <div class="info-box" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white;">
-            <h3>✨ Nuova Funzione: Eliminazione Automatica</h3>
-            <p>L'app ora include un <strong>sistema di eliminazione automatica</strong> che rimuove simultaneamente:</p>
-            <ul style="margin-top: 10px; margin-left: 20px;">
-                <li>📱 Tutti i dati locali dal dispositivo</li>
-                <li>☁️ Tutti i backup da Google Drive</li>
-                <li>🔥 Dati Firebase Analytics (se presenti)</li>
-                <li>🔗 Revoca automatica autorizzazioni Google</li>
-            </ul>
-            <p style="margin-top: 15px;"><strong>Un solo pulsante elimina tutto!</strong></p>
         </div>
 
         <div class="section">
             <h2>🎯 Opzioni di Eliminazione</h2>
-            
-            <div class="quick-actions">
-                <div class="action-card">
-                    <div class="action-icon">📱</div>
-                    <h3>Eliminazione Locale</h3>
-                    <p>Elimina i dati solo dal tuo dispositivo mantenendo eventuali backup cloud</p>
+            <div class="options-grid">
+                <div class="option-card">
+                    <div class="option-icon">📱</div>
+                    <div class="option-title">Eliminazione Locale</div>
+                    <div class="option-description">Elimina i dati solo dal tuo dispositivo mantenendo eventuali backup cloud</div>
                 </div>
                 
-                <div class="action-card">
-                    <div class="action-icon">☁️</div>
-                    <h3>Eliminazione Cloud</h3>
-                    <p>Elimina i backup da Google Drive mantenendo i dati locali</p>
+                <div class="option-card">
+                    <div class="option-icon">☁️</div>
+                    <div class="option-title">Eliminazione Cloud</div>
+                    <div class="option-description">Elimina i backup da Google Drive mantenendo i dati locali</div>
                 </div>
                 
-                <div class="action-card" style="border: 2px solid #28a745; background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white;">
-                    <div class="action-icon">🚀</div>
-                    <h3>Eliminazione Automatica</h3>
-                    <p><strong>NOVITÀ:</strong> Un solo pulsante elimina TUTTO automaticamente: dati locali, backup cloud, analytics e autorizzazioni</p>
-                </div>
+                <div class="option-card">
+                    <div class="option-icon">🌍</div>
+                    <div class="option-title">Eliminazione Completa</div>
+                    <div class="option-description">Elimina TUTTI i dati: locali, cloud, analytics e backup</div>
                 </div>
             </div>
         </div>
 
         <div class="section">
             <h2>📋 Tipi di Dati e Metodi di Eliminazione</h2>
-            
-            <table class="deletion-table">
-                <tr>
-                    <th>Tipo di Dato</th>
-                    <th>Posizione</th>
-                    <th>Metodo Eliminazione</th>
-                    <th>Tempo Richiesto</th>
-                </tr>
-                <tr style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white; font-weight: bold;">
-                    <td>🚀 TUTTI I DATI</td>
-                    <td>Ovunque (Locale + Cloud)</td>
-                    <td>⚡ Eliminazione Automatica</td>
-                    <td>30 secondi</td>
-                </tr>
-                <tr>
-                    <td>Orari di Lavoro</td>
-                    <td>Dispositivo Locale</td>
-                    <td>Funzione app o disinstallazione</td>
-                    <td>Immediato</td>
-                </tr>
-                <tr>
-                    <td>Impostazioni App</td>
-                    <td>SharedPreferences</td>
-                    <td>Reset app o disinstallazione</td>
-                    <td>Immediato</td>
-                </tr>
-                <tr>
-                    <td>Backup Google Drive</td>
-                    <td>Google Drive Utente</td>
-                    <td>Eliminazione automatica o manuale</td>
-                    <td>Immediato / 1-2 giorni</td>
-                </tr>
-                <tr>
-                    <td>Analytics Firebase</td>
-                    <td>Server Firebase</td>
-                    <td>Eliminazione automatica</td>
-                    <td>Immediato</td>
-                </tr>
-                <tr>
-                    <td>Crash Reports</td>
-                    <td>Firebase Crashlytics</td>
-                    <td>Eliminazione automatica</td>
-                    <td>Immediato</td>
-                </tr>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Tipo di Dato</th>
+                        <th>Posizione</th>
+                        <th>Metodo Eliminazione</th>
+                        <th>Tempo Richiesto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Orari di Lavoro</td>
+                        <td>Dispositivo Locale</td>
+                        <td>Pulsante "ELIMINA TUTTI I DATI"</td>
+                        <td><span class="status-immediate">Immediato</span></td>
+                    </tr>
+                    <tr>
+                        <td>Impostazioni App</td>
+                        <td>SharedPreferences</td>
+                        <td>Pulsante "ELIMINA TUTTI I DATI"</td>
+                        <td><span class="status-immediate">Immediato</span></td>
+                    </tr>
+                    <tr>
+                        <td>Backup Google Drive</td>
+                        <td>Google Drive Utente</td>
+                        <td>Eliminazione manuale dall'utente</td>
+                        <td><span class="status-immediate">Immediato</span></td>
+                    </tr>
+                    <tr>
+                        <td>Analytics Firebase</td>
+                        <td>Server Firebase</td>
+                        <td>Pulsante "ELIMINA TUTTI I DATI"</td>
+                        <td><span class="status-immediate">Immediato</span></td>
+                    </tr>
+                    <tr>
+                        <td>Crash Reports</td>
+                        <td>Firebase Crashlytics</td>
+                        <td>Pulsante "ELIMINA TUTTI I DATI"</td>
+                        <td><span class="status-immediate">Immediato</span></td>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
         <div class="section">
-            <h2>🚀 Eliminazione Rapida (Fai da Te)</h2>
+            <h2>🚀 Procedura di Eliminazione Automatica</h2>
             
-            <div class="info-box" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white; margin-bottom: 30px;">
-                <h3>⚡ METODO RAPIDO - Eliminazione Automatica Completa</h3>
-                <p><strong>NOVITÀ: Processo completamente automatizzato in un solo passo!</strong></p>
-                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 15px 0;">
-                    <h4>📋 Istruzioni (30 secondi):</h4>
-                    <ol style="margin-left: 20px; line-height: 1.8;">
+            <div class="success">
+                <h3>✅ Processo Completamente Automatico</h3>
+                <p>Il pulsante <strong>"ELIMINA TUTTI I DATI"</strong> elimina automaticamente TUTTI i tipi di dati senza richiedere interventi manuali o contatti con lo sviluppatore.</p>
+            </div>
+
+            <div class="step-container">
+                <div class="step-title">
+                    <span class="step-number">1</span>Eliminazione Automatica Dati App
+                </div>
+                <div class="step-content">
+                    <ol>
                         <li>Apri l'app <strong>Calcolo Straordinario</strong></li>
-                        <li>Tocca il <strong>Menu Principale</strong> (☰ in alto a sinistra)</li>
-                        <li>Seleziona <strong>"Privacy e Gestione Dati"</strong></li>
-                        <li>Scorri fino alla sezione <strong>"Eliminazione Dati"</strong></li>
-                        <li>Tocca <strong>"ELIMINA TUTTI I DATI"</strong> (pulsante rosso grande)</li>
-                        <li>Conferma toccando <strong>"ELIMINA DEFINITIVAMENTE"</strong></li>
-                    </ol>
-                    <p style="margin-top: 15px; font-weight: bold;">✅ FATTO! Tutti i dati sono stati eliminati automaticamente.</p>
-                </div>
-                <h4>🎯 Cosa viene eliminato automaticamente:</h4>
-                <ul style="margin-left: 20px; line-height: 1.6;">
-                    <li>📱 Tutti i dati locali dall'app</li>
-                    <li>☁️ Tutti i backup da Google Drive</li>
-                    <li>🔥 Dati Firebase Analytics</li>
-                    <li>🔗 Revoca autorizzazioni Google Account</li>
-                    <li>📊 Log di utilizzo e crash reports</li>
-                </ul>
-            </div>
-
-            <h3>📖 Metodi Alternativi (se preferisci il controllo manuale)</h3>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h4><span class="step-number">1</span>Eliminazione Manuale Dati Locali</h4>
-                    <p><em>Nota: Se hai già usato il metodo automatico sopra, salta questo step.</em></p>
-                    
-                    <p><strong>Metodo 1 - Funzione App:</strong></p>
-                    <ul>
-                        <li>Apri l'app Calcolo Straordinario</li>
-                        <li>Vai nel <strong>Menu Principale</strong> (☰)</li>
-                        <li>Seleziona <strong>"Privacy e Gestione Dati"</strong></li>
-                        <li>Scorri fino alla sezione <strong>"Eliminazione Dati"</strong></li>
-                        <li>Tocca <strong>"ELIMINA TUTTI I DATI"</strong> (pulsante rosso)</li>
+                        <li>Vai in <strong>Impostazioni → Privacy e Sicurezza</strong></li>
+                        <li>Tocca <strong>"ELIMINA TUTTI I DATI"</strong></li>
                         <li>Conferma l'operazione (irreversibile)</li>
-                        <li>✅ Tutti i dati locali e remoti vengono eliminati</li>
-                    </ul>
-                    
-                    <p><strong>Metodo 2 - Disinstallazione:</strong></p>
-                    <ul>
-                        <li>Vai nelle Impostazioni Android</li>
-                        <li>Seleziona Apps → Calcolo Straordinario</li>
-                        <li>Tocca "Disinstalla"</li>
-                        <li>Tutti i dati locali vengono eliminati automaticamente</li>
-                    </ul>
+                    </ol>
+                    <p><strong>⚡ Risultato:</strong> Eliminazione immediata di dati locali, Firebase Analytics e Crashlytics</p>
                 </div>
+            </div>
 
-                <div class="timeline-item">
-                    <h4><span class="step-number">2</span>Eliminazione Backup Google Drive</h4>
-                    <ul>
-                        <li>Apri Google Drive sul web o app</li>
-                        <li>Cerca file con nome "calcolo_straordinario_backup"</li>
-                        <li>Seleziona tutti i file backup</li>
+            <div class="step-container">
+                <div class="step-title">
+                    <span class="step-number">2</span>Eliminazione Backup Google Drive (Opzionale)
+                </div>
+                <div class="step-content">
+                    <ol>
+                        <li>Apri <strong>Google Drive</strong> sul web o app</li>
+                        <li>Cerca file con nome <strong>"calcolo_straordinario_backup"</strong></li>
+                        <li>Seleziona tutti i file backup dell'app</li>
                         <li>Elimina definitivamente (anche dal cestino)</li>
-                        <li>Revoca autorizzazioni app da Google Account</li>
-                    </ul>
+                    </ol>
+                    <p><strong>📝 Nota:</strong> I backup sono nel TUO Google Drive - solo tu puoi eliminarli poiché l'app non ha accesso di eliminazione ai tuoi file Drive.</p>
                 </div>
+            </div>
 
-                <div class="timeline-item">
-                    <h4><span class="step-number">3</span>Revoca Autorizzazioni Google</h4>
-                    <ul>
-                        <li>Vai su <a href="https://myaccount.google.com/permissions" target="_blank" style="color: #667eea;">myaccount.google.com/permissions</a></li>
-                        <li>Cerca "Calcolo Straordinario"</li>
-                        <li>Tocca "Rimuovi accesso"</li>
+            <div class="step-container">
+                <div class="step-title">
+                    <span class="step-number">3</span>Revoca Autorizzazioni Google (Opzionale)
+                </div>
+                <div class="step-content">
+                    <ol>
+                        <li>Vai su <strong>myaccount.google.com/permissions</strong></li>
+                        <li>Cerca <strong>"Calcolo Straordinario"</strong></li>
+                        <li>Tocca <strong>"Rimuovi accesso"</strong></li>
                         <li>Conferma la revoca delle autorizzazioni</li>
-                    </ul>
+                    </ol>
                 </div>
             </div>
         </div>
 
-        <div class="info-box" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white;">
-            <h3>✅ Eliminazione Completa Automatica</h3>
-            <p><strong>Con il pulsante "ELIMINA TUTTI I DATI" vengono eliminati automaticamente:</strong></p>
-            <ul style="margin-top: 10px; margin-left: 20px;">
-                <li>📱 Tutti i dati locali dall'app</li>
-                <li>☁️ Tutti i backup da Google Drive</li>
-                <li>🔥 Dati Firebase Analytics</li>
-                <li>🔗 Autorizzazioni Google Account</li>
-                <li>📊 Log e crash reports</li>
-                <li>🗂️ Cache e dati temporanei</li>
-            </ul>
-            <p style="margin-top: 15px; font-weight: bold;">🎯 Conformità GDPR garantita automaticamente!</p>
-        </div>
-
         <div class="section">
-        <div class="section">
-            <h2>🎯 Conferma Eliminazione Automatica</h2>
-            
-            <div class="info-box">
-                <h3>✅ Il tuo diritto GDPR è rispettato automaticamente</h3>
-                <p>Con il sistema di <strong>eliminazione automatica</strong> implementato nell'app, tutti i requisiti GDPR vengono soddisfatti immediatamente:</p>
-                
-                <ul style="margin: 15px 0 15px 20px;">
-                    <li><strong>Art. 17 GDPR</strong> - Diritto all'oblio: ✅ Completamente rispettato</li>
-                    <li><strong>Eliminazione completa</strong>: ✅ Tutti i dati cancellati</li>
-                    <li><strong>Tempistiche</strong>: ✅ Immediata (30 secondi)</li>
-                    <li><strong>Conferma</strong>: ✅ Messaggio di conferma nell'app</li>
-                </ul>
-                
-                <p><strong>Non è necessario contattare il supporto.</strong> Il sistema gestisce tutto automaticamente!</p>
-            </div>
-        </div>
-
-        <div class="success">
-            <h3>✅ Cosa Succede Dopo l'Eliminazione Automatica</h3>
+            <h2>✅ Cosa Succede Dopo l'Eliminazione</h2>
             <ul>
-                <li><strong>Eliminazione Immediata:</strong> Tutti i dati vengono cancellati istantaneamente</li>
-                <li><strong>Conferma Visiva:</strong> L'app mostra un messaggio di conferma</li>
+                <li><strong>Eliminazione Permanente:</strong> I dati non possono essere recuperati</li>
                 <li><strong>Nessun Backup:</strong> Non manteniamo copie di sicurezza dei dati eliminati</li>
                 <li><strong>Reinstallazione Possibile:</strong> Puoi reinstallare l'app come nuovo utente</li>
                 <li><strong>Nessun Impatto Funzionale:</strong> L'app continua a funzionare normalmente</li>
-                <li><strong>Conferma Scritta:</strong> Riceverai email di conferma dell'eliminazione</li>
+                <li><strong>Conformità Immediata:</strong> Eliminazione completa in conformità GDPR</li>
             </ul>
         </div>
 
@@ -518,13 +450,13 @@
         </div>
 
         <div class="section">
-            <h2>🆘 Supporto Tecnico</h2>
+            <h2>🔧 Supporto Tecnico</h2>
             
             <div class="contact-info">
                 <h3>Solo per Problemi Tecnici</h3>
                 <p>Il supporto è disponibile <strong>esclusivamente</strong> per problemi tecnici con l'app che impediscono l'utilizzo del pulsante automatico di eliminazione.</p>
                 
-                <div class="notice" style="background-color: #e8f4fd; border: 1px solid #2196F3; padding: 15px; margin: 15px 0; border-radius: 8px;">
+                <div class="notice">
                     <p><strong>📋 Prima di contattare il supporto:</strong></p>
                     <ul>
                         <li>Assicurati di aver seguito correttamente la procedura sopra indicata</li>
