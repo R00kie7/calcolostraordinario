@@ -1,169 +1,111 @@
-# Calcolo Straordinario - Website
+# 📱 Calcolo Straordinario
 
-**Repository:** https://github.com/R00kie7/calcolostraordinario/  
-**App:** Calcolo Straordinario - App per il Calcolo degli Straordinari  
-**Developer:** Antonio Rota  
-**Contact:** appdevmond@gmail.com
+**L'app più semplice per tracciare orari di lavoro e calcolare automaticamente gli straordinari**
 
-## 📁 Struttura del Sito
-
-```
-webpages/
-├── index.html          # Homepage principale con overview app
-├── setup.html          # Guida completa setup iniziale
-├── privacy-policy.html # Privacy Policy GDPR completa  
-└── README.md           # Questo file - documentazione sito
-```
-
-## 🚀 Descrizione App
-
-**Calcolo Straordinario** è l'app più semplice per tracciare orari di lavoro e calcolare automaticamente gli straordinari. Con un setup iniziale di pochi minuti, potrai registrare entrata e uscita con un solo click!
-
-### ✨ Caratteristiche Principali
-
-- **🎯 Calcolo Automatico:** Ore lavorate, straordinari e guadagni extra
-- **⚡ Registrazione Rapida:** Un click imposta l'ora corrente 
-- **🍽️ Buono Pasto Intelligente:** Riconoscimento automatico diritto
-- **📋 Copia e Incolla:** Duplica orari fissi su più giorni
-- **📝 Note e Permessi:** Gestione ferie, malattie, permessi
-- **💾 Backup Locale:** Sistema backup avanzato offline
-- **📊 Statistiche:** Grafici e analisi mensili
-- **📤 Esportazione:** Report PDF/CSV professionali
-- **🛡️ Privacy Totale:** Dati locali, nessun server esterno
-
-## 📱 Funzionalità Intelligenti
-
-### Click Intelligenti
-- **Primo click:** Imposta ora corrente automaticamente
-- **Secondo click:** Permette modifica manuale
-- **Click "Uscita":** Aggiunge automaticamente pausa pranzo se applicabile
-
-### Opzioni Avanzate
-- **Filtra orario inizio:** Ignora arrivi anticipati
-- **Soglia straordinario:** Tolleranze contrattuali (es: primi 15 min gratis)
-- **Calcoli precisi:** Anche con situazioni complesse
-
-### Sistema Backup
-- **Backup Impostazioni:** ~2-5 KB (orari, soglie, configurazioni)
-- **Backup Dati:** 10-100 KB (tutti i giorni lavorativi e note)
-- **Backup Completo:** 15-105 KB (tutto insieme)
-- **Condivisione:** Email, Google Drive, WhatsApp, Bluetooth, WiFi Direct
-
-## 🛠️ Setup Rapido (4 Passi)
-
-1. **Orario di Lavoro** *(OBBLIGATORIO)*
-   - Imposta ore contrattuali per ogni giorno
-   - Esempio: 8h Lun-Ven, 0h weekend
-
-2. **Opzioni Avanzate** *(OPZIONALE)*
-   - Solo per esigenze particolari
-   - Filtra orario inizio, soglie straordinario
-
-3. **Buono Pasto** *(SE APPLICABILE)*
-   - Attiva e imposta soglia maturazione (solitamente 6 ore)
-   - Configurazione pausa pranzo automatica
-
-4. **Importo Straordinario** *(SE INTERESSATO)*
-   - Tariffa oraria per calcolare guadagni extra
-   - Visualizzazione guadagni in tempo reale
-
-## 📄 Pagine del Sito
-
-### 🏠 index.html
-**Homepage principale** con panoramica completa dell'app:
-- Hero section con descrizione e navigazione
-- Funzionalità principali con icone e dettagli
-- Funzionalità intelligenti avanzate
-- Anteprima setup con passi fondamentali
-- Sistema backup con specifiche tecniche
-- Sezione download con link store
-- Footer con contatti e link privacy
-
-### ⚙️ setup.html
-**Guida completa setup** per nuovi utenti:
-- Procedura step-by-step dettagliata
-- Configurazione orari di lavoro obbligatoria
-- Spiegazione opzioni avanzate
-- Setup buono pasto con soglie
-- Configurazione importo straordinario
-- Esempi pratici e casi d'uso
-- Consigli per ottimizzare l'uso quotidiano
-
-### 🛡️ privacy-policy.html
-**Privacy Policy GDPR completa**:
-- Informative complete sulla raccolta dati
-- Dettagli integrazione AdMob per monetizzazione
-- Diritti dell'utente secondo GDPR
-- Informazioni di contatto per richieste privacy
-- Clausole aggiornamento policy
-- Conformità normative europee
-
-## 🎨 Design e Tecnologie
-
-### Design System
-- **Colori primari:** Gradiente blu-viola (#667eea → #764ba2)
-- **Typography:** System fonts (-apple-system, Segoe UI, Roboto)
-- **Layout:** CSS Grid e Flexbox per responsività
-- **Icone:** Font Awesome 6.4.0 per consistenza visiva
-- **Effetti:** Backdrop filter, box-shadow, transitions
-
-### Responsive Design
-- **Mobile-first:** Design ottimizzato per smartphone
-- **Breakpoints:** Media queries per tablet e desktop
-- **Touch-friendly:** Pulsanti e link dimensionati per touch
-- **Performance:** CSS ottimizzato, immagini responsive
-
-### Accessibilità
-- **Semantic HTML:** Struttura semantica corretta
-- **ARIA labels:** Supporto screen reader
-- **Contrast ratio:** Contrasti accessibili
-- **Keyboard navigation:** Navigazione da tastiera
-
-## 🔧 Configurazione AdMob
-
-Il sito include la configurazione per AdMob:
-```
-Publisher ID: pub-1187208580069065
-app-ads.txt: google.com, pub-1187208580069065, DIRECT, f08c47fec0942fa0
-```
-
-## 📈 SEO e Meta Tags
-
-- **Title ottimizzato:** Keywords strategiche per ricerca app lavoro
-- **Meta description:** Descrizione accattivante per snippet
-- **Open Graph:** Meta tags per condivisione social
-- **Schema.org:** Markup strutturato per rich snippet
-- **Keywords:** Termini di ricerca pertinenti al settore
-
-## 🚀 Deployment
-
-### GitHub Pages
-1. Push del contenuto nella repository
-2. Abilitazione GitHub Pages dalle impostazioni
-3. Configurazione dominio personalizzato (opzionale)
-4. HTTPS automatico tramite Let's Encrypt
-
-### Struttura URL
-- **Homepage:** `/` (index.html)
-- **Setup:** `/setup.html`
-- **Privacy:** `/privacy-policy.html`
-
-## 📞 Supporto e Contatti
-
-- **Email sviluppatore:** appdevmond@gmail.com
-- **Repository:** https://github.com/R00kie7/calcolostraordinario/
-- **Issues:** Utilizzare GitHub Issues per segnalazioni
-- **Feedback:** Email diretta per suggerimenti
-
-## 📝 Note di Sviluppo
-
-- **Framework:** Vanilla HTML/CSS/JS per performance ottimali
-- **Hosting:** GitHub Pages per hosting gratuito e affidabile  
-- **Manutenzione:** Aggiornamenti tramite commit repository
-- **Backup:** Repository Git come sistema di backup automatico
+[![Download APK](https://img.shields.io/badge/Download-APK-blue?style=for-the-badge&logo=android)](https://github.com/R00kie7/calcolostraordinario/releases)
+[![Website](https://img.shields.io/badge/Website-Live-green?style=for-the-badge&logo=github-pages)](https://r00kie7.github.io/calcolostraordinario/)
 
 ---
 
-*Ultima modifica: Gennaio 2025*  
-*Versione sito: 1.0*  
-*Compatibile con: Tutti i browser moderni*
+## 🎯 **Cosa Fa Questa App**
+
+Con un setup iniziale di pochi minuti, potrai **registrare entrata e uscita con un solo click**! L'app calcola automaticamente ore lavorate, straordinari, buoni pasto e guadagni extra.
+
+### ⚡ **Setup in 10 Secondi**
+- Un click imposta l'ora corrente automaticamente
+- Due click per modificare manualmente
+- Tutto calcolato in tempo reale
+
+###  ️ **Privacy Totale** 
+- Tutti i dati rimangono sul tuo dispositivo
+- Nessun server esterno
+- Controllo completo dei tuoi dati
+
+---
+
+## ✨ **Funzionalità Principali**
+
+🎯 **Calcolo Automatico Straordinari**  
+Inserisci entrata/uscita, l'app calcola tutto secondo le tue impostazioni contrattuali
+
+⚡ **Registrazione Rapida**  
+Un click imposta l'ora corrente, perfetto per registrare quando entri/esci dal lavoro
+
+🍽️ **Buono Pasto Intelligente**  
+Configura le soglie e l'app ti dice automaticamente se hai diritto al buono pasto
+
+📋 **Copia e Incolla Orari**  
+Orari fissi? Copia un giorno e incollalo sui successivi. Imposta una settimana in 30 secondi!
+
+📝 **Gestione Note e Permessi**  
+Registra ferie, malattie, permessi con esclusione orario
+
+💾 **Sistema Backup Locale**  
+Backup completo offline con condivisione via email, cloud o WhatsApp
+
+📊 **Statistiche e Grafici**  
+Analisi mensili automatiche con grafici delle ore lavorate
+
+📤 **Esportazione Professionale**  
+Genera report mensili in PDF o CSV per commercialisti o HR
+
+---
+
+## 🚀 **Come Iniziare**
+
+### Setup Rapido (4 Passi):
+
+1. **⏰ Orario di Lavoro** *(Obbligatorio)*
+   - Imposta ore contrattuali per ogni giorno (es: 8h Lun-Ven, 0h weekend)
+
+2. **⚙️ Opzioni Avanzate** *(Opzionale)*
+   - Solo per esigenze particolari (filtra orario inizio, soglie straordinario)
+
+3. **🍽️ Buono Pasto** *(Se applicabile)*
+   - Attiva e imposta soglia maturazione (solitamente 6 ore)
+
+4. **💰 Importo Straordinario** *(Se interessato)*
+   - Tariffa oraria per calcolare guadagni extra
+
+**  [Guida Setup Completa](https://r00kie7.github.io/calcolostraordinario/setup.html)**
+
+---
+
+## 📱 **Download**
+
+### 🤖 Android
+- **APK Diretta:** [Download dall'area releases](https://github.com/R00kie7/calcolostraordinario/releases)
+- **Google Play Store:** Prossimamente
+
+###   iOS
+- **App Store:** In sviluppo
+
+---
+
+## 🌐 **Website e Documentazione**
+
+- **🏠 Homepage:** [calcolostraordinario.github.io](https://r00kie7.github.io/calcolostraordinario/)
+- **⚙️ Guida Setup:** [Setup completo](https://r00kie7.github.io/calcolostraordinario/setup.html)
+- **🛡️ Privacy Policy:** [Policy completa](https://r00kie7.github.io/calcolostraordinario/privacy-policy.html)
+
+---
+
+## 📞 **Supporto**
+
+- **📧 Email:** appdevmond@gmail.com
+- **🐛 Bug Report:** [GitHub Issues](https://github.com/R00kie7/calcolostraordinario/issues)
+- **💡 Suggerimenti:** Email diretta
+
+---
+
+##   **Caratteristiche Tecniche**
+
+- **📱 Piattaforma:** Android (Flutter)
+- **💾 Storage:** Locale (SQLite)
+- **🌐 Internet:** Solo per AdMob (facoltativo)
+- **🔒 Privacy:** GDPR compliant
+- **📦 Dimensione:** ~15-25 MB
+
+---
+
+**Sviluppato da Antonio Rota** • **© 2025** • **Gratuita**
