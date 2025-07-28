@@ -4,413 +4,616 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Calcolo Straordinario</title>
-    <meta name="description" content="Privacy Policy per l'app Calcolo Straordinario. Informazioni sulla raccolta, uso e protezione dei dati degli utenti.">
+    <meta name="description" content="Privacy Policy completa di Calcolo Straordinario. Informazioni su raccolta dati, GDPR, AdMob e diritti degli utenti.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            padding: 20px;
         }
-
+        
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.95);
+            padding: 0 20px;
+        }
+        
+        header {
+            padding: 2rem 0;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero {
+            background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin: 1rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
-
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #e9ecef;
-        }
-
-        .header h1 {
-            font-size: 2.5em;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #fff, #f0f8ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 10px;
         }
-
-        .last-updated {
-            color: #666;
-            font-style: italic;
+        
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
         }
-
-        .section {
-            margin-bottom: 30px;
-        }
-
-        .section h2 {
-            color: #667eea;
-            font-size: 1.5em;
-            margin-bottom: 15px;
-            padding-bottom: 5px;
-            border-bottom: 2px solid #f8f9fa;
-        }
-
-        .section h3 {
-            color: #764ba2;
-            font-size: 1.2em;
-            margin: 20px 0 10px 0;
-        }
-
-        .section p, .section li {
-            margin-bottom: 10px;
-            text-align: justify;
-        }
-
-        .section ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
-        }
-
-        .highlight {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        
+        .nav a {
+            background: rgba(255, 255, 255, 0.2);
             color: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-
-        .warning {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-
-        .contact-info {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 4px solid #667eea;
-            margin: 20px 0;
-        }
-
-        .back-link {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 12px 25px;
+            padding: 8px 16px;
             text-decoration: none;
-            border-radius: 25px;
-            margin-top: 30px;
-            transition: transform 0.3s ease;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            font-size: 0.9rem;
         }
-
-        .back-link:hover {
+        
+        .nav a:hover {
+            background: rgba(255, 255, 255, 0.3);
             transform: translateY(-2px);
         }
-
-        .gdpr-section {
-            background: #e8f4fd;
-            border: 2px solid #2196F3;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
-        }
-
-        .gdpr-section h3 {
-            color: #1976D2;
-        }
-
-        .data-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
+        
+        .main-content {
             background: white;
-            border-radius: 8px;
+            border-radius: 20px;
+            margin: 1rem 0;
             overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
-
-        .data-table th,
-        .data-table td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #e9ecef;
+        
+        .section {
+            padding: 2rem;
         }
-
-        .data-table th {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            font-weight: bold;
-        }
-
-        .data-table tr:hover {
+        
+        .section:nth-child(even) {
             background: #f8f9fa;
         }
-
+        
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .highlight-box {
+            background: #e8f4f8;
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 5px;
+        }
+        
+        .important-note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+        
+        .gdpr-rights {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 5px;
+        }
+        
+        .contact-box {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .contact-box h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        
+        .data-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .data-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .data-list li:before {
+            content: '•';
+            color: #667eea;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+        
+        .rights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .right-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 2px solid #667eea;
+        }
+        
+        .right-item h4 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+        
+        .last-updated {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .toc {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+        }
+        
+        .toc h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .toc li {
+            margin: 0.5rem 0;
+        }
+        
+        .toc a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.25rem 0;
+            display: block;
+        }
+        
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        
         @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-                margin: 10px;
+            .hero h1 {
+                font-size: 2rem;
             }
-
-            .header h1 {
-                font-size: 2em;
-            }
-
-            .section h2 {
-                font-size: 1.3em;
+            
+            .rights-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>🔒 Privacy Policy</h1>
-            <p class="last-updated">Ultimo aggiornamento: Dicembre 2024</p>
-            <p><strong>Calcolo Straordinario - App Flutter</strong></p>
-        </div>
-
-        <div class="highlight">
-            <h3>📱 Informazioni Generali</h3>
-            <p><strong>Calcolo Straordinario</strong> è un'applicazione proprietaria per la gestione degli orari di lavoro, sviluppata con Flutter per dispositivi Android. La tua privacy è fondamentale per noi.</p>
-        </div>
-
-        <div class="section">
-            <h2>1. Dati Raccolti</h2>
-            
-            <h3>📊 Dati Personali</h3>
-            <table class="data-table">
-                <tr>
-                    <th>Categoria</th>
-                    <th>Tipo di Dato</th>
-                    <th>Finalità</th>
-                    <th>Base Legale</th>
-                </tr>
-                <tr>
-                    <td>Orari di Lavoro</td>
-                    <td>Entrate, uscite, pause</td>
-                    <td>Funzionalità app</td>
-                    <td>Consenso</td>
-                </tr>
-                <tr>
-                    <td>Impostazioni</td>
-                    <td>Configurazioni utente</td>
-                    <td>Personalizzazione</td>
-                    <td>Consenso</td>
-                </tr>
-                <tr>
-                    <td>Backup</td>
-                    <td>File esportazione</td>
-                    <td>Sincronizzazione</td>
-                    <td>Consenso</td>
-                </tr>
-                <tr>
-                    <td>Identificativo</td>
-                    <td>ID anonimo dispositivo</td>
-                    <td>Analytics</td>
-                    <td>Consenso</td>
-                </tr>
-            </table>
-
-            <h3>📈 Dati Analytics (Firebase)</h3>
-            <ul>
-                <li><strong>Identificativo utente anonimo</strong> - Generato automaticamente</li>
-                <li><strong>Dati di utilizzo</strong> - Apertura app, funzioni utilizzate</li>
-                <li><strong>Informazioni dispositivo</strong> - Modello, versione OS (anonimi)</li>
-                <li><strong>Prestazioni app</strong> - Crash report, performance</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>2. Archiviazione Dati</h2>
-            
-            <h3>📱 Archiviazione Locale (Predefinita)</h3>
-            <p>Per impostazione predefinita, tutti i tuoi dati vengono salvati <strong>ESCLUSIVAMENTE</strong> sul tuo dispositivo:</p>
-            <ul>
-                <li>SharedPreferences Android per impostazioni</li>
-                <li>Database SQLite locale per orari di lavoro</li>
-                <li>Nessuna trasmissione automatica di dati</li>
-                <li>Accesso offline completo alle funzionalità</li>
-            </ul>
-
-            <h3>☁️ Backup Google Drive (Opzionale)</h3>
-            <p>Il backup su Google Drive è <strong>COMPLETAMENTE OPZIONALE</strong>:</p>
-            <ul>
-                <li>Devi autorizzare esplicitamente l'accesso</li>
-                <li>Dati crittografati end-to-end prima del caricamento</li>
-                <li>Solo il tuo account Google può accedere ai file</li>
-                <li>Puoi disattivare il backup in qualsiasi momento</li>
-            </ul>
-        </div>
-
-        <div class="gdpr-section">
-            <h2>3. 🇪🇺 Diritti GDPR</h2>
-            
-            <h3>I Tuoi Diritti</h3>
-            <ul>
-                <li><strong>Diritto di Accesso</strong> - Visualizza tutti i dati archiviati</li>
-                <li><strong>Diritto di Rettifica</strong> - Modifica dati non corretti</li>
-                <li><strong>Diritto alla Cancellazione</strong> - Elimina tutti i dati</li>
-                <li><strong>Diritto alla Portabilità</strong> - Esporta i tuoi dati</li>
-                <li><strong>Diritto di Opposizione</strong> - Rifiuta il trattamento</li>
-                <li><strong>Diritto di Limitazione</strong> - Limita l'uso dei dati</li>
-            </ul>
-
-            <h3>🗑️ Eliminazione Dati</h3>
-            <p>Hai il controllo completo sui tuoi dati:</p>
-            <ul>
-                <li><strong>Eliminazione Locale:</strong> Disinstalla l'app o usa la funzione "Elimina tutti i dati"</li>
-                <li><strong>Eliminazione Analytics:</strong> Richiesta tramite supporto per eliminazione da Firebase</li>
-                <li><strong>Eliminazione Google Drive:</strong> Elimina i file backup dal tuo account Google Drive</li>
-                <li><strong>Eliminazione Completa:</strong> Contatta il supporto per eliminazione totale</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>4. Sicurezza e Protezione</h2>
-            
-            <h3>🔐 Misure di Sicurezza</h3>
-            <ul>
-                <li><strong>Crittografia End-to-End</strong> per backup cloud</li>
-                <li><strong>Archiviazione locale sicura</strong> con Android Keystore</li>
-                <li><strong>Nessuna trasmissione non autorizzata</strong> di dati</li>
-                <li><strong>Accesso limitato</strong> solo alle funzionalità necessarie</li>
-                <li><strong>Aggiornamenti di sicurezza</strong> regolari</li>
-            </ul>
-
-            <h3>🛡️ Protezione Privacy</h3>
-            <ul>
-                <li>Nessuna vendita di dati a terze parti</li>
-                <li>Nessun tracciamento pubblicitario</li>
-                <li>Analytics anonimi e aggregati</li>
-                <li>Conformità GDPR e normative privacy</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>5. Conservazione Dati</h2>
-            
-            <h3>⏱️ Periodi di Conservazione</h3>
-            <table class="data-table">
-                <tr>
-                    <th>Tipo di Dato</th>
-                    <th>Periodo Conservazione</th>
-                    <th>Azione Automatica</th>
-                </tr>
-                <tr>
-                    <td>Dati locali app</td>
-                    <td>Fino a disinstallazione</td>
-                    <td>Eliminazione automatica</td>
-                </tr>
-                <tr>
-                    <td>Backup Google Drive</td>
-                    <td>Fino a eliminazione manuale</td>
-                    <td>Controllo utente</td>
-                </tr>
-                <tr>
-                    <td>Analytics Firebase</td>
-                    <td>14 mesi</td>
-                    <td>Eliminazione automatica</td>
-                </tr>
-                <tr>
-                    <td>Crash reports</td>
-                    <td>90 giorni</td>
-                    <td>Eliminazione automatica</td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="section">
-            <h2>6. Servizi Terze Parti</h2>
-            
-            <h3>🔥 Firebase Analytics (Google)</h3>
-            <ul>
-                <li><strong>Finalità:</strong> Miglioramento app e correzione bug</li>
-                <li><strong>Dati:</strong> Eventi anonimi, prestazioni, crash</li>
-                <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-                <li><strong>Controllo:</strong> Puoi disattivare analytics dalle impostazioni</li>
-            </ul>
-
-            <h3>☁️ Google Drive API</h3>
-            <ul>
-                <li><strong>Finalità:</strong> Backup opzionale dati utente</li>
-                <li><strong>Accesso:</strong> Solo file creati dall'app</li>
-                <li><strong>Autorizzazione:</strong> Esplicita da parte dell'utente</li>
-                <li><strong>Controllo:</strong> Revocabile in qualsiasi momento</li>
-            </ul>
-        </div>
-
-        <div class="warning">
-            <h3>⚠️ IMPORTANTE - App Proprietaria</h3>
-            <p><strong>Calcolo Straordinario è un'applicazione proprietaria protetta da copyright.</strong></p>
-            <ul>
-                <li>È VIETATO modificare, decompilare o effettuare reverse engineering</li>
-                <li>È VIETATO redistribuire o creare versioni alternative</li>
-                <li>Utilizzare SOLO la versione ufficiale dal Google Play Store</li>
-                <li>Violazioni saranno perseguite legalmente</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>7. Contatti e Richieste</h2>
-            
-            <div class="contact-info">
-                <h3>📧 Supporto Privacy</h3>
-                <p><strong>Email:</strong> <a href="mailto:appdevmond@gmail.com">appdevmond@gmail.com</a></p>
-                <p><strong>Oggetto:</strong> [PRIVACY] La tua richiesta</p>
-                
-                <h4>Richieste Supportate:</h4>
-                <ul>
-                    <li>Accesso ai dati personali</li>
-                    <li>Rettifica dati non corretti</li>
-                    <li>Eliminazione completa dati</li>
-                    <li>Esportazione dati (portabilità)</li>
-                    <li>Disattivazione analytics</li>
-                    <li>Revoca consensi</li>
-                </ul>
-                
-                <p><strong>Tempo di Risposta:</strong> Entro 30 giorni dalla richiesta</p>
+    <header>
+        <div class="container">
+            <div class="hero">
+                <h1><i class="fas fa-shield-alt"></i> Privacy Policy</h1>
+                <p>Informazioni complete sulla privacy e protezione dei dati in Calcolo Straordinario</p>
+                <nav class="nav">
+                    <a href="index.html"><i class="fas fa-home"></i> Homepage</a>
+                    <a href="setup.html"><i class="fas fa-cog"></i> Guida Setup</a>
+                    <a href="#contatti"><i class="fas fa-envelope"></i> Contatti</a>
+                    <a href="#diritti"><i class="fas fa-user-shield"></i> I Tuoi Diritti</a>
+                </nav>
             </div>
         </div>
+    </header>
 
-        <div class="section">
-            <h2>8. Aggiornamenti Policy</h2>
-            <p>Questa Privacy Policy può essere aggiornata periodicamente per riflettere:</p>
-            <ul>
-                <li>Nuove funzionalità dell'app</li>
-                <li>Modifiche normative</li>
-                <li>Miglioramenti sicurezza</li>
-                <li>Feedback degli utenti</li>
-            </ul>
-            <p>Gli aggiornamenti significativi saranno comunicati tramite notifica in-app.</p>
-        </div>
+    <main class="main-content">
+        <div class="container">
+            
+            <section class="section">
+                <div class="toc">
+                    <h3><i class="fas fa-list"></i> Indice</h3>
+                    <ul>
+                        <li><a href="#introduzione">1. Introduzione</a></li>
+                        <li><a href="#dati-raccolti">2. Dati che Raccogliamo</a></li>
+                        <li><a href="#utilizzo-dati">3. Come Utilizziamo i Dati</a></li>
+                        <li><a href="#condivisione">4. Condivisione Dati</a></li>
+                        <li><a href="#admob">5. Integrazione AdMob</a></li>
+                        <li><a href="#sicurezza">6. Sicurezza dei Dati</a></li>
+                        <li><a href="#diritti">7. I Tuoi Diritti GDPR</a></li>
+                        <li><a href="#contatti">8. Contatti</a></li>
+                        <li><a href="#aggiornamenti">9. Aggiornamenti</a></li>
+                    </ul>
+                </div>
+            </section>
 
-        <div class="highlight">
-            <h3>🛡️ Riepilogo Impegni</h3>
-            <ul>
-                <li><strong>Privacy by Design:</strong> Dati locali per default</li>
-                <li><strong>Controllo Utente:</strong> Tu decidi cosa condividere</li>
-                <li><strong>Trasparenza:</strong> Comunicazione chiara su raccolta dati</li>
-                <li><strong>Sicurezza:</strong> Crittografia e protezioni avanzate</li>
-                <li><strong>Conformità:</strong> Rispetto GDPR e normative privacy</li>
-            </ul>
-        </div>
+            <section id="introduzione" class="section">
+                <h2><i class="fas fa-info-circle"></i> 1. Introduzione</h2>
+                
+                <p>Benvenuto nella Privacy Policy di <strong>Calcolo Straordinario</strong>. Questa informativa descrive come raccogliamo, utilizziamo e proteggiamo le tue informazioni personali quando utilizzi la nostra applicazione mobile.</p>
+                
+                <div class="highlight-box">
+                    <h3><i class="fas fa-heart"></i> Il Nostro Impegno per la Privacy</h3>
+                    <p>Rispettiamo profondamente la tua privacy. Calcolo Straordinario è progettata con un approccio <strong>"privacy-first"</strong>: tutti i tuoi dati lavorativi rimangono sul tuo dispositivo e non vengono mai trasmessi ai nostri server.</p>
+                </div>
+                
+                <h3>Informazioni del Titolare del Trattamento</h3>
+                <ul class="data-list">
+                    <li><strong>Denominazione:</strong> Antonio Rota</li>
+                    <li><strong>Tipo:</strong> Sviluppatore Individuale</li>
+                    <li><strong>Email:</strong> appdevmond@gmail.com</li>
+                    <li><strong>App:</strong> Calcolo Straordinario</li>
+                </ul>
+                
+                <div class="important-note">
+                    <i class="fas fa-calendar-alt"></i>
+                    <strong>Data di entrata in vigore:</strong> Questa Privacy Policy è efficace dal 15 gennaio 2025 ed è conforme al Regolamento Generale sulla Protezione dei Dati (GDPR) dell'Unione Europea.
+                </div>
+            </section>
 
-        <div style="text-align: center; margin-top: 40px;">
-            <a href="https://r00kie7.github.io/calcolostraordinario/" class="back-link">🏠 Torna alla Home</a>
+            <section id="dati-raccolti" class="section">
+                <h2><i class="fas fa-database"></i> 2. Dati che Raccogliamo</h2>
+                
+                <h3><i class="fas fa-mobile-alt"></i> Dati dell'App (Locali)</h3>
+                <div class="highlight-box">
+                    <p><strong>IMPORTANTE:</strong> Tutti questi dati rimangono esclusivamente sul tuo dispositivo e non vengono mai trasmessi esternamente.</p>
+                    
+                    <ul class="data-list">
+                        <li><strong>Orari di lavoro:</strong> Entrate, uscite, pause che inserisci manualmente</li>
+                        <li><strong>Impostazioni personali:</strong> Ore contrattuali, soglie straordinario, buono pasto</li>
+                        <li><strong>Note e commenti:</strong> Annotazioni aggiunte ai giorni lavorativi</li>
+                        <li><strong>Calcoli derivati:</strong> Straordinari, ore lavorate, statistiche generate dall'app</li>
+                        <li><strong>Preferenze UI:</strong> Tema, layout, impostazioni interfaccia</li>
+                        <li><strong>Backup locali:</strong> File di backup che crei volontariamente</li>
+                    </ul>
+                </div>
+                
+                <h3><i class="fas fa-chart-bar"></i> Dati Analitici (Anonimi)</h3>
+                <p>Raccogliamo informazioni aggregate e anonime per migliorare l'app:</p>
+                <ul class="data-list">
+                    <li><strong>Statistiche d'uso:</strong> Funzioni più utilizzate, tempo di utilizzo app</li>
+                    <li><strong>Informazioni tecniche:</strong> Versione Android, modello dispositivo (per compatibilità)</li>
+                    <li><strong>Crash reports:</strong> Errori dell'app per correggere bug (senza dati personali)</li>
+                    <li><strong>Performance:</strong> Velocità caricamento, utilizzo memoria (per ottimizzazioni)</li>
+                </ul>
+                
+                <h3><i class="fas fa-times-circle"></i> Dati che NON Raccogliamo</h3>
+                <div class="gdpr-rights">
+                    <ul class="data-list">
+                        <li><strong>Identità personale:</strong> Nome, cognome, indirizzo</li>
+                        <li><strong>Dati di contatto:</strong> Email, telefono (tranne quella di supporto volontaria)</li>
+                        <li><strong>Posizione:</strong> GPS o localizzazione di alcun tipo</li>
+                        <li><strong>Dati biometrici:</strong> Impronte, riconoscimento facciale</li>
+                        <li><strong>Contenuti multimediali:</strong> Foto, video, audio</li>
+                        <li><strong>Contatti del telefono:</strong> Rubrica o liste contatti</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="utilizzo-dati" class="section">
+                <h2><i class="fas fa-cogs"></i> 3. Come Utilizziamo i Dati</h2>
+                
+                <h3><i class="fas fa-calculator"></i> Funzionalità Core dell'App</h3>
+                <ul class="data-list">
+                    <li><strong>Calcoli automatici:</strong> Straordinari, ore lavorate, buoni pasto</li>
+                    <li><strong>Statistiche personalizzate:</strong> Grafici e report basati sui tuoi dati</li>
+                    <li><strong>Backup e ripristino:</strong> Salvare e recuperare le tue impostazioni</li>
+                    <li><strong>Personalizzazione:</strong> Adattare l'interfaccia alle tue preferenze</li>
+                </ul>
+                
+                <h3><i class="fas fa-wrench"></i> Miglioramento del Servizio</h3>
+                <ul class="data-list">
+                    <li><strong>Analisi anonime:</strong> Capire quali funzioni sono più utili</li>
+                    <li><strong>Correzione bug:</strong> Identificare e risolvere problemi tecnici</li>
+                    <li><strong>Ottimizzazioni:</strong> Migliorare performance e usabilità</li>
+                    <li><strong>Nuove funzionalità:</strong> Sviluppare features richieste dagli utenti</li>
+                </ul>
+                
+                <h3><i class="fas fa-headset"></i> Supporto Utenti</h3>
+                <ul class="data-list">
+                    <li><strong>Assistenza tecnica:</strong> Solo quando ci contatti volontariamente</li>
+                    <li><strong>Risoluzione problemi:</strong> Debug di issues specifiche</li>
+                    <li><strong>Feedback:</strong> Raccogliere suggerimenti per miglioramenti</li>
+                </ul>
+                
+                <div class="important-note">
+                    <i class="fas fa-shield-alt"></i>
+                    <strong>Principio di Minimizzazione:</strong> Utilizziamo solo i dati strettamente necessari per le funzionalità richieste. Nessun dato viene utilizzato per profilazione o marketing personalizzato.
+                </div>
+            </section>
+
+            <section id="condivisione" class="section">
+                <h2><i class="fas fa-share-alt"></i> 4. Condivisione Dati</h2>
+                
+                <div class="highlight-box">
+                    <h3><i class="fas fa-lock"></i> Politica di Non Condivisione</h3>
+                    <p><strong>Non vendiamo, affittiamo o condividiamo i tuoi dati personali con terze parti per scopi commerciali.</strong></p>
+                </div>
+                
+                <h3><i class="fas fa-users"></i> Condivisione Limitata</h3>
+                <p>I dati possono essere condivisi solo nei seguenti casi limitati:</p>
+                
+                <ul class="data-list">
+                    <li><strong>Servizi tecnici:</strong> Google Analytics/Firebase per statistiche anonime aggregate</li>
+                    <li><strong>AdMob (Google):</strong> Per la visualizzazione di pubblicità (vedi sezione dedicata)</li>
+                    <li><strong>Obblighi legali:</strong> Solo se richiesto da autorità competenti con ordinanza</li>
+                    <li><strong>Sicurezza:</strong> Per prevenire frodi o attività illegali (estremamente raro)</li>
+                </ul>
+                
+                <h3><i class="fas fa-user-check"></i> Condivisione Volontaria</h3>
+                <p>Tu puoi scegliere di condividere i tuoi dati:</p>
+                <ul class="data-list">
+                    <li><strong>Backup manuali:</strong> Via email, cloud, WhatsApp (tua scelta)</li>
+                    <li><strong>Export report:</strong> PDF o CSV da condividere con HR/commercialista</li>
+                    <li><strong>Supporto tecnico:</strong> Inviarci dati per risolvere problemi specifici</li>
+                </ul>
+            </section>
+
+            <section id="admob" class="section">
+                <h2><i class="fas fa-ad"></i> 5. Integrazione AdMob (Google)</h2>
+                
+                <div class="important-note">
+                    <i class="fas fa-info-circle"></i>
+                    <strong>Monetizzazione Trasparente:</strong> Calcolo Straordinario è gratuita e si sostiene attraverso pubblicità non invasive fornite da Google AdMob.
+                </div>
+                
+                <h3><i class="fas fa-eye"></i> Cosa Raccoglie AdMob</h3>
+                <ul class="data-list">
+                    <li><strong>Advertising ID:</strong> Identificatore anonimo per pubblicità personalizzate</li>
+                    <li><strong>Informazioni dispositivo:</strong> Modello, OS, schermo (per format annunci)</li>
+                    <li><strong>Interazioni annunci:</strong> Click, visualizzazioni, tempo di esposizione</li>
+                    <li><strong>Dati di rete:</strong> IP approssimativo per targeting geografico</li>
+                </ul>
+                
+                <h3><i class="fas fa-cog"></i> Le Tue Opzioni</h3>
+                <div class="rights-grid">
+                    <div class="right-item">
+                        <h4><i class="fas fa-toggle-off"></i> Disattivare Ads Personalizzate</h4>
+                        <p>Impostazioni Android → Google → Annunci → Disattiva personalizzazione annunci</p>
+                    </div>
+                    
+                    <div class="right-item">
+                        <h4><i class="fas fa-refresh"></i> Reset Advertising ID</h4>
+                        <p>Impostazioni → Privacy → Advertising ID → Reset ID</p>
+                    </div>
+                    
+                    <div class="right-item">
+                        <h4><i class="fas fa-external-link-alt"></i> Maggiori Informazioni</h4>
+                        <p>Consulta la Privacy Policy di Google AdMob per dettagli completi</p>
+                    </div>
+                </div>
+                
+                <h3><i class="fas fa-balance-scale"></i> Il Nostro Impegno</h3>
+                <ul class="data-list">
+                    <li><strong>Annunci non invasivi:</strong> Posizionamento rispettoso dell'esperienza utente</li>
+                    <li><strong>Contenuti appropriati:</strong> Filtri per evitare contenuti inadeguati</li>
+                    <li><strong>Frequenza limitata:</strong> Non sovraccarico di pubblicità</li>
+                    <li><strong>Separazione dati:</strong> I tuoi dati lavorativi non vengono mai utilizzati per pubblicità</li>
+                </ul>
+            </section>
+
+            <section id="sicurezza" class="section">
+                <h2><i class="fas fa-shield-alt"></i> 6. Sicurezza dei Dati</h2>
+                
+                <h3><i class="fas fa-mobile-alt"></i> Sicurezza Locale</h3>
+                <div class="highlight-box">
+                    <p><strong>Vantaggio del storage locale:</strong> I tuoi dati non viaggiano mai su internet, riducendo drasticamente i rischi di intercettazione o data breach.</p>
+                </div>
+                
+                <ul class="data-list">
+                    <li><strong>Crittografia dispositivo:</strong> Protetti dalla sicurezza Android nativa</li>
+                    <li><strong>Backup privati:</strong> I file di backup sono protetti dalle tue app di condivisione</li>
+                    <li><strong>Nessun server:</strong> Impossibili attacchi ai nostri server (non esistono)</li>
+                    <li><strong>Controllo totale:</strong> Tu decidi quando e come condividere i dati</li>
+                </ul>
+                
+                <h3><i class="fas fa-server"></i> Sicurezza Trasmissione</h3>
+                <p>Per i limitati dati che transitano (analytics, ads):</p>
+                <ul class="data-list">
+                    <li><strong>HTTPS/TLS:</strong> Tutte le comunicazioni sono crittografate</li>
+                    <li><strong>Anonimizzazione:</strong> Dati aggregati senza identificatori personali</li>
+                    <li><strong>Partners affidabili:</strong> Solo Google (Firebase, AdMob) con certificazioni di sicurezza</li>
+                </ul>
+                
+                <h3><i class="fas fa-user-shield"></i> Le Tue Responsabilità</h3>
+                <div class="important-note">
+                    <ul class="data-list">
+                        <li><strong>Sicurezza dispositivo:</strong> Usa PIN, password o biometria per bloccare il telefono</li>
+                        <li><strong>Backup sicuri:</strong> Condividi backup solo con destinatari fidati</li>
+                        <li><strong>App updates:</strong> Mantieni l'app aggiornata per correzioni di sicurezza</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="diritti" class="section">
+                <h2><i class="fas fa-user-shield"></i> 7. I Tuoi Diritti GDPR</h2>
+                
+                <div class="gdpr-rights">
+                    <h3><i class="fas fa-balance-scale"></i> Diritti Garantiti dal GDPR</h3>
+                    <p>Come utente europeo, hai diritti specifici sui tuoi dati personali:</p>
+                </div>
+                
+                <div class="rights-grid">
+                    <div class="right-item">
+                        <h4><i class="fas fa-info"></i> Diritto di Accesso</h4>
+                        <p>Sapere quali dati abbiamo e come li utilizziamo. Per i dati locali, sono tutti nel tuo dispositivo.</p>
+                    </div>
+                    
+                    <div class="right-item">
+                        <h4><i class="fas fa-edit"></i> Diritto di Rettifica</h4>
+                        <p>Correggere dati inesatti. Puoi modificare tutti i tuoi dati direttamente nell'app.</p>
+                    </div>
+                    
+                    <div class="right-item">
+                        <h4><i class="fas fa-trash"></i> Diritto di Cancellazione</h4>
+                        <p>Eliminare i tuoi dati. Disinstalla l'app per rimozione completa dei dati locali.</p>
+                    </div>
+                    
+                    <div class="right-item">
+                        <h4><i class="fas fa-ban"></i> Diritto di Limitazione</h4>
+                        <p>Limitare il trattamento. Contattaci per bloccare elaborazioni specifiche.</p>
+                    </div>
+                    
+                    <div class="right-item">
+                        <h4><i class="fas fa-download"></i> Diritto di Portabilità</h4>
+                        <p>Esportare i tuoi dati. Usa la funzione backup/export dell'app.</p>
+                    </div>
+                    
+                    <div class="right-item">
+                        <h4><i class="fas fa-times-circle"></i> Diritto di Opposizione</h4>
+                        <p>Opporti al trattamento. Disattiva analytics o ads dalle impostazioni.</p>
+                    </div>
+                </div>
+                
+                <h3><i class="fas fa-hourglass-half"></i> Tempi di Risposta</h3>
+                <ul class="data-list">
+                    <li><strong>Richieste standard:</strong> Risposta entro 30 giorni</li>
+                    <li><strong>Richieste complesse:</strong> Possibile estensione di 60 giorni (con comunicazione)</li>
+                    <li><strong>Richieste urgenti:</strong> Priorità massima per questioni di sicurezza</li>
+                </ul>
+                
+                <h3><i class="fas fa-gavel"></i> Reclami</h3>
+                <p>Se non sei soddisfatto della gestione dei tuoi dati, puoi:</p>
+                <ul class="data-list">
+                    <li>Contattare direttamente il nostro team</li>
+                    <li>Presentare reclamo al Garante Privacy del tuo paese</li>
+                    <li>Rivolgerti alle autorità di protezione dati competenti</li>
+                </ul>
+            </section>
+
+            <section id="contatti" class="section">
+                <div class="contact-box">
+                    <h2><i class="fas fa-envelope"></i> 8. Contatti per Privacy</h2>
+                    
+                    <div class="contact-info">
+                        <p><i class="fas fa-user"></i> <strong>Data Protection Officer:</strong> Antonio Rota (Sviluppatore)</p>
+                        <p><i class="fas fa-envelope"></i> <strong>Email Privacy:</strong> appdevmond@gmail.com</p>
+                        <p><i class="fas fa-subject"></i> <strong>Oggetto Email:</strong> [PRIVACY] Calcolo Straordinario - [Tua richiesta]</p>
+                    </div>
+                    
+                    <h3>Informazioni da Includere</h3>
+                    <ul style="text-align: left; margin-top: 1rem;">
+                        <li>Tipo di richiesta (accesso, cancellazione, rettifica, etc.)</li>
+                        <li>Versione app e modello dispositivo (se rilevante)</li>
+                        <li>Descrizione dettagliata della questione</li>
+                        <li>Preferenza per la modalità di risposta</li>
+                    </ul>
+                    
+                    <div class="important-note" style="background: rgba(255,255,255,0.2); border-color: white; color: white; margin-top: 1.5rem;">
+                        <i class="fas fa-clock"></i>
+                        <strong>Tempi di Risposta:</strong> Rispondiamo a tutte le richieste privacy entro 72 ore per un primo contatto, con risoluzione completa entro 30 giorni.
+                    </div>
+                </div>
+            </section>
+
+            <section id="aggiornamenti" class="section">
+                <h2><i class="fas fa-sync-alt"></i> 9. Aggiornamenti della Privacy Policy</h2>
+                
+                <h3><i class="fas fa-history"></i> Modifiche Future</h3>
+                <p>Potremmo aggiornare questa Privacy Policy per:</p>
+                <ul class="data-list">
+                    <li><strong>Nuove funzionalità:</strong> Che richiedono trattamenti dati aggiuntivi</li>
+                    <li><strong>Cambi normativi:</strong> Adeguamento a nuove leggi sulla privacy</li>
+                    <li><strong>Miglioramenti sicurezza:</strong> Implementazione di protezioni aggiuntive</li>
+                    <li><strong>Feedback utenti:</strong> Chiarimenti richiesti dalla community</li>
+                </ul>
+                
+                <h3><i class="fas fa-bell"></i> Come Ti Informiamo</h3>
+                <ul class="data-list">
+                    <li><strong>Notifica in-app:</strong> Popup informativi per modifiche importanti</li>
+                    <li><strong>Update notes:</strong> Dettagli nelle note di rilascio app store</li>
+                    <li><strong>Website:</strong> Versione sempre aggiornata su questa pagina</li>
+                    <li><strong>Email (se fornita):</strong> Comunicazione diretta per cambi sostanziali</li>
+                </ul>
+                
+                <h3><i class="fas fa-check-circle"></i> Il Tuo Consenso</h3>
+                <div class="highlight-box">
+                    <p><strong>Consenso continuo:</strong> Continuare a usare l'app dopo le modifiche costituisce accettazione della nuova Privacy Policy. Se non accetti, puoi cessare l'utilizzo e cancellare i dati.</p>
+                </div>
+                
+                <h3><i class="fas fa-archive"></i> Versioni Precedenti</h3>
+                <p>Manteniamo archivio delle versioni precedenti per:</p>
+                <ul class="data-list">
+                    <li>Trasparenza sui cambiamenti nel tempo</li>
+                    <li>Riferimento legale per dispute passate</li>
+                    <li>Audit di conformità normativa</li>
+                </ul>
+            </section>
         </div>
-    </div>
+        
+        <div class="last-updated">
+            <div class="container">
+                <p><i class="fas fa-calendar-alt"></i> <strong>Ultima modifica:</strong> 15 gennaio 2025</p>
+                <p><i class="fas fa-code-branch"></i> <strong>Versione:</strong> 1.0.0</p>
+                <p><i class="fas fa-globe"></i> <strong>Applicabile a:</strong> Tutte le versioni di Calcolo Straordinario</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p><i class="fas fa-home"></i> <a href="index.html" style="color: #ccc;">Torna alla Homepage</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:appdevmond@gmail.com" style="color: #ccc;">Privacy: appdevmond@gmail.com</a></p>
+            <p>&copy; 2025 Calcolo Straordinario - Privacy Policy Completa</p>
+        </div>
+    </footer>
 </body>
 </html>
