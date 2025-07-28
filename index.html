@@ -3,468 +3,503 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcolo Straordinario - App Flutter per la Gestione Orari di Lavoro</title>
-    <meta name="description" content="App Flutter gratuita per il tracciamento professionale degli orari di lavoro e il calcolo automatico degli straordinari. Disponibile su Google Play Store.">
-    <meta name="keywords" content="calcolo straordinari, orari lavoro, flutter app, tracciamento ore, android app">
+    <title>Calcolo Straordinario - App per il Calcolo degli Straordinari</title>
+    <meta name="description" content="Calcolo Straordinario - L'app più semplice per tracciare orari di lavoro e calcolare automaticamente gli straordinari. Backup locale, privacy totale, interfaccia intuitiva.">
+    <meta name="keywords" content="calcolo straordinario, ore lavoro, timesheet, overtime calculator, orari lavoro, straordinari, app lavoro">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
         }
-
+        
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 0 20px;
         }
-
-        .hero {
+        
+        header {
+            padding: 2rem 0;
             text-align: center;
-            padding: 60px 20px;
-            background: rgba(255, 255, 255, 0.95);
+            color: white;
+        }
+        
+        .hero {
+            background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             border-radius: 20px;
-            margin-bottom: 30px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 3rem 2rem;
+            margin: 2rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
-
-        .app-icon {
-            width: 120px;
-            height: 120px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 30px;
-            margin: 0 auto 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 60px;
-            color: white;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
-        }
-
-        .hero-title {
-            font-size: 3.5em;
-            font-weight: bold;
-            margin-bottom: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #fff, #f0f8ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-
-        .hero-subtitle {
-            font-size: 1.3em;
-            color: #666;
-            margin-bottom: 40px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
         }
-
-        .download-buttons {
+        
+        .nav {
             display: flex;
-            gap: 20px;
             justify-content: center;
+            gap: 1rem;
             flex-wrap: wrap;
         }
-
-        .download-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 15px 30px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        
+        .nav a {
+            background: rgba(255, 255, 255, 0.2);
             color: white;
+            padding: 12px 24px;
             text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 1.1em;
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            backdrop-filter: blur(5px);
         }
-
-        .download-btn:hover {
+        
+        .nav a:hover {
+            background: rgba(255, 255, 255, 0.3);
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
         }
-
-        .download-btn span {
-            font-size: 1.3em;
+        
+        .main-content {
+            background: white;
+            border-radius: 20px;
+            margin: 2rem 0;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
-
+        
+        .section {
+            padding: 3rem 2rem;
+        }
+        
+        .section:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
+            gap: 2rem;
+            margin: 2rem 0;
         }
-
+        
         .feature-card {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease;
         }
-
+        
         .feature-card:hover {
             transform: translateY(-5px);
         }
-
+        
         .feature-icon {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .setup-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .step {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            border-top: 4px solid #667eea;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
-            margin: 0 auto 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 40px;
-            color: white;
-        }
-
-        .feature-title {
-            font-size: 1.5em;
             font-weight: bold;
-            margin-bottom: 15px;
-            color: #333;
+            margin: 0 auto 1rem;
         }
-
-        .feature-description {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        .section {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 40px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .section h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
+        
+        .download-section {
             text-align: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .tech-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .tech-item {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 15px;
-            text-align: center;
-            border: 2px solid transparent;
-            transition: all 0.3s ease;
-        }
-
-        .tech-item:hover {
-            border-color: #667eea;
-            transform: translateY(-2px);
-        }
-
-        .tech-icon {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
-        .warning-box {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-            color: white;
-            padding: 25px;
-            border-radius: 15px;
-            margin: 30px 0;
-            text-align: center;
-            box-shadow: 0 10px 25px rgba(255, 107, 107, 0.3);
-        }
-
-        .warning-box h3 {
-            margin-bottom: 15px;
-            font-size: 1.3em;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .stat-card {
+            padding: 4rem 2rem;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 25px;
-            border-radius: 15px;
-            text-align: center;
         }
-
-        .stat-number {
-            font-size: 2.5em;
-            font-weight: bold;
-            display: block;
-        }
-
-        .stat-label {
-            font-size: 0.9em;
-            opacity: 0.9;
-        }
-
-        .footer {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 40px;
-            text-align: center;
-            margin-top: 40px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-        }
-
-        .footer-links a {
-            color: #667eea;
+        
+        .download-button {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 15px 30px;
             text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            margin: 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+        
+        .download-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
             font-weight: bold;
-            transition: color 0.3s ease;
+            color: #667eea;
         }
-
-        .footer-links a:hover {
-            color: #764ba2;
+        
+        .stat-label {
+            font-size: 1.1rem;
+            color: #666;
+            margin-top: 0.5rem;
         }
-
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        .app-ads-txt {
+            display: none;
+        }
+        
         @media (max-width: 768px) {
-            .hero-title {
-                font-size: 2.5em;
+            .hero h1 {
+                font-size: 2rem;
             }
-
-            .hero-subtitle {
-                font-size: 1.1em;
+            
+            .hero p {
+                font-size: 1.1rem;
             }
-
-            .download-buttons {
-                flex-direction: column;
-                align-items: center;
+            
+            .nav {
+                gap: 0.5rem;
             }
-
-            .download-btn {
-                width: 100%;
-                max-width: 300px;
-            }
-
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .section {
-                padding: 25px;
-            }
-
-            .section h2 {
-                font-size: 2em;
-            }
-
-            .footer-links {
-                flex-direction: column;
-                gap: 15px;
+            
+            .nav a {
+                padding: 8px 16px;
+                font-size: 0.9rem;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Hero Section -->
-        <div class="hero">
-            <div class="app-icon">📊</div>
-            <h1 class="hero-title">Calcolo Straordinario</h1>
-            <p class="hero-subtitle">La tua app Flutter gratuita per la gestione professionale degli orari di lavoro</p>
-            
-            <div class="download-buttons">
-                <a href="#download" class="download-btn">
-                    <span>📱</span> Scarica da Google Play
-                </a>
-                <a href="mailto:appdevmond@gmail.com" class="download-btn">
-                    <span>📧</span> Contatta Supporto
-                </a>
+    <header>
+        <div class="container">
+            <div class="hero">
+                <h1><i class="fas fa-clock"></i> Calcolo Straordinario</h1>
+                <p>L'app più semplice per tracciare orari di lavoro e calcolare automaticamente gli straordinari</p>
+                <nav class="nav">
+                    <a href="#features"><i class="fas fa-star"></i> Funzionalità</a>
+                    <a href="setup.html"><i class="fas fa-cog"></i> Guida Setup</a>
+                    <a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy</a>
+                    <a href="#download"><i class="fas fa-download"></i> Download</a>
+                </nav>
             </div>
         </div>
+    </header>
 
-        <!-- Features Grid -->
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">⏰</div>
-                <h3 class="feature-title">Gestione Orari Avanzata</h3>
-                <p class="feature-description">Registrazione precisa di entrate, uscite e pause con supporto per turni notturni e orari flessibili personalizzabili.</p>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">💼</div>
-                <h3 class="feature-title">Calcolo Straordinari Intelligente</h3>
-                <p class="feature-description">Algoritmi automatici per straordinari feriali e festivi con maggiorazioni personalizzabili secondo contratto.</p>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">📊</div>
-                <h3 class="feature-title">Reportistica Professionale</h3>
-                <p class="feature-description">Esportazione Excel/PDF con template professionali, grafici statistiche e riepiloghi dettagliati per periodo.</p>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">☁️</div>
-                <h3 class="feature-title">Backup e Sincronizzazione</h3>
-                <p class="feature-description">Google Drive integrato con crittografia end-to-end e sincronizzazione automatica multi-dispositivo.</p>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">🎨</div>
-                <h3 class="feature-title">Esperienza Utente</h3>
-                <p class="feature-description">Modalità scura/chiara con cambio automatico, design responsive e performance elevate con Flutter.</p>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">🛡️</div>
-                <h3 class="feature-title">Privacy e Sicurezza</h3>
-                <p class="feature-description">Dati locali per default, crittografia avanzata e conformità GDPR per la massima protezione.</p>
-            </div>
-        </div>
-
-        <!-- Avviso Importante -->
-        <div class="warning-box">
-            <h3>⚠️ IMPORTANTE - Solo Uso Autorizzato</h3>
-            <p><strong>Questa app è protetta da copyright.</strong><br>
-            Utilizzare SOLO la versione ufficiale dal Google Play Store.<br>
-            È VIETATO modificare, redistribuire o creare versioni alternative.<br>
-            Tutti i diritti riservati allo sviluppatore.</p>
-        </div>
-
-        <!-- Stack Tecnologico -->
-        <div class="section">
-            <h2>🛠️ Stack Tecnologico</h2>
-            <div class="tech-grid">
-                <div class="tech-item">
-                    <div class="tech-icon">📱</div>
-                    <h4>Flutter</h4>
-                    <p>Framework UI cross-platform</p>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">🎯</div>
-                    <h4>Dart</h4>
-                    <p>Linguaggio di programmazione</p>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">🔥</div>
-                    <h4>Firebase</h4>
-                    <p>Backend as a Service</p>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">☁️</div>
-                    <h4>Google Drive</h4>
-                    <p>Sincronizzazione cloud</p>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">🎨</div>
-                    <h4>Material Design</h4>
-                    <p>Design system Google</p>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">🤖</div>
-                    <h4>Android</h4>
-                    <p>Piattaforma mobile</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Statistiche -->
-        <div class="section">
-            <h2>📈 Performance e Compatibilità</h2>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <span class="stat-number">< 2s</span>
-                    <span class="stat-label">Avvio App</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">~30MB</span>
-                    <span class="stat-label">Dimensione APK</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">Android 5.0+</span>
-                    <span class="stat-label">Compatibilità</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Gratuita</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Download Section -->
-        <div class="section" id="download">
-            <h2>📱 Scarica l'App</h2>
-            <div style="text-align: center;">
-                <p style="font-size: 1.2em; margin-bottom: 30px; color: #666;">
-                    Disponibile gratuitamente su Google Play Store
+    <main class="main-content">
+        <div class="container">
+            <section id="overview" class="section">
+                <h2><i class="fas fa-rocket"></i> Perché Scegliere Calcolo Straordinario?</h2>
+                <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">
+                    Con un setup iniziale di pochi minuti, potrai registrare entrata e uscita con un solo click! 
+                    L'app calcola automaticamente ore lavorate, straordinari, buoni pasto e guadagni extra.
                 </p>
-                <div class="download-buttons">
-                    <a href="#" class="download-btn" style="font-size: 1.2em; padding: 20px 40px;">
-                        <span>📱</span> Scarica da Google Play Store
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">10</div>
+                        <div class="stat-label">Secondi per registrare<br>una giornata</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Privacy<br>Dati locali</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Server esterni<br>Tutto offline</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">7</div>
+                        <div class="stat-label">Backup automatici<br>per tipo</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="features" class="section">
+                <h2><i class="fas fa-magic"></i> Funzionalità Principali</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                        <h3>Calcolo Automatico Straordinari</h3>
+                        <p>Inserisci entrata e uscita, l'app calcola automaticamente ore lavorate, straordinari e guadagni extra secondo le tue impostazioni contrattuali.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-calendar-check"></i></div>
+                        <h3>Registrazione Rapida</h3>
+                        <p>Un click imposta l'ora corrente, due click per modificare manualmente. Perfetto per registrare in tempo reale quando entri/esci dal lavoro.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                        <h3>Buono Pasto Intelligente</h3>
+                        <p>Configura le soglie e l'app ti dirà automaticamente se hai diritto al buono pasto. Include calcolo automatico pause pranzo.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-copy"></i></div>
+                        <h3>Copia e Incolla Dati</h3>
+                        <p>Orari fissi? Copia un giorno e incollalo sui successivi. Imposta un'intera settimana in 30 secondi!</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-sticky-note"></i></div>
+                        <h3>Gestione Note e Permessi</h3>
+                        <p>Registra ferie, malattie, permessi con esclusione orario. Distingui tra giorni lavorativi e permessi speciali.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-database"></i></div>
+                        <h3>Sistema Backup Locale</h3>
+                        <p>Backup completo offline con retention automatica. Condividi dati via email, cloud o WhatsApp per cambio dispositivo.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Statistiche e Grafici</h3>
+                        <p>Analisi mensili automatiche con grafici delle ore lavorate e straordinari. Obiettivi personalizzabili.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-file-export"></i></div>
+                        <h3>Esportazione Dati</h3>
+                        <p>Genera report mensili in PDF o CSV per commercialisti, HR o archivio personale. Tutto professionale e dettagliato.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Privacy Totale</h3>
+                        <p>Tutti i dati rimangono sul tuo dispositivo. Nessun server esterno, nessun tracking, controllo completo dei tuoi dati.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="smart-features" class="section">
+                <h2><i class="fas fa-brain"></i> Funzionalità Intelligenti</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-mouse-pointer"></i></div>
+                        <h3>Click Intelligenti</h3>
+                        <ul style="text-align: left; margin-top: 1rem;">
+                            <li><strong>Primo click:</strong> Imposta ora corrente automaticamente</li>
+                            <li><strong>Secondo click:</strong> Permette modifica manuale</li>
+                            <li><strong>Click "Uscita":</strong> Aggiunge automaticamente 30 min pausa pranzo se hai diritto al buono pasto</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-cogs"></i></div>
+                        <h3>Opzioni Avanzate</h3>
+                        <ul style="text-align: left; margin-top: 1rem;">
+                            <li><strong>Filtra orario inizio:</strong> Ignora arrivi anticipati</li>
+                            <li><strong>Soglia straordinario:</strong> Tolleranze contrattuali (es: primi 15 min gratis)</li>
+                            <li><strong>Calcoli precisi:</strong> Anche con situazioni complesse</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-magic"></i></div>
+                        <h3>Automazioni Intelligenti</h3>
+                        <ul style="text-align: left; margin-top: 1rem;">
+                            <li><strong>Buono pasto automatico:</strong> Riconoscimento diritto e calcolo pausa</li>
+                            <li><strong>Backup retention:</strong> Mantiene automaticamente ultimi 7 backup</li>
+                            <li><strong>Calcoli in tempo reale:</strong> Tutto aggiornato istantaneamente</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="setup-preview" class="section">
+                <h2><i class="fas fa-rocket"></i> Setup Rapido</h2>
+                <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">
+                    Configura l'app in 5 minuti seguendo l'ordine del menu Impostazioni:
+                </p>
+                
+                <div class="setup-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Orario di Lavoro</h3>
+                        <p><strong>OBBLIGATORIO:</strong> Imposta ore contrattuali per ogni giorno (es: 8h Lun-Ven, 0h weekend)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Opzioni Avanzate</h3>
+                        <p><strong>OPZIONALE:</strong> Solo per esigenze particolari (filtra orario, soglie straordinario)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Buono Pasto</h3>
+                        <p><strong>SE APPLICABILE:</strong> Attiva e imposta soglia maturazione (solitamente 6 ore)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Importo Straordinario</h3>
+                        <p><strong>SE INTERESSATO:</strong> Tariffa oraria per calcolare guadagni extra</p>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="setup.html" class="download-button">
+                        <i class="fas fa-book"></i> Guida Completa Setup
                     </a>
                 </div>
-                <p style="margin-top: 20px; color: #888; font-size: 0.9em;">
-                    ⚠️ Scarica solo dalla fonte ufficiale per garantire sicurezza e aggiornamenti
-                </p>
-            </div>
-        </div>
+            </section>
 
-        <!-- Footer -->
-        <div class="footer">
-            <div class="footer-links">
-                <a href="https://r00kie7.github.io/calcolostraordinario/privacy-policy.html">Privacy Policy</a>
-                <a href="https://r00kie7.github.io/calcolostraordinario/terms-of-service.html">Termini di Servizio</a>
-                <a href="https://r00kie7.github.io/calcolostraordinario/account_deletion.html">Eliminazione Account</a>
-                <a href="mailto:appdevmond@gmail.com">Supporto</a>
+            <section id="backup-system" class="section">
+                <h2><i class="fas fa-database"></i> Sistema Backup Avanzato</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-cog"></i></div>
+                        <h3>Backup Impostazioni</h3>
+                        <p><strong>~2-5 KB:</strong> Orari lavoro, soglie, buono pasto, tema. Perfetto prima di modifiche importanti.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-calendar-alt"></i></div>
+                        <h3>Backup Dati</h3>
+                        <p><strong>10-100 KB:</strong> Tutti i giorni lavorativi, note, allegati. Backup periodico del tuo lavoro.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-archive"></i></div>
+                        <h3>Backup Completo</h3>
+                        <p><strong>15-105 KB:</strong> Tutto insieme. Ideale per cambio dispositivo o backup di sicurezza totale.</p>
+                    </div>
+                </div>
+
+                <h3 style="text-align: center; margin: 2rem 0; color: #667eea;">Condivisione Multi-Piattaforma</h3>
+                <div style="text-align: center;">
+                    <p style="font-size: 1.1rem; margin-bottom: 1rem;">
+                        <i class="fas fa-envelope"></i> Email &nbsp;&nbsp;
+                        <i class="fas fa-cloud"></i> Google Drive &nbsp;&nbsp;
+                        <i class="fab fa-whatsapp"></i> WhatsApp &nbsp;&nbsp;
+                        <i class="fas fa-bluetooth-b"></i> Bluetooth &nbsp;&nbsp;
+                        <i class="fas fa-wifi"></i> WiFi Direct
+                    </p>
+                    <p><strong>Privacy:</strong> Tutto locale, nessun server esterno, controllo completo</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section id="download" class="download-section">
+        <div class="container">
+            <h2><i class="fas fa-download"></i> Scarica Ora</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+                Inizia subito a tracciare i tuoi orari di lavoro con la massima semplicità e privacy
+            </p>
+            
+            <div>
+                <a href="#" class="download-button">
+                    <i class="fab fa-google-play"></i> Google Play Store
+                </a>
+                <a href="#" class="download-button">
+                    <i class="fab fa-apple"></i> App Store (Prossimamente)
+                </a>
             </div>
             
-            <div style="border-top: 1px solid #e9ecef; padding-top: 20px; margin-top: 20px;">
-                <p style="color: #666;">
-                    📧 <strong>Supporto:</strong> <a href="mailto:appdevmond@gmail.com" style="color: #667eea;">appdevmond@gmail.com</a>
-                </p>
-                <p style="color: #888; margin-top: 10px;">
-                    © 2024 Calcolo Straordinario. Sviluppato con ❤️ usando Flutter.
-                </p>
-                <p style="color: #aaa; font-size: 0.9em; margin-top: 10px;">
-                    🛡️ App Proprietaria • 🔒 Privacy First • 📱 Made with Flutter
-                </p>
-            </div>
+            <p style="margin-top: 2rem; opacity: 0.8;">
+                <i class="fas fa-shield-alt"></i> 100% Gratuita • <i class="fas fa-lock"></i> Privacy Totale • <i class="fas fa-mobile-alt"></i> Funziona Offline
+            </p>
         </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Calcolo Straordinario - Sviluppata da Antonio Rota</p>
+            <p>
+                <a href="mailto:appdevmond@gmail.com" style="color: #ccc;">
+                    <i class="fas fa-envelope"></i> appdevmond@gmail.com
+                </a> • 
+                <a href="privacy.html" style="color: #ccc;">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- app-ads.txt content for AdMob verification -->
+    <div class="app-ads-txt">
+        google.com, pub-1187208580069065, DIRECT, f08c47fec0942fa0
     </div>
 </body>
 </html>
