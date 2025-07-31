@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Calcolo Straordinario</title>
-    <meta name="description" content="Privacy Policy completa di Calcolo Straordinario. Informazioni su raccolta dati, GDPR, AdMob e diritti degli utenti.">
+    <meta name="description" content="Privacy Policy completa di Calcolo Straordinario. Informazioni su raccolta dati, GDPR, Google AdMob e Google Consent Mode v2.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -51,191 +51,143 @@
             background-clip: text;
         }
         
-        .nav {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-            margin-top: 1rem;
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
         }
         
-        .nav a {
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            padding: 8px 16px;
-            text-decoration: none;
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            transition: all 0.3s ease;
-            backdrop-filter: blur(5px);
-            font-size: 0.9rem;
-        }
-        
-        .nav a:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-2px);
-        }
-        
-        .main-content {
+        .content {
             background: white;
             border-radius: 20px;
-            margin: 1rem 0;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         }
         
         .section {
-            padding: 2rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
         }
         
-        .section:nth-child(even) {
-            background: #f8f9fa;
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
         }
         
         .section h2 {
             color: #667eea;
-            margin-bottom: 1.5rem;
-            font-size: 1.8rem;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 0.5rem;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
         
         .section h3 {
-            color: #333;
+            color: #555;
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.8rem 0;
+        }
+        
+        .section p {
             margin-bottom: 1rem;
-            margin-top: 1.5rem;
-            font-size: 1.3rem;
+            text-align: justify;
+        }
+        
+        .section ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        .section li {
+            margin-bottom: 0.5rem;
         }
         
         .highlight-box {
-            background: #e8f4f8;
-            border-left: 4px solid #667eea;
+            background: linear-gradient(135deg, #ff6b6b, #ffa500);
+            color: white;
             padding: 1.5rem;
+            border-radius: 15px;
             margin: 1.5rem 0;
-            border-radius: 5px;
         }
         
-        .important-note {
+        .highlight-box h3 {
+            color: white;
+            margin-top: 0;
+        }
+        
+        .warning-box {
             background: #fff3cd;
-            border-left: 4px solid #ffc107;
+            border: 1px solid #ffc107;
+            border-radius: 10px;
             padding: 1rem;
             margin: 1rem 0;
-            border-radius: 5px;
         }
         
-        .gdpr-rights {
-            background: #d4edda;
-            border-left: 4px solid #28a745;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 5px;
+        .warning-box .icon {
+            color: #ff9800;
+            margin-right: 0.5rem;
         }
         
-        .contact-box {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
-            margin: 2rem 0;
-        }
-        
-        .contact-box h3 {
-            color: white;
-            margin-bottom: 1rem;
-        }
-        
-        .contact-info {
-            font-size: 1.1rem;
-            margin: 0.5rem 0;
-        }
-        
-        .data-list {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .data-list li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid #eee;
-            position: relative;
-            padding-left: 2rem;
-        }
-        
-        .data-list li:before {
-            content: '•';
-            color: #667eea;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-            font-size: 1.2rem;
-        }
-        
-        .rights-grid {
+        .info-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1rem;
             margin: 1.5rem 0;
         }
         
-        .right-item {
-            background: white;
-            padding: 1rem;
-            border-radius: 8px;
-            border: 2px solid #667eea;
+        .info-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
         }
         
-        .right-item h4 {
+        .info-card h4 {
             color: #667eea;
             margin-bottom: 0.5rem;
         }
         
-        .last-updated {
-            background: #333;
+        .choice-card {
+            background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
-            text-align: center;
-            padding: 1rem;
-            font-size: 0.9rem;
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 1rem 0;
+        }
+        
+        .choice-card h4 {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .back-button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            margin: 2rem 0;
+        }
+        
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
         }
         
         footer {
-            background: #333;
-            color: white;
             text-align: center;
             padding: 2rem 0;
-            margin-top: 2rem;
-        }
-        
-        .toc {
-            background: #f8f9fa;
-            padding: 1.5rem;
-            border-radius: 10px;
-            margin: 1.5rem 0;
-        }
-        
-        .toc h3 {
-            color: #667eea;
-            margin-bottom: 1rem;
-        }
-        
-        .toc ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .toc li {
-            margin: 0.5rem 0;
-        }
-        
-        .toc a {
-            color: #667eea;
-            text-decoration: none;
-            padding: 0.25rem 0;
-            display: block;
-        }
-        
-        .toc a:hover {
-            text-decoration: underline;
+            color: white;
+            opacity: 0.8;
         }
         
         @media (max-width: 768px) {
@@ -243,377 +195,280 @@
                 font-size: 2rem;
             }
             
-            .rights-grid {
-                grid-template-columns: 1fr;
+            .content {
+                padding: 1.5rem;
+            }
+            
+            .section h2 {
+                font-size: 1.3rem;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
+    <div class="container">
+        <header>
             <div class="hero">
                 <h1><i class="fas fa-shield-alt"></i> Privacy Policy</h1>
-                <p>Informazioni complete sulla privacy e protezione dei dati in Calcolo Straordinario</p>
-                <nav class="nav">
-                    <a href="index.html"><i class="fas fa-home"></i> Homepage</a>
-                    <a href="setup.html"><i class="fas fa-cog"></i> Guida Setup</a>
-                    <a href="#contatti"><i class="fas fa-envelope"></i> Contatti</a>
-                    <a href="#diritti"><i class="fas fa-user-shield"></i> I Tuoi Diritti</a>
-                </nav>
+                <p>Informazioni complete sulla privacy per Calcolo Straordinario</p>
+                <p><strong>Ultimo aggiornamento:</strong> 30 luglio 2025</p>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <main class="main-content">
-        <div class="container">
-            
-            <section class="section">
-                <div class="toc">
-                    <h3><i class="fas fa-list"></i> Indice</h3>
-                    <ul>
-                        <li><a href="#introduzione">1. Introduzione</a></li>
-                        <li><a href="#dati-raccolti">2. Dati che Raccogliamo</a></li>
-                        <li><a href="#utilizzo-dati">3. Come Utilizziamo i Dati</a></li>
-                        <li><a href="#condivisione">4. Condivisione Dati</a></li>
-                        <li><a href="#admob">5. Integrazione AdMob</a></li>
-                        <li><a href="#sicurezza">6. Sicurezza dei Dati</a></li>
-                        <li><a href="#diritti">7. I Tuoi Diritti GDPR</a></li>
-                        <li><a href="#contatti">8. Contatti</a></li>
-                        <li><a href="#aggiornamenti">9. Aggiornamenti</a></li>
-                    </ul>
-                </div>
-            </section>
+        <main class="content">
+            <div class="warning-box">
+                <i class="fas fa-info-circle icon"></i>
+                <strong>Importante:</strong> Questa Privacy Policy descrive come gestiamo i tuoi dati nell'app Calcolo Straordinario, con particolare focus su Google Consent Mode v2 e AdMob.
+            </div>
 
-            <section id="introduzione" class="section">
+            <div class="section">
                 <h2><i class="fas fa-info-circle"></i> 1. Introduzione</h2>
+                <p>La tua privacy è fondamentale per noi. Questa Privacy Policy descrive come l'app Calcolo Straordinario, sviluppata da Antonio Rota, gestisce i tuoi dati personali. L'app offre due modalità di utilizzo: <strong>gratuita con annunci pubblicitari personalizzati</strong> o <strong>a pagamento senza annunci</strong>. La scelta dell'utente determina la raccolta e il trattamento dei dati per scopi pubblicitari.</p>
                 
-                <p>Benvenuto nella Privacy Policy di <strong>Calcolo Straordinario</strong>. Questa informativa descrive come raccogliamo, utilizziamo e proteggiamo le tue informazioni personali quando utilizzi la nostra applicazione mobile.</p>
-                
-                <div class="highlight-box">
-                    <h3><i class="fas fa-heart"></i> Il Nostro Impegno per la Privacy</h3>
-                    <p>Rispettiamo profondamente la tua privacy. Calcolo Straordinario è progettata con un approccio <strong>"privacy-first"</strong>: tutti i tuoi dati lavorativi rimangono sul tuo dispositivo e non vengono mai trasmessi ai nostri server.</p>
-                </div>
-                
-                <h3>Informazioni del Titolare del Trattamento</h3>
-                <ul class="data-list">
-                    <li><strong>Denominazione:</strong> Antonio Rota</li>
-                    <li><strong>Tipo:</strong> Sviluppatore Individuale</li>
-                    <li><strong>Email:</strong> appdevmond@gmail.com</li>
-                    <li><strong>App:</strong> Calcolo Straordinario</li>
-                </ul>
-                
-                <div class="important-note">
-                    <i class="fas fa-calendar-alt"></i>
-                    <strong>Data di entrata in vigore:</strong> Questa Privacy Policy è efficace dal 15 gennaio 2025 ed è conforme al Regolamento Generale sulla Protezione dei Dati (GDPR) dell'Unione Europea.
-                </div>
-            </section>
-
-            <section id="dati-raccolti" class="section">
-                <h2><i class="fas fa-database"></i> 2. Dati che Raccogliamo</h2>
-                
-                <h3><i class="fas fa-mobile-alt"></i> Dati dell'App (Locali)</h3>
-                <div class="highlight-box">
-                    <p><strong>IMPORTANTE:</strong> Tutti questi dati rimangono esclusivamente sul tuo dispositivo e non vengono mai trasmessi esternamente.</p>
-                    
-                    <ul class="data-list">
-                        <li><strong>Orari di lavoro:</strong> Entrate, uscite, pause che inserisci manualmente</li>
-                        <li><strong>Impostazioni personali:</strong> Ore contrattuali, soglie straordinario, buono pasto</li>
-                        <li><strong>Note e commenti:</strong> Annotazioni aggiunte ai giorni lavorativi</li>
-                        <li><strong>Calcoli derivati:</strong> Straordinari, ore lavorate, statistiche generate dall'app</li>
-                        <li><strong>Preferenze UI:</strong> Tema, layout, impostazioni interfaccia</li>
-                        <li><strong>Backup locali:</strong> File di backup che crei volontariamente</li>
-                    </ul>
-                </div>
-                
-                <h3><i class="fas fa-chart-bar"></i> Dati Analitici (Anonimi)</h3>
-                <p>Raccogliamo informazioni aggregate e anonime per migliorare l'app:</p>
-                <ul class="data-list">
-                    <li><strong>Statistiche d'uso:</strong> Funzioni più utilizzate, tempo di utilizzo app</li>
-                    <li><strong>Informazioni tecniche:</strong> Versione Android, modello dispositivo (per compatibilità)</li>
-                    <li><strong>Crash reports:</strong> Errori dell'app per correggere bug (senza dati personali)</li>
-                    <li><strong>Performance:</strong> Velocità caricamento, utilizzo memoria (per ottimizzazioni)</li>
-                </ul>
-                
-                <h3><i class="fas fa-times-circle"></i> Dati che NON Raccogliamo</h3>
-                <div class="gdpr-rights">
-                    <ul class="data-list">
-                        <li><strong>Identità personale:</strong> Nome, cognome, indirizzo</li>
-                        <li><strong>Dati di contatto:</strong> Email, telefono (tranne quella di supporto volontaria)</li>
-                        <li><strong>Posizione:</strong> GPS o localizzazione di alcun tipo</li>
-                        <li><strong>Dati biometrici:</strong> Impronte, riconoscimento facciale</li>
-                        <li><strong>Contenuti multimediali:</strong> Foto, video, audio</li>
-                        <li><strong>Contatti del telefono:</strong> Rubrica o liste contatti</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section id="utilizzo-dati" class="section">
-                <h2><i class="fas fa-cogs"></i> 3. Come Utilizziamo i Dati</h2>
-                
-                <h3><i class="fas fa-calculator"></i> Funzionalità Core dell'App</h3>
-                <ul class="data-list">
-                    <li><strong>Calcoli automatici:</strong> Straordinari, ore lavorate, buoni pasto</li>
-                    <li><strong>Statistiche personalizzate:</strong> Grafici e report basati sui tuoi dati</li>
-                    <li><strong>Backup e ripristino:</strong> Salvare e recuperare le tue impostazioni</li>
-                    <li><strong>Personalizzazione:</strong> Adattare l'interfaccia alle tue preferenze</li>
-                </ul>
-                
-                <h3><i class="fas fa-wrench"></i> Miglioramento del Servizio</h3>
-                <ul class="data-list">
-                    <li><strong>Analisi anonime:</strong> Capire quali funzioni sono più utili</li>
-                    <li><strong>Correzione bug:</strong> Identificare e risolvere problemi tecnici</li>
-                    <li><strong>Ottimizzazioni:</strong> Migliorare performance e usabilità</li>
-                    <li><strong>Nuove funzionalità:</strong> Sviluppare features richieste dagli utenti</li>
-                </ul>
-                
-                <h3><i class="fas fa-headset"></i> Supporto Utenti</h3>
-                <ul class="data-list">
-                    <li><strong>Assistenza tecnica:</strong> Solo quando ci contatti volontariamente</li>
-                    <li><strong>Risoluzione problemi:</strong> Debug di issues specifiche</li>
-                    <li><strong>Feedback:</strong> Raccogliere suggerimenti per miglioramenti</li>
-                </ul>
-                
-                <div class="important-note">
-                    <i class="fas fa-shield-alt"></i>
-                    <strong>Principio di Minimizzazione:</strong> Utilizziamo solo i dati strettamente necessari per le funzionalità richieste. Nessun dato viene utilizzato per profilazione o marketing personalizzato.
-                </div>
-            </section>
-
-            <section id="condivisione" class="section">
-                <h2><i class="fas fa-share-alt"></i> 4. Condivisione Dati</h2>
-                
-                <div class="highlight-box">
-                    <h3><i class="fas fa-lock"></i> Politica di Non Condivisione</h3>
-                    <p><strong>Non vendiamo, affittiamo o condividiamo i tuoi dati personali con terze parti per scopi commerciali.</strong></p>
-                </div>
-                
-                <h3><i class="fas fa-users"></i> Condivisione Limitata</h3>
-                <p>I dati possono essere condivisi solo nei seguenti casi limitati:</p>
-                
-                <ul class="data-list">
-                    <li><strong>Servizi tecnici:</strong> Google Analytics/Firebase per statistiche anonime aggregate</li>
-                    <li><strong>AdMob (Google):</strong> Per la visualizzazione di pubblicità (vedi sezione dedicata)</li>
-                    <li><strong>Obblighi legali:</strong> Solo se richiesto da autorità competenti con ordinanza</li>
-                    <li><strong>Sicurezza:</strong> Per prevenire frodi o attività illegali (estremamente raro)</li>
-                </ul>
-                
-                <h3><i class="fas fa-user-check"></i> Condivisione Volontaria</h3>
-                <p>Tu puoi scegliere di condividere i tuoi dati:</p>
-                <ul class="data-list">
-                    <li><strong>Backup manuali:</strong> Via email, cloud, WhatsApp (tua scelta)</li>
-                    <li><strong>Export report:</strong> PDF o CSV da condividere con HR/commercialista</li>
-                    <li><strong>Supporto tecnico:</strong> Inviarci dati per risolvere problemi specifici</li>
-                </ul>
-            </section>
-
-            <section id="admob" class="section">
-                <h2><i class="fas fa-ad"></i> 5. Integrazione AdMob (Google)</h2>
-                
-                <div class="important-note">
-                    <i class="fas fa-info-circle"></i>
-                    <strong>Monetizzazione Trasparente:</strong> Calcolo Straordinario è gratuita e si sostiene attraverso pubblicità non invasive fornite da Google AdMob.
-                </div>
-                
-                <h3><i class="fas fa-eye"></i> Cosa Raccoglie AdMob</h3>
-                <ul class="data-list">
-                    <li><strong>Advertising ID:</strong> Identificatore anonimo per pubblicità personalizzate</li>
-                    <li><strong>Informazioni dispositivo:</strong> Modello, OS, schermo (per format annunci)</li>
-                    <li><strong>Interazioni annunci:</strong> Click, visualizzazioni, tempo di esposizione</li>
-                    <li><strong>Dati di rete:</strong> IP approssimativo per targeting geografico</li>
-                </ul>
-                
-                <h3><i class="fas fa-cog"></i> Le Tue Opzioni</h3>
-                <div class="rights-grid">
-                    <div class="right-item">
-                        <h4><i class="fas fa-toggle-off"></i> Disattivare Ads Personalizzate</h4>
-                        <p>Impostazioni Android → Google → Annunci → Disattiva personalizzazione annunci</p>
-                    </div>
-                    
-                    <div class="right-item">
-                        <h4><i class="fas fa-refresh"></i> Reset Advertising ID</h4>
-                        <p>Impostazioni → Privacy → Advertising ID → Reset ID</p>
-                    </div>
-                    
-                    <div class="right-item">
-                        <h4><i class="fas fa-external-link-alt"></i> Maggiori Informazioni</h4>
-                        <p>Consulta la Privacy Policy di Google AdMob per dettagli completi</p>
-                    </div>
-                </div>
-                
-                <h3><i class="fas fa-balance-scale"></i> Il Nostro Impegno</h3>
-                <ul class="data-list">
-                    <li><strong>Annunci non invasivi:</strong> Posizionamento rispettoso dell'esperienza utente</li>
-                    <li><strong>Contenuti appropriati:</strong> Filtri per evitare contenuti inadeguati</li>
-                    <li><strong>Frequenza limitata:</strong> Non sovraccarico di pubblicità</li>
-                    <li><strong>Separazione dati:</strong> I tuoi dati lavorativi non vengono mai utilizzati per pubblicità</li>
-                </ul>
-            </section>
-
-            <section id="sicurezza" class="section">
-                <h2><i class="fas fa-shield-alt"></i> 6. Sicurezza dei Dati</h2>
-                
-                <h3><i class="fas fa-mobile-alt"></i> Sicurezza Locale</h3>
-                <div class="highlight-box">
-                    <p><strong>Vantaggio del storage locale:</strong> I tuoi dati non viaggiano mai su internet, riducendo drasticamente i rischi di intercettazione o data breach.</p>
-                </div>
-                
-                <ul class="data-list">
-                    <li><strong>Crittografia dispositivo:</strong> Protetti dalla sicurezza Android nativa</li>
-                    <li><strong>Backup privati:</strong> I file di backup sono protetti dalle tue app di condivisione</li>
-                    <li><strong>Nessun server:</strong> Impossibili attacchi ai nostri server (non esistono)</li>
-                    <li><strong>Controllo totale:</strong> Tu decidi quando e come condividere i dati</li>
-                </ul>
-                
-                <h3><i class="fas fa-server"></i> Sicurezza Trasmissione</h3>
-                <p>Per i limitati dati che transitano (analytics, ads):</p>
-                <ul class="data-list">
-                    <li><strong>HTTPS/TLS:</strong> Tutte le comunicazioni sono crittografate</li>
-                    <li><strong>Anonimizzazione:</strong> Dati aggregati senza identificatori personali</li>
-                    <li><strong>Partners affidabili:</strong> Solo Google (Firebase, AdMob) con certificazioni di sicurezza</li>
-                </ul>
-                
-                <h3><i class="fas fa-user-shield"></i> Le Tue Responsabilità</h3>
-                <div class="important-note">
-                    <ul class="data-list">
-                        <li><strong>Sicurezza dispositivo:</strong> Usa PIN, password o biometria per bloccare il telefono</li>
-                        <li><strong>Backup sicuri:</strong> Condividi backup solo con destinatari fidati</li>
-                        <li><strong>App updates:</strong> Mantieni l'app aggiornata per correzioni di sicurezza</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section id="diritti" class="section">
-                <h2><i class="fas fa-user-shield"></i> 7. I Tuoi Diritti GDPR</h2>
-                
-                <div class="gdpr-rights">
-                    <h3><i class="fas fa-balance-scale"></i> Diritti Garantiti dal GDPR</h3>
-                    <p>Come utente europeo, hai diritti specifici sui tuoi dati personali:</p>
-                </div>
-                
-                <div class="rights-grid">
-                    <div class="right-item">
-                        <h4><i class="fas fa-info"></i> Diritto di Accesso</h4>
-                        <p>Sapere quali dati abbiamo e come li utilizziamo. Per i dati locali, sono tutti nel tuo dispositivo.</p>
-                    </div>
-                    
-                    <div class="right-item">
-                        <h4><i class="fas fa-edit"></i> Diritto di Rettifica</h4>
-                        <p>Correggere dati inesatti. Puoi modificare tutti i tuoi dati direttamente nell'app.</p>
-                    </div>
-                    
-                    <div class="right-item">
-                        <h4><i class="fas fa-trash"></i> Diritto di Cancellazione</h4>
-                        <p>Eliminare i tuoi dati. Disinstalla l'app per rimozione completa dei dati locali.</p>
-                    </div>
-                    
-                    <div class="right-item">
-                        <h4><i class="fas fa-ban"></i> Diritto di Limitazione</h4>
-                        <p>Limitare il trattamento. Contattaci per bloccare elaborazioni specifiche.</p>
-                    </div>
-                    
-                    <div class="right-item">
-                        <h4><i class="fas fa-download"></i> Diritto di Portabilità</h4>
-                        <p>Esportare i tuoi dati. Usa la funzione backup/export dell'app.</p>
-                    </div>
-                    
-                    <div class="right-item">
-                        <h4><i class="fas fa-times-circle"></i> Diritto di Opposizione</h4>
-                        <p>Opporti al trattamento. Disattiva analytics o ads dalle impostazioni.</p>
-                    </div>
-                </div>
-                
-                <h3><i class="fas fa-hourglass-half"></i> Tempi di Risposta</h3>
-                <ul class="data-list">
-                    <li><strong>Richieste standard:</strong> Risposta entro 30 giorni</li>
-                    <li><strong>Richieste complesse:</strong> Possibile estensione di 60 giorni (con comunicazione)</li>
-                    <li><strong>Richieste urgenti:</strong> Priorità massima per questioni di sicurezza</li>
-                </ul>
-                
-                <h3><i class="fas fa-gavel"></i> Reclami</h3>
-                <p>Se non sei soddisfatto della gestione dei tuoi dati, puoi:</p>
-                <ul class="data-list">
-                    <li>Contattare direttamente il nostro team</li>
-                    <li>Presentare reclamo al Garante Privacy del tuo paese</li>
-                    <li>Rivolgerti alle autorità di protezione dati competenti</li>
-                </ul>
-            </section>
-
-            <section id="contatti" class="section">
-                <div class="contact-box">
-                    <h2><i class="fas fa-envelope"></i> 8. Contatti per Privacy</h2>
-                    
-                    <div class="contact-info">
-                        <p><i class="fas fa-user"></i> <strong>Data Protection Officer:</strong> Antonio Rota (Sviluppatore)</p>
-                        <p><i class="fas fa-envelope"></i> <strong>Email Privacy:</strong> appdevmond@gmail.com</p>
-                        <p><i class="fas fa-subject"></i> <strong>Oggetto Email:</strong> [PRIVACY] Calcolo Straordinario - [Tua richiesta]</p>
-                    </div>
-                    
-                    <h3>Informazioni da Includere</h3>
-                    <ul style="text-align: left; margin-top: 1rem;">
-                        <li>Tipo di richiesta (accesso, cancellazione, rettifica, etc.)</li>
-                        <li>Versione app e modello dispositivo (se rilevante)</li>
-                        <li>Descrizione dettagliata della questione</li>
-                        <li>Preferenza per la modalità di risposta</li>
-                    </ul>
-                    
-                    <div class="important-note" style="background: rgba(255,255,255,0.2); border-color: white; color: white; margin-top: 1.5rem;">
-                        <i class="fas fa-clock"></i>
-                        <strong>Tempi di Risposta:</strong> Rispondiamo a tutte le richieste privacy entro 72 ore per un primo contatto, con risoluzione completa entro 30 giorni.
-                    </div>
-                </div>
-            </section>
-
-            <section id="aggiornamenti" class="section">
-                <h2><i class="fas fa-sync-alt"></i> 9. Aggiornamenti della Privacy Policy</h2>
-                
-                <h3><i class="fas fa-history"></i> Modifiche Future</h3>
-                <p>Potremmo aggiornare questa Privacy Policy per:</p>
-                <ul class="data-list">
-                    <li><strong>Nuove funzionalità:</strong> Che richiedono trattamenti dati aggiuntivi</li>
-                    <li><strong>Cambi normativi:</strong> Adeguamento a nuove leggi sulla privacy</li>
-                    <li><strong>Miglioramenti sicurezza:</strong> Implementazione di protezioni aggiuntive</li>
-                    <li><strong>Feedback utenti:</strong> Chiarimenti richiesti dalla community</li>
-                </ul>
-                
-                <h3><i class="fas fa-bell"></i> Come Ti Informiamo</h3>
-                <ul class="data-list">
-                    <li><strong>Notifica in-app:</strong> Popup informativi per modifiche importanti</li>
-                    <li><strong>Update notes:</strong> Dettagli nelle note di rilascio app store</li>
-                    <li><strong>Website:</strong> Versione sempre aggiornata su questa pagina</li>
-                    <li><strong>Email (se fornita):</strong> Comunicazione diretta per cambi sostanziali</li>
-                </ul>
-                
-                <h3><i class="fas fa-check-circle"></i> Il Tuo Consenso</h3>
-                <div class="highlight-box">
-                    <p><strong>Consenso continuo:</strong> Continuare a usare l'app dopo le modifiche costituisce accettazione della nuova Privacy Policy. Se non accetti, puoi cessare l'utilizzo e cancellare i dati.</p>
-                </div>
-                
-                <h3><i class="fas fa-archive"></i> Versioni Precedenti</h3>
-                <p>Manteniamo archivio delle versioni precedenti per:</p>
-                <ul class="data-list">
-                    <li>Trasparenza sui cambiamenti nel tempo</li>
-                    <li>Riferimento legale per dispute passate</li>
-                    <li>Audit di conformità normativa</li>
-                </ul>
-            </section>
-        </div>
-        
-        <div class="last-updated">
-            <div class="container">
-                <p><i class="fas fa-calendar-alt"></i> <strong>Ultima modifica:</strong> 15 gennaio 2025</p>
-                <p><i class="fas fa-code-branch"></i> <strong>Versione:</strong> 1.0.0</p>
-                <p><i class="fas fa-globe"></i> <strong>Applicabile a:</strong> Tutte le versioni di Calcolo Straordinario</p>
+                <p>Per la gestione del consenso relativo agli annunci e l'erogazione degli stessi, utilizziamo <strong>Google AdMob</strong> e implementiamo il <strong>Google Consent Mode v2</strong>, in piena conformità con il Regolamento Generale sulla Protezione dei Dati (GDPR). L'applicazione stessa non raccoglie direttamente dati personali dall'utente. Tuttavia, il sistema operativo Android e i servizi di Google integrati possono raccogliere dati tecnici per il funzionamento e la stabilità dell'app.</p>
             </div>
-        </div>
-    </main>
 
-    <footer>
-        <div class="container">
-            <p><i class="fas fa-home"></i> <a href="index.html" style="color: #ccc;">Torna alla Homepage</a></p>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:appdevmond@gmail.com" style="color: #ccc;">Privacy: appdevmond@gmail.com</a></p>
-            <p>&copy; 2025 Calcolo Straordinario - Privacy Policy Completa</p>
-        </div>
-    </footer>
+            <div class="section">
+                <h2><i class="fas fa-user"></i> 2. Titolare del trattamento</h2>
+                <div class="info-card">
+                    <h4>Sviluppatore</h4>
+                    <p><strong>Antonio Rota</strong> (persona fisica)<br>
+                    Indirizzo: Mondragone, Italia<br>
+                    Email: appdevmond@gmail.com<br>
+                    <strong>Oggetto email:</strong> PRIVACY CALCOLO STRAORDINARIO</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-mobile-alt"></i> 3. Le tue opzioni di utilizzo e gestione del consenso</h2>
+                <p>Al primo avvio dell'app, ti verrà chiesto di scegliere come desideri utilizzare "Calcolo Straordinario":</p>
+                
+                <div class="choice-card">
+                    <h4><i class="fas fa-free-code-camp"></i> 1. Utilizzo gratuito con annunci personalizzati</h4>
+                    <p>Scegliendo questa opzione, acconsenti alla visualizzazione di annunci pubblicitari personalizzati. Google AdMob raccoglierà e utilizzerà i tuoi dati per mostrarti annunci pertinenti ai tuoi interessi.</p>
+                </div>
+                
+                <div class="choice-card">
+                    <h4><i class="fas fa-crown"></i> 2. Versione a pagamento (€2,49) senza pubblicità</h4>
+                    <p>Se scegli questa opzione, non ti verranno mostrati annunci pubblicitari e Google AdMob non raccoglierà alcun dato dal tuo dispositivo per scopi pubblicitari.</p>
+                </div>
+                
+                <div class="highlight-box">
+                    <h3><i class="fas fa-hand-paper"></i> Il tuo consenso è sempre libero</h3>
+                    <p>L'accesso alle funzionalità essenziali dell'app non è condizionato alla tua accettazione degli annunci pubblicitari. Puoi sempre optare per la versione a pagamento come alternativa.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-database"></i> 4. Dati raccolti tramite Google AdMob e Google Consent Mode v2</h2>
+                <p>L'app "Calcolo Straordinario" utilizza Google AdMob per la fornitura di annunci pubblicitari, la cui raccolta dati è gestita tramite il Google Consent Mode v2. Google AdMob, in qualità di fornitore di servizi pubblicitari, raccoglie determinate informazioni dal tuo dispositivo. Google agisce come titolare del trattamento indipendente per molti degli scopi legati alla raccolta dati di AdMob.</p>
+                
+                <h3><i class="fas fa-check-circle"></i> Se scegli l'utilizzo gratuito con annunci personalizzati:</h3>
+                <p>Tutti i parametri del Google Consent Mode v2 sono impostati su <strong>"granted" (consentito)</strong> e Google AdMob può raccogliere:</p>
+                <ul>
+                    <li><strong>Identificatori:</strong> Google Advertising ID (GAID), App Set ID e altri identificatori unici del dispositivo</li>
+                    <li><strong>Informazioni sul dispositivo:</strong> Indirizzo IP (utilizzato anche per derivare la posizione approssimativa a fini pubblicitari e di prevenzione delle frodi), tipo di dispositivo, modello del dispositivo, sistema operativo (es. versione Android), lingua del dispositivo, produttore, nome dell'operatore mobile</li>
+                    <li><strong>Dati di utilizzo e comportamento nell'app:</strong> Dati relativi alle interazioni con gli annunci (es. clic, visualizzazioni, durata dell'interazione), durata delle sessioni di utilizzo dell'app, versioni dell'app utilizzate</li>
+                    <li><strong>Dati demografici e interessi:</strong> Informazioni derivate dal comportamento online o da altri dati, utilizzate per la profilazione pubblicitaria e la personalizzazione degli annunci</li>
+                    <li><strong>Dati di performance degli annunci:</strong> Dati relativi all'efficacia degli annunci, come impressioni e potenziali errori nella visualizzazione</li>
+                </ul>
+                
+                <h3><i class="fas fa-times-circle"></i> Se scegli la versione a pagamento:</h3>
+                <p>Tutti i parametri del Google Consent Mode v2 sono impostati su <strong>"denied" (negato)</strong> e Google AdMob non raccoglie alcun dato dal tuo dispositivo per scopi pubblicitari.</p>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4><i class="fas fa-toggle-on"></i> ad_storage</h4>
+                        <p>Consenso per l'archiviazione di cookie e dati relativi agli annunci</p>
+                    </div>
+                    <div class="info-card">
+                        <h4><i class="fas fa-chart-line"></i> analytics_storage</h4>
+                        <p>Consenso per l'archiviazione di cookie e dati relativi all'analisi</p>
+                    </div>
+                    <div class="info-card">
+                        <h4><i class="fas fa-user-friends"></i> ad_user_data</h4>
+                        <p>Consenso all'invio di dati utente a Google per scopi pubblicitari</p>
+                    </div>
+                    <div class="info-card">
+                        <h4><i class="fas fa-bullseye"></i> ad_personalization</h4>
+                        <p>Consenso per la personalizzazione degli annunci</p>
+                    </div>
+                </div>
+                
+                <div class="warning-box">
+                    <i class="fas fa-map-marker-alt icon"></i>
+                    <strong>Nota sulla posizione:</strong> L'app Calcolo Straordinario non richiede né raccoglie dati di localizzazione precisa (GPS). Tuttavia, Google AdMob utilizza l'indirizzo IP del tuo dispositivo per determinare una posizione geografica approssimativa, necessaria per scopi di targeting geografico degli annunci e prevenzione delle frodi.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-android"></i> 5. Dati tecnici raccolti dal sistema Android e da Google (non per pubblicità)</h2>
+                <p>Oltre ai dati gestiti tramite AdMob, il sistema operativo Android e i servizi associati di Google (come Google Play Services) possono raccogliere automaticamente dati tecnici e di utilizzo essenziali per il funzionamento del dispositivo e delle applicazioni. Questi dati sono raccolti da Google per i propri scopi operativi e di miglioramento del servizio e non sono correlati alla tua scelta di visualizzazione degli annunci nell'app.</p>
+                
+                <h3>Questi dati tecnici possono includere:</h3>
+                <ul>
+                    <li><strong>Dati di telemetria e diagnostica:</strong> Informazioni anonime o pseudonimizzate sull'utilizzo del dispositivo, le prestazioni generali del sistema e la stabilità delle app</li>
+                    <li><strong>Dati sui crash dell'applicazione:</strong> In caso di crash dell'app, il sistema Android (tramite Google Play Console) può raccogliere informazioni tecniche relative al crash (es. stack trace, stato del dispositivo al momento del crash, versione del sistema operativo, versione dell'app). Questi dati sono generalmente pseudonimizzati e aggregati e vengono utilizzati da Google per aiutare gli sviluppatori a identificare e risolvere problemi tecnici, monitorare la stabilità dell'app e migliorare l'esperienza utente.</li>
+                </ul>
+                
+                <p>La base giuridica per la raccolta di questi dati tecnici da parte di Google è il <strong>legittimo interesse</strong> di Google a fornire e migliorare i propri servizi di sistema e di piattaforma. Questi dati non vengono utilizzati per profilazione pubblicitaria all'interno della tua app.</p>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-balance-scale"></i> 6. Finalità e base giuridica</h2>
+                
+                <h3><i class="fas fa-ad"></i> Per utenti versione gratuita con annunci personalizzati:</h3>
+                <ul>
+                    <li><strong>Personalizzazione degli annunci pubblicitari:</strong> Per mostrare annunci pertinenti in base ai tuoi interessi e al tuo comportamento. La base giuridica per questo trattamento è il tuo <strong>consenso esplicito</strong> tramite Google Consent Mode v2</li>
+                    <li><strong>Fornitura, analisi, prevenzione delle frodi e miglioramento dei servizi pubblicitari:</strong> Per garantire il corretto funzionamento degli annunci, analizzare le prestazioni delle campagne pubblicitarie, prevenire attività fraudolente e migliorare i servizi offerti da Google AdMob. La base giuridica per questi scopi è il tuo <strong>consenso</strong> tramite Google Consent Mode v2</li>
+                    <li><strong>Reporting e misurazione:</strong> Per fornire a sviluppatori come noi report aggregati sull'andamento delle campagne pubblicitarie. La base giuridica è il <strong>legittimo interesse</strong> sia dello sviluppatore che di Google</li>
+                </ul>
+                
+                <h3><i class="fas fa-crown"></i> Per utenti versione a pagamento:</h3>
+                <ul>
+                    <li><strong>Nessuna raccolta dati</strong> per scopi pubblicitari da parte di Google AdMob</li>
+                </ul>
+                
+                <h3><i class="fas fa-cog"></i> Per tutti gli utenti (dati tecnici sistema Android):</h3>
+                <ul>
+                    <li><strong>Funzionamento e miglioramento dell'app e del sistema Android:</strong> Per monitorare la stabilità dell'app, identificare e risolvere bug, e migliorare le prestazioni del sistema operativo. La base giuridica per questa raccolta è il <strong>legittimo interesse</strong> di Google</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-globe-americas"></i> 7. Trasferimento dati fuori dall'UE</h2>
+                <p>Google può trasferire i dati negli USA o altri Paesi dove opera. Sono adottate clausole contrattuali standard (SCCs) e altri meccanismi legali per proteggere i dati. Tuttavia, è importante sapere che le normative locali in alcuni Paesi terzi possono prevedere la possibilità di accesso ai dati da parte delle autorità pubbliche.</p>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-cookie-bite"></i> 8. Uso di cookie e tecnologie simili</h2>
+                <p>Google AdMob utilizza cookie, identificatori del dispositivo, SDK (Software Development Kits) e tecnologie simili (es. pixel tag) per raccogliere dati, mostrare annunci personalizzati, analizzare il traffico pubblicitario, misurare l'efficacia delle campagne e prevenire le frodi, sempre in base al tuo consenso fornito tramite il Google Consent Mode v2.</p>
+                
+                <div class="warning-box">
+                    <i class="fas fa-info-circle icon"></i>
+                    <strong>Nota importante per utenti Premium:</strong> Anche nella versione Premium, alcuni cookie e dati tecnici (sicurezza, prestazioni, crash reporting, telemetria diagnostica) vengono raccolti da Google per garantire il funzionamento dell'app. Tuttavia, non vengono raccolti dati per scopi pubblicitari.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-clock"></i> 9. Durata della conservazione</h2>
+                <p>I dati sono conservati secondo le politiche di conservazione dei dati di Google, per il tempo necessario all'erogazione del servizio e al rispetto degli obblighi legali e regolamentari.</p>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-user-shield"></i> 10. Diritti dell'utente</h2>
+                <p>Hai il diritto di:</p>
+                <ul>
+                    <li>Accedere, rettificare, cancellare i tuoi dati personali</li>
+                    <li>Limitare o opporti al trattamento dei tuoi dati</li>
+                    <li>Richiedere la portabilità dei dati</li>
+                    <li>Revocare il consenso in qualsiasi momento per i trattamenti basati sul consenso (es. annunci personalizzati)</li>
+                    <li>Presentare reclamo all'Autorità Garante per la protezione dei dati personali italiana (Garante Privacy) qualora tu ritenga che i tuoi diritti siano stati violati</li>
+                </ul>
+                
+                <div class="info-card">
+                    <h4>Per esercitare questi diritti</h4>
+                    <p>Contattaci all'indirizzo email: <strong>appdevmond@gmail.com</strong><br>
+                    <strong>Oggetto:</strong> PRIVACY CALCOLO STRAORDINARIO</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-google"></i> 11. Gestione dati tramite Google e modifiche al consenso</h2>
+                <p>Poiché Google è un titolare del trattamento indipendente per molti dati raccolti tramite AdMob e i servizi di sistema, per gestire o esercitare i tuoi diritti sui dati che Google ha raccolto, devi utilizzare gli strumenti forniti da Google:</p>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4><i class="fas fa-user-cog"></i> Account Google</h4>
+                        <p><a href="https://myaccount.google.com/data-and-privacy" target="_blank">Il mio account Google - Dati e privacy</a></p>
+                    </div>
+                    <div class="info-card">
+                        <h4><i class="fas fa-ad"></i> Impostazioni Annunci</h4>
+                        <p><a href="https://adssettings.google.com" target="_blank">Google Ads Settings</a></p>
+                    </div>
+                    <div class="info-card">
+                        <h4><i class="fas fa-file-alt"></i> Privacy Policy Google</h4>
+                        <p><a href="https://policies.google.com/privacy" target="_blank">Privacy Policy di Google</a></p>
+                    </div>
+                </div>
+                
+                <h3>All'interno dell'app "Calcolo Straordinario":</h3>
+                <ul>
+                    <li><strong>Passare da utilizzo gratuito a versione a pagamento:</strong> Puoi acquistare la versione premium in qualsiasi momento</li>
+                    <li><strong>La versione premium è un acquisto definitivo</strong> e non può essere revocata</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-user-tie"></i> 12. Ruolo e responsabilità del titolare</h2>
+                <p>Antonio Rota (persona fisica), in qualità di sviluppatore e titolare del trattamento per l'applicazione Calcolo Straordinario, garantisce la protezione dei dati personali raccolti tramite l'app e adotta misure tecniche e organizzative adeguate per la loro sicurezza. Rispettiamo e garantiamo l'esercizio dei diritti degli utenti, come descritto nella presente Policy. Per i dati raccolti da Google AdMob e i servizi di sistema Google, Google agisce come titolare del trattamento separato, e la sua Privacy Policy regola tale raccolta e trattamento.</p>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-edit"></i> 13. Modifiche alla policy</h2>
+                <p>Questa Privacy Policy potrà essere aggiornata periodicamente. Eventuali modifiche saranno pubblicate sul sito ufficiale dell'app. Ti invitiamo a consultare regolarmente questa pagina:</p>
+                <p><strong>URL aggiornato:</strong> <a href="https://r00kie7.github.io/calcolostraordinario/privacy-policy.html" target="_blank">https://r00kie7.github.io/calcolostraordinario/privacy-policy.html</a></p>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-envelope"></i> 14. Contatti</h2>
+                <p>Per qualsiasi domanda o richiesta relativa alla presente Privacy Policy, puoi contattarci all'indirizzo email:</p>
+                <div class="info-card">
+                    <h4>Contatto Privacy</h4>
+                    <p><strong>Email:</strong> appdevmond@gmail.com<br>
+                    <strong>Oggetto:</strong> PRIVACY CALCOLO STRAORDINARIO</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-crown"></i> 15. Condizioni d'uso della versione Premium</h2>
+                
+                <div class="highlight-box">
+                    <h3><i class="fas fa-gem"></i> Natura dell'acquisto</h3>
+                    <p>L'acquisto della versione Premium di "Calcolo Straordinario" per <strong>€2,49</strong> rimuove la pubblicità e la raccolta dati per annunci personalizzati, garantendo maggiore privacy durante l'utilizzo dell'app.</p>
+                </div>
+                
+                <h3><i class="fas fa-exclamation-triangle"></i> Limitazioni e disclaimer</h3>
+                <ul>
+                    <li><strong>Versione corrente:</strong> L'acquisto si riferisce alla versione attuale dell'app e alle sue funzionalità esistenti al momento del pagamento</li>
+                    <li><strong>Manutenzione non garantita:</strong> Non vi è alcuna garanzia che l'app sarà mantenuta, aggiornata o supportata indefinitamente nel tempo</li>
+                    <li><strong>Compatibilità futura:</strong> Non è garantita la compatibilità con future versioni di Android o modifiche delle politiche dei Play Store</li>
+                    <li><strong>Servizi terzi:</strong> Il funzionamento dell'app dipende da servizi di terze parti (Google Play Services, etc.) su cui non abbiamo controllo</li>
+                    <li><strong>Cessazione del servizio:</strong> Ci riserviamo il diritto di cessare lo sviluppo e il supporto dell'app in qualsiasi momento, con preavviso di 30 giorni tramite aggiornamento dell'app o comunicazione email</li>
+                </ul>
+                
+                <h3><i class="fas fa-check-circle"></i> Cosa è garantito</h3>
+                <ul>
+                    <li><strong>Nessuna pubblicità:</strong> Finché l'app funziona, la versione Premium non mostrerà pubblicità</li>
+                    <li><strong>Privacy migliorata:</strong> Nessuna raccolta dati per pubblicità personalizzate</li>
+                    <li><strong>Accesso completo:</strong> Accesso a tutte le funzioni dell'app (identiche a quelle gratuite)</li>
+                    <li><strong>Best effort:</strong> Faremo il possibile per mantenere l'app funzionante e aggiornata, ma senza obblighi legali vincolanti</li>
+                </ul>
+                
+                <div class="warning-box">
+                    <i class="fas fa-info-circle icon"></i>
+                    <strong>Rimborsi:</strong> In caso di cessazione definitiva dell'app, non saranno previsti rimborsi automatici, salvo diversa decisione discrezionale dello sviluppatore o obblighi legali specifici.
+                </div>
+                
+                <div class="info-card">
+                    <h4><i class="fas fa-gavel"></i> Riferimento Termini Completi</h4>
+                    <p>Per i termini completi di utilizzo, consulta i nostri <a href="https://r00kie7.github.io/calcolostraordinario/terms-of-service.html" target="_blank">Termini di Servizio</a></p>
+                </div>
+            </div>
+
+            <a href="https://r00kie7.github.io/calcolostraordinario/" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Torna alla Homepage
+            </a>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Antonio Rota - Calcolo Straordinario. Tutti i diritti riservati.</p>
+            <p>
+                <a href="https://r00kie7.github.io/calcolostraordinario/privacy-policy.html" style="color: white; opacity: 0.8;">Privacy Policy</a> | 
+                <a href="https://r00kie7.github.io/calcolostraordinario/terms-of-service.html" style="color: white; opacity: 0.8;">Termini di Servizio</a>
+            </p>
+        </footer>
+    </div>
 </body>
 </html>
