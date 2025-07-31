@@ -226,6 +226,141 @@
             display: none;
         }
         
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .pricing-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border: 2px solid #e9ecef;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .pricing-card.premium {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #f8f9ff 0%, #fff 100%);
+        }
+        
+        .premium-badge {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .pricing-header h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        
+        .price {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+        
+        .price-subtitle {
+            color: #666;
+            font-size: 1rem;
+        }
+        
+        .pricing-features ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .pricing-features li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .pricing-features i.fa-check {
+            color: #28a745;
+        }
+        
+        .pricing-features i.fa-ad {
+            color: #ffc107;
+        }
+        
+        .pricing-limitation {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .premium-feature {
+            font-weight: 500;
+        }
+        
+        .premium-feature i {
+            color: #667eea;
+        }
+        
+        .pricing-info {
+            margin-top: 3rem;
+        }
+        
+        .info-box {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .info-box h4 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        .info-box ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .info-box li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .info-box li:before {
+            content: '•';
+            color: #667eea;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2rem;
@@ -243,6 +378,19 @@
                 padding: 8px 16px;
                 font-size: 0.9rem;
             }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .pricing-card {
+                padding: 1.5rem;
+            }
+            
+            .price {
+                font-size: 2.5rem;
+            }
         }
     </style>
 </head>
@@ -254,8 +402,9 @@
                 <p>L'app più semplice per tracciare orari di lavoro e calcolare automaticamente gli straordinari</p>
                 <nav class="nav">
                     <a href="#features"><i class="fas fa-star"></i> Funzionalità</a>
+                    <a href="#pricing"><i class="fas fa-tags"></i> Prezzi</a>
                     <a href="setup.html"><i class="fas fa-cog"></i> Guida Setup</a>
-                    <a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy</a>
+                    <a href="privacy-policy.html"><i class="fas fa-shield-alt"></i> Privacy</a>
                     <a href="#download"><i class="fas fa-download"></i> Download</a>
                 </nav>
             </div>
@@ -344,8 +493,8 @@
 
                     <div class="feature-card">
                         <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-                        <h3>Privacy Totale</h3>
-                        <p>Tutti i dati rimangono sul tuo dispositivo. Nessun server esterno, nessun tracking, controllo completo dei tuoi dati.</p>
+                        <h3>Privacy Garantita</h3>
+                        <p>Tutti i tuoi dati lavorativi rimangono sul dispositivo. Versione premium senza annunci pubblicitari per massima privacy.</p>
                     </div>
                 </div>
             </section>
@@ -460,6 +609,67 @@
                     <p><strong>Privacy:</strong> Tutto locale, nessun server esterno, controllo completo</p>
                 </div>
             </section>
+
+            <section id="pricing" class="section">
+                <h2><i class="fas fa-tags"></i> Scegli la Tua Esperienza</h2>
+                <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">
+                    Calcolo Straordinario offre due modalità di utilizzo per soddisfare ogni esigenza
+                </p>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3><i class="fas fa-mobile-alt"></i> Versione Gratuita</h3>
+                            <div class="price">€0</div>
+                            <p class="price-subtitle">Con pubblicità</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Tutte le funzionalità complete</li>
+                                <li><i class="fas fa-check"></i> Calcolo automatico straordinari</li>
+                                <li><i class="fas fa-check"></i> Sistema backup locale</li>
+                                <li><i class="fas fa-check"></i> Export dati (PDF/CSV)</li>
+                                <li><i class="fas fa-check"></i> Privacy garantita sui dati lavorativi</li>
+                                <li class="pricing-limitation"><i class="fas fa-ad"></i> Annunci pubblicitari personalizzati</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card premium">
+                        <div class="premium-badge">
+                            <i class="fas fa-crown"></i> CONSIGLIATA
+                        </div>
+                        <div class="pricing-header">
+                            <h3><i class="fas fa-crown"></i> Versione Premium</h3>
+                            <div class="price">€2,49</div>
+                            <p class="price-subtitle">Acquisto una tantum</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Tutte le funzionalità complete</li>
+                                <li><i class="fas fa-check"></i> Calcolo automatico straordinari</li>
+                                <li><i class="fas fa-check"></i> Sistema backup locale</li>
+                                <li><i class="fas fa-check"></i> Export dati (PDF/CSV)</li>
+                                <li class="premium-feature"><i class="fas fa-shield-alt"></i> <strong>Zero pubblicità</strong></li>
+                                <li class="premium-feature"><i class="fas fa-user-shield"></i> <strong>Massima privacy</strong></li>
+                                <li class="premium-feature"><i class="fas fa-heart"></i> <strong>Supporta lo sviluppatore</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-info">
+                    <div class="info-box">
+                        <h4><i class="fas fa-info-circle"></i> Informazioni Importanti</h4>
+                        <ul>
+                            <li><strong>Privacy garantita:</strong> I tuoi dati lavorativi rimangono sempre sul tuo dispositivo, indipendentemente dalla versione scelta</li>
+                            <li><strong>Funzionalità identiche:</strong> Entrambe le versioni offrono le stesse potenti funzionalità di calcolo</li>
+                            <li><strong>Consenso libero:</strong> Puoi sempre scegliere la versione Premium come alternativa agli annunci</li>
+                            <li><strong>Acquisto definitivo:</strong> La versione Premium è un acquisto una tantum, senza abbonamenti</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
@@ -480,7 +690,7 @@
             </div>
             
             <p style="margin-top: 2rem; opacity: 0.8;">
-                <i class="fas fa-shield-alt"></i> 100% Gratuita • <i class="fas fa-lock"></i> Privacy Totale • <i class="fas fa-mobile-alt"></i> Funziona Offline
+                <i class="fas fa-mobile-alt"></i> Gratuita con Annunci • <i class="fas fa-crown"></i> Premium €2,49 • <i class="fas fa-lock"></i> Privacy Garantita • <i class="fas fa-wifi-off"></i> Funziona Offline
             </p>
         </div>
     </section>
@@ -492,7 +702,8 @@
                 <a href="mailto:appdevmond@gmail.com" style="color: #ccc;">
                     <i class="fas fa-envelope"></i> appdevmond@gmail.com
                 </a> • 
-                <a href="privacy.html" style="color: #ccc;">Privacy Policy</a>
+                <a href="privacy-policy.html" style="color: #ccc;">Privacy Policy</a> •
+                <a href="terms-of-service.html" style="color: #ccc;">Termini di Servizio</a>
             </p>
         </div>
     </footer>
