@@ -108,4 +108,4 @@ Genera report mensili in PDF o CSV per commercialisti o HR
 
 ---
 
-**Sviluppato da Antonio Rota** • **© 2025** • **Gratuita**
+**Sviluppato da Antonio Rota** • **© 2025**
