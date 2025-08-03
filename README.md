@@ -87,6 +87,7 @@ Genera report mensili in PDF o CSV per commercialisti o HR
 - **🏠 Homepage:** [calcolostraordinario.github.io](https://r00kie7.github.io/calcolostraordinario/)
 - **⚙️ Guida Setup:** [Setup completo](https://r00kie7.github.io/calcolostraordinario/setup.html)
 - **🛡️ Privacy Policy:** [Policy completa](https://r00kie7.github.io/calcolostraordinario/privacy-policy.html)
+- **📋 Termini di Servizio:** [Terms of Service](https://r00kie7.github.io/calcolostraordinario/terms-of-service.html)
 
 ---
 
@@ -108,4 +109,4 @@ Genera report mensili in PDF o CSV per commercialisti o HR
 
 ---
 
-**Sviluppato da Antonio Rota** • **© 2025**
+**Sviluppato da Antonio Rota** • **© 2025** • **Gratuita**
