@@ -340,6 +340,7 @@
                     <a href="#step2"><i class="fas fa-cogs"></i> Opzioni Avanzate</a>
                     <a href="#step3"><i class="fas fa-utensils"></i> Buono Pasto</a>
                     <a href="#step4"><i class="fas fa-euro-sign"></i> Importo Straordinario</a>
+                    <a href="#advanced"><i class="fas fa-star"></i> Funzioni Avanzate</a>
                 </nav>
             </div>
         </div>
@@ -554,14 +555,26 @@
                 <div class="quick-actions">
                     <div class="action-card">
                         <div class="action-icon"><i class="fas fa-play"></i></div>
-                        <h4>Registrazione Entrata</h4>
-                        <p>Un click su "Entrata" imposta l'ora corrente. Secondo click per modificare manualmente.</p>
+                        <h4>Registrazione Entrata/Uscita</h4>
+                        <p>Un click su "Entrata/Uscita" imposta l'ora corrente. Secondo click per modificare manualmente.</p>
                     </div>
                     
                     <div class="action-card">
-                        <div class="action-icon"><i class="fas fa-stop"></i></div>
-                        <h4>Registrazione Uscita</h4>
-                        <p>Un click su "Uscita". Se hai diritto al buono pasto, aggiunge automaticamente 30 min pausa.</p>
+                        <div class="action-icon"><i class="fas fa-utensils"></i></div>
+                        <h4>Pausa Pranzo</h4>
+                        <p>La pausa pranzo viene impostata automaticamente a 30 minuti quando registri solo un'uscita. Puoi modificare durata e orari manualmente.</p>
+                    </div>
+                    
+                    <div class="action-card">
+                        <div class="action-icon"><i class="fas fa-calendar-plus"></i></div>
+                        <h4>Uscita Giorno Successivo</h4>
+                        <p>Attiva lo switch "Uscita Giorno Successivo" quando l'uscita avviene dopo la mezzanotte per calcoli corretti degli straordinari.</p>
+                    </div>
+                    
+                    <div class="action-card">
+                        <div class="action-icon"><i class="fas fa-umbrella-beach"></i></div>
+                        <h4>Ferie e Malattia</h4>
+                        <p>Usa le icone ferie (aereo) e malattia (croce) per contrassegnare i giorni. Aggiungi note per specificare il tipo di permesso.</p>
                     </div>
                     
                     <div class="action-card">
@@ -575,6 +588,18 @@
                         <h4>Note e Permessi</h4>
                         <p>Aggiungi note per ferie, malattie, permessi. Esclusione orario per giorni speciali.</p>
                     </div>
+                    
+                    <div class="action-card">
+                        <div class="action-icon"><i class="fas fa-paperclip"></i></div>
+                        <h4>Allegati e Foto</h4>
+                        <p>Aggiungi foto, documenti o ricevute ai tuoi giorni lavorativi. Tutto salvato localmente.</p>
+                    </div>
+                    
+                    <div class="action-card">
+                        <div class="action-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h4>Backup Automatico</h4>
+                        <p>Sistema di backup automatico alle 19:00 ogni giorno per proteggere i tuoi dati.</p>
+                    </div>
                 </div>
                 
                 <div class="tip">
@@ -585,6 +610,134 @@
                 <div class="success">
                     <i class="fas fa-check-circle"></i>
                     <strong>Setup Completato!</strong> Sei pronto per tracciare i tuoi orari con la massima semplicità. L'app calcolerà tutto automaticamente basandosi sulle tue configurazioni.
+                </div>
+            </section>
+
+            <section id="advanced" class="section">
+                <h2><i class="fas fa-star"></i> Funzioni Avanzate</h2>
+                
+                <div class="step-card">
+                    <div class="step-number">📎</div>
+                    <h3>Sistema Allegati <span class="optional">NUOVO</span></h3>
+                    
+                    <p><strong>Cosa fa:</strong> Aggiungi foto, documenti e file ai tuoi giorni lavorativi per una documentazione completa.</p>
+                    
+                    <div class="usage-examples">
+                        <div class="example-card">
+                            <h4><i class="fas fa-camera"></i> Foto Dirette</h4>
+                            <p>Scatta foto direttamente dall'app: badge entrata, documenti, ricevute spese di lavoro</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h4><i class="fas fa-images"></i> Galleria</h4>
+                            <p>Seleziona immagini dalla galleria del dispositivo per allegare screenshot o foto esistenti</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h4><i class="fas fa-file"></i> Documenti</h4>
+                            <p>Allega PDF, DOC, TXT e altri documenti per tenere tutto organizzato in un posto</p>
+                        </div>
+                    </div>
+                    
+                    <div class="config-example">
+                        <h4>Esempi d'Uso Pratici:</h4>
+                        <ul class="feature-list">
+                            <li><strong>Badge Entrata:</strong> Foto del timbraggio per verifiche future</li>
+                            <li><strong>Trasferte:</strong> Ricevute carburante, pedaggi, parcheggi</li>
+                            <li><strong>Documenti Lavoro:</strong> Contratti, autorizzazioni, permessi</li>
+                            <li><strong>Note Visive:</strong> Foto del posto di lavoro, attrezzature, situazioni particolari</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tip">
+                        <i class="fas fa-shield-alt tip-icon"></i>
+                        <strong>Privacy Garantita:</strong> Tutti gli allegati rimangono sul tuo dispositivo. Nessun upload automatico su server esterni.
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">🔄</div>
+                    <h3>Backup Automatico <span class="optional">NUOVO</span></h3>
+                    
+                    <p><strong>Cosa fa:</strong> Sistema automatico di backup giornaliero alle 19:00 per proteggere completamente i tuoi dati.</p>
+                    
+                    <div class="config-example">
+                        <h4>Come Funziona:</h4>
+                        <ul class="feature-list">
+                            <li><strong>Backup Automatico:</strong> Ogni giorno alle 19:00 (se abilitato)</li>
+                            <li><strong>3 Tipi di Backup:</strong> Solo Impostazioni, Solo Dati, Backup Completo</li>
+                            <li><strong>Retention:</strong> Mantiene automaticamente gli ultimi 7 backup per tipo</li>
+                            <li><strong>Condivisione:</strong> Esporta backup via email, cloud, messaging</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="usage-examples">
+                        <div class="example-card">
+                            <h4><i class="fas fa-cog"></i> Backup Settings</h4>
+                            <p>Solo configurazioni: orari lavoro, buoni pasto, importi straordinario. Ideale per nuovo dispositivo.</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h4><i class="fas fa-database"></i> Backup Data</h4>
+                            <p>Solo dati lavorativi: orari registrati, note, allegati. Per preservare lo storico.</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h4><i class="fas fa-archive"></i> Backup Complete</h4>
+                            <p>Tutto insieme: configurazioni + dati + allegati. Backup completo per massima sicurezza.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="warning">
+                        <i class="fas fa-info-circle"></i>
+                        <strong>Configurazione:</strong> Vai in Impostazioni → Gestione Backup → Abilita "Backup Automatico" per attivare la protezione giornaliera.
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">📊</div>
+                    <h3>Export Avanzato <span class="optional">MIGLIORATO</span></h3>
+                    
+                    <p><strong>Cosa fa:</strong> Esportazione dati potenziata con più formati e opzioni personalizzate.</p>
+                    
+                    <div class="usage-examples">
+                        <div class="example-card">
+                            <h4><i class="fas fa-file-pdf"></i> Export PDF</h4>
+                            <p>Report mensili professionali con calcoli dettagliati, grafici e statistiche complete</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h4><i class="fas fa-file-csv"></i> Export CSV</h4>
+                            <p>Dati grezzi per Excel/Calc con range personalizzabile per analisi approfondite</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h4><i class="fas fa-share"></i> Condivisione</h4>
+                            <p>Invio diretto via email, cloud, WhatsApp per condividere con datori di lavoro</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">🎯</div>
+                    <h3>Obiettivi Mensili <span class="optional">NUOVO</span></h3>
+                    
+                    <p><strong>Cosa fa:</strong> Imposta obiettivi di ore mensili e monitora il progresso in tempo reale.</p>
+                    
+                    <div class="config-example">
+                        <h4>Come Impostare:</h4>
+                        <ul class="feature-list">
+                            <li>Tocca il pulsante "Obiettivo" nella schermata principale</li>
+                            <li>Imposta ore e minuti target per il mese</li>
+                            <li>Monitora il progresso con barra visuale</li>
+                            <li>Ricevi feedback su ore rimanenti o raggiunte</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tip">
+                        <i class="fas fa-bullseye tip-icon"></i>
+                        <strong>Strategia:</strong> Usa gli obiettivi per programmare ferie, permessi e gestire il carico di lavoro mensile.
+                    </div>
                 </div>
             </section>
 
@@ -611,10 +764,27 @@
                     </div>
                     
                     <div class="example-card">
-                        <h4><i class="fas fa-calendar-times"></i> "Weekend conta come giorni lavorativi"</h4>
-                        <p><strong>Causa:</strong> Ore weekend non impostate a 0</p>
-                        <p><strong>Soluzione:</strong> Setup orario lavoro → Sabato e Domenica = 0:00 ore</p>
+                        <h4><i class="fas fa-shield-alt"></i> "Come funziona il backup automatico?"</h4>
+                        <p><strong>Risposta:</strong> Si attiva dalle Impostazioni → Gestione Backup</p>
+                        <p><strong>Dettagli:</strong> Backup automatico ogni giorno alle 19:00, mantiene 7 copie per tipo, tutto locale</p>
                     </div>
+                    
+                    <div class="example-card">
+                        <h4><i class="fas fa-paperclip"></i> "Gli allegati rallentano l'app?"</h4>
+                        <p><strong>Risposta:</strong> No, sono ottimizzati per le performance</p>
+                        <p><strong>Dettagli:</strong> Gestione intelligente memoria, compressione automatica, caricamento lazy</p>
+                    </div>
+                    
+                    <div class="example-card">
+                        <h4><i class="fas fa-cloud"></i> "I miei dati sono al sicuro?"</h4>
+                        <p><strong>Risposta:</strong> Sì, tutto rimane sul tuo dispositivo</p>
+                        <p><strong>Dettagli:</strong> Nessun server esterno, tu controlli backup e condivisioni, privacy totale</p>
+                    </div>
+                </div>
+                
+                <div class="success">
+                    <i class="fas fa-heart"></i>
+                    <strong>Grazie per aver scelto Calcolo Straordinario!</strong> L'app continua a evolversi grazie ai feedback degli utenti. Contattaci per suggerimenti!
                 </div>
             </section>
         </div>
