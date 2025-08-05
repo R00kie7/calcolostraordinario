@@ -340,6 +340,7 @@
                     <a href="#step2"><i class="fas fa-cogs"></i> Opzioni Avanzate</a>
                     <a href="#step3"><i class="fas fa-utensils"></i> Buono Pasto</a>
                     <a href="#step4"><i class="fas fa-euro-sign"></i> Importo Straordinario</a>
+                    <a href="#step5"><i class="fas fa-trash-alt"></i> Gestione Dati</a>
                     <a href="#advanced"><i class="fas fa-star"></i> Funzioni Avanzate</a>
                 </nav>
             </div>
@@ -549,6 +550,71 @@
                 </div>
             </section>
 
+            <section id="step5" class="section">
+                <div class="step-card">
+                    <div class="step-number">5</div>
+                    <h3>Gestione Dati <span class="optional">SE NECESSARIO</span></h3>
+                    
+                    <p><strong>Cosa fa:</strong> Permette di eliminare selettivamente dati utente, impostazioni o fare un reset completo dell'app.</p>
+                    
+                    <h4><i class="fas fa-exclamation-triangle"></i> Quando Usare Questa Funzione</h4>
+                    <div class="usage-examples">
+                        <div class="example-card">
+                            <h4><i class="fas fa-redo"></i> Reset Completo</h4>
+                            <p>Quando vuoi ricominciare da zero con configurazioni fresche</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h4><i class="fas fa-calendar-times"></i> Eliminazione Dati</h4>
+                            <p>Per rimuovere solo orari e giorni lavorativi mantenendo le impostazioni</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h4><i class="fas fa-cogs"></i> Reset Configurazioni</h4>
+                            <p>Per cancellare solo le impostazioni mantenendo i dati storici</p>
+                        </div>
+                    </div>
+                    
+                    <h4><i class="fas fa-list"></i> Tipologie di Eliminazione</h4>
+                    <div class="config-example">
+                        <h4>Opzioni Disponibili:</h4>
+                        <ul class="feature-list">
+                            <li><strong>Solo Dati Utente:</strong> Elimina orari, pause pranzo, giorni lavorativi, obiettivi mensili</li>
+                            <li><strong>Solo Impostazioni App:</strong> Cancella tema, lingua, preferenze, configurazioni orari lavoro</li>
+                            <li><strong>Tutti i Dati:</strong> Reset completo - elimina tutto e ripristina l'app alle condizioni iniziali</li>
+                        </ul>
+                    </div>
+                    
+                    <h4><i class="fas fa-shield-alt"></i> Misure di Sicurezza</h4>
+                    <div class="usage-examples">
+                        <div class="example-card">
+                            <h4><i class="fas fa-backup"></i> Raccomandazione Backup</h4>
+                            <p>L'app suggerisce sempre di creare un backup prima dell'eliminazione</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h4><i class="fas fa-hand-paper"></i> Conferma Obbligatoria</h4>
+                            <p>Due passaggi di conferma per prevenire eliminazioni accidentali</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h4><i class="fas fa-undo"></i> Azione Irreversibile</h4>
+                            <p>L'operazione non può essere annullata - assicurati di avere un backup</p>
+                        </div>
+                    </div>
+                    
+                    <div class="warning">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <strong>ATTENZIONE:</strong> Questa operazione è irreversibile! Crea sempre un backup prima di eliminare dati. Dopo l'eliminazione sarà necessario riavviare l'app.
+                    </div>
+                    
+                    <div class="tip">
+                        <i class="fas fa-lightbulb tip-icon"></i>
+                        <strong>Suggerimento:</strong> Prima di eliminare, vai in "Gestione Backup" e crea un backup unificato. Potrai ripristinare selettivamente i dati in futuro.
+                    </div>
+                </div>
+            </section>
+
             <section class="section">
                 <h2><i class="fas fa-rocket"></i> Dopo il Setup: Come Usare l'App</h2>
                 
@@ -597,8 +663,8 @@
                     
                     <div class="action-card">
                         <div class="action-icon"><i class="fas fa-shield-alt"></i></div>
-                        <h4>Backup Automatico</h4>
-                        <p>Sistema di backup automatico alle 19:00 ogni giorno per proteggere i tuoi dati.</p>
+                        <h4>Smart Backup</h4>
+                        <p>Sistema intelligente di backup all'apertura app quando necessario. Condividi su Google Drive con un tap!</p>
                     </div>
                 </div>
                 
@@ -657,40 +723,59 @@
                 
                 <div class="step-card">
                     <div class="step-number">🔄</div>
-                    <h3>Backup Automatico <span class="optional">NUOVO</span></h3>
+                    <h3>Sistema Backup Unificato <span class="optional">AGGIORNATO</span></h3>
                     
-                    <p><strong>Cosa fa:</strong> Sistema automatico di backup giornaliero alle 19:00 per proteggere completamente i tuoi dati.</p>
+                    <p><strong>Cosa fa:</strong> Sistema intelligente di backup per proteggere completamente i tuoi dati con ripristino selettivo.</p>
                     
                     <div class="config-example">
                         <h4>Come Funziona:</h4>
                         <ul class="feature-list">
-                            <li><strong>Backup Automatico:</strong> Ogni giorno alle 19:00 (se abilitato)</li>
-                            <li><strong>3 Tipi di Backup:</strong> Solo Impostazioni, Solo Dati, Backup Completo</li>
-                            <li><strong>Retention:</strong> Mantiene automaticamente gli ultimi 7 backup per tipo</li>
-                            <li><strong>Condivisione:</strong> Esporta backup via email, cloud, messaging</li>
+                            <li><strong>Smart Backup:</strong> Backup automatico all'apertura app quando necessario</li>
+                            <li><strong>Backup Unificato:</strong> Un solo file contiene tutti i dati separati internamente</li>
+                            <li><strong>Ripristino Selettivo:</strong> Scegli cosa importare: Solo Impostazioni, Solo Dati o Tutto</li>
+                            <li><strong>Retention:</strong> Mantiene automaticamente gli ultimi 7 backup</li>
+                            <li><strong>Condivisione Google Drive:</strong> Condividi backup via tasto dedicato per ogni backup</li>
                         </ul>
                     </div>
                     
                     <div class="usage-examples">
                         <div class="example-card">
-                            <h4><i class="fas fa-cog"></i> Backup Settings</h4>
-                            <p>Solo configurazioni: orari lavoro, buoni pasto, importi straordinario. Ideale per nuovo dispositivo.</p>
+                            <h4><i class="fas fa-brain"></i> Smart Backup</h4>
+                            <p>Sistema intelligente che crea backup solo quando necessario all'apertura dell'app. Più efficiente del timer.</p>
                         </div>
                         
                         <div class="example-card">
-                            <h4><i class="fas fa-database"></i> Backup Data</h4>
-                            <p>Solo dati lavorativi: orari registrati, note, allegati. Per preservare lo storico.</p>
+                            <h4><i class="fas fa-archive"></i> Backup Unificato</h4>
+                            <p>Un file JSON che contiene tutto: configurazioni + dati lavorativi + allegati. Formato semplice e sicuro.</p>
                         </div>
                         
                         <div class="example-card">
-                            <h4><i class="fas fa-archive"></i> Backup Complete</h4>
-                            <p>Tutto insieme: configurazioni + dati + allegati. Backup completo per massima sicurezza.</p>
+                            <h4><i class="fas fa-filter"></i> Ripristino Selettivo</h4>
+                            <p>All'importazione scegli: Solo Impostazioni (nuovo telefono), Solo Dati (ripristino) o Tutto insieme.</p>
                         </div>
+                    </div>
+                    
+                    <div class="success">
+                        <i class="fas fa-cloud"></i>
+                        <strong>Google Drive Integration:</strong> Usa il tasto "Condividi" su ogni backup per salvarlo su Google Drive. Poi importalo su altro dispositivo!
+                    </div>
+                    
+                    <h4><i class="fas fa-mobile-alt"></i> Come Trasferire Dati su Nuovo Telefono</h4>
+                    <div class="config-example">
+                        <h4>Procedura Completa:</h4>
+                        <ol>
+                            <li><strong>Vecchio telefono:</strong> Vai in Impostazioni → Gestione Backup</li>
+                            <li><strong>Crea backup:</strong> Premi "Crea Backup" (file unificato)</li>
+                            <li><strong>Condividi:</strong> Premi "Condividi" sul backup creato → Google Drive</li>
+                            <li><strong>Nuovo telefono:</strong> Installa app e vai in Impostazioni → Gestione Backup</li>
+                            <li><strong>Importa:</strong> Premi "Importa" → Seleziona il file da Google Drive</li>
+                            <li><strong>Scegli dati:</strong> Seleziona "Tutto" per trasferimento completo</li>
+                        </ol>
                     </div>
                     
                     <div class="warning">
                         <i class="fas fa-info-circle"></i>
-                        <strong>Configurazione:</strong> Vai in Impostazioni → Gestione Backup → Abilita "Backup Automatico" per attivare la protezione giornaliera.
+                        <strong>Configurazione:</strong> Vai in Impostazioni → Gestione Backup → Abilita "Smart Backup" per attivare la protezione automatica intelligente.
                     </div>
                 </div>
                 
@@ -764,9 +849,9 @@
                     </div>
                     
                     <div class="example-card">
-                        <h4><i class="fas fa-shield-alt"></i> "Come funziona il backup automatico?"</h4>
-                        <p><strong>Risposta:</strong> Si attiva dalle Impostazioni → Gestione Backup</p>
-                        <p><strong>Dettagli:</strong> Backup automatico ogni giorno alle 19:00, mantiene 7 copie per tipo, tutto locale</p>
+                        <h4><i class="fas fa-shield-alt"></i> "Come funziona il backup intelligente?"</h4>
+                        <p><strong>Risposta:</strong> Si attiva dalle Impostazioni → Gestione Backup → Smart Backup</p>
+                        <p><strong>Dettagli:</strong> Backup automatico all'apertura app quando necessario, mantiene 7 copie, tutto locale</p>
                     </div>
                     
                     <div class="example-card">
@@ -779,6 +864,18 @@
                         <h4><i class="fas fa-cloud"></i> "I miei dati sono al sicuro?"</h4>
                         <p><strong>Risposta:</strong> Sì, tutto rimane sul tuo dispositivo</p>
                         <p><strong>Dettagli:</strong> Nessun server esterno, tu controlli backup e condivisioni, privacy totale</p>
+                    </div>
+                    
+                    <div class="example-card">
+                        <h4><i class="fas fa-trash-alt"></i> "Come posso resettare l'app?"</h4>
+                        <p><strong>Risposta:</strong> Vai in Impostazioni → Gestione Dati → Elimina tutti i dati</p>
+                        <p><strong>Attenzione:</strong> Crea sempre un backup prima! L'operazione è irreversibile e richiede riavvio app</p>
+                    </div>
+                    
+                    <div class="example-card">
+                        <h4><i class="fas fa-undo"></i> "Ho eliminato i dati per sbaglio!"</h4>
+                        <p><strong>Soluzione:</strong> Ripristina dall'ultimo backup se disponibile</p>
+                        <p><strong>Prevenzione:</strong> Attiva Smart Backup per backup automatici quotidiani</p>
                     </div>
                 </div>
                 
