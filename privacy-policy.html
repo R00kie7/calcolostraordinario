@@ -211,19 +211,22 @@
             <div class="hero">
                 <h1><i class="fas fa-shield-alt"></i> Privacy Policy</h1>
                 <p>Informazioni complete sulla privacy per Calcolo Straordinario</p>
-                <p><strong>Ultimo aggiornamento:</strong> 30 luglio 2025</p>
+                <p><strong>Ultimo aggiornamento:</strong> 8 Agosto 2025</p>
+                <p><strong>Versione:</strong> 1.0.26+41 (Solo versioni gratuite)</p>
             </div>
         </header>
 
         <main class="content">
             <div class="section">
                 <h2><i class="fas fa-info-circle"></i> 1. Introduzione</h2>
-                <p>La tua privacy è fondamentale per noi. Questa Privacy Policy descrive come l'app Calcolo Straordinario, sviluppata da Antonio Rota, gestisce i tuoi dati personali. L'app offre due modalità di utilizzo: <strong>gratuita con annunci pubblicitari personalizzati</strong> o <strong>a pagamento senza annunci</strong>. La scelta dell'utente determina la raccolta e il trattamento dei dati per scopi pubblicitari.</p>
+                <p>La tua privacy è fondamentale per noi. Questa Privacy Policy descrive come l'app Calcolo Straordinario, sviluppata da Antonio Rota, gestisce i tuoi dati personali. L'app offre due modalità di utilizzo completamente gratuite: <strong>con annunci pubblicitari personalizzati</strong> o <strong>con annunci non personalizzati</strong>. La scelta dell'utente determina la raccolta e il trattamento dei dati per scopi pubblicitari.</p>
                 
                 <div class="warning-box">
                     <i class="fas fa-info-circle icon"></i>
                     <strong>Importante:</strong> L'app "Calcolo Straordinario" di per sé non raccoglie dati personali in proprio. Tutta la raccolta e gestione dei dati avviene attraverso i servizi di Google (AdMob per gli annunci, servizi di sistema Android per il funzionamento dell'app).
                 </div>
+                
+                <p>Per la gestione del consenso relativo agli annunci e l'erogazione degli stessi, utilizziamo <strong>Google AdMob</strong> e implementiamo il <strong>Google Consent Mode v2</strong>, in piena conformità con il Regolamento Generale sulla Protezione dei Dati (GDPR).</p>
                 
                 <p>Per la gestione del consenso relativo agli annunci e l'erogazione degli stessi, utilizziamo <strong>Google AdMob</strong> e implementiamo il <strong>Google Consent Mode v2</strong>, in piena conformità con il Regolamento Generale sulla Protezione dei Dati (GDPR).</p>
             </div>
@@ -244,18 +247,18 @@
                 <p>Al primo avvio dell'app, ti verrà chiesto di scegliere come desideri utilizzare "Calcolo Straordinario":</p>
                 
                 <div class="choice-card">
-                    <h4><i class="fas fa-free-code-camp"></i> 1. Utilizzo gratuito con annunci personalizzati</h4>
-                    <p>Scegliendo questa opzione, acconsenti alla visualizzazione di annunci pubblicitari personalizzati. Google AdMob raccoglierà e utilizzerà i tuoi dati per mostrarti annunci pertinenti ai tuoi interessi.</p>
+                    <h4><i class="fas fa-free-code-camp"></i> 1. Utilizzo gratuito con annunci personalizzati ⭐ (SUPPORTA LO SVILUPPO)</h4>
+                    <p>Scegliendo questa opzione, acconsenti alla visualizzazione di annunci pubblicitari personalizzati. Google AdMob raccoglierà e utilizzerà i tuoi dati per mostrarti annunci pertinenti ai tuoi interessi. <strong>Questa scelta ci permette di mantenere l'app gratuita e di aggiungere nuove funzionalità senza alcun costo per te.</strong></p>
                 </div>
                 
                 <div class="choice-card">
-                    <h4><i class="fas fa-crown"></i> 2. Versione a pagamento senza pubblicità</h4>
-                    <p>Se scegli questa opzione, non ti verranno mostrati annunci pubblicitari e Google AdMob non raccoglierà alcun dato dal tuo dispositivo per scopi pubblicitari.</p>
+                    <h4><i class="fas fa-chart-bar"></i> 2. Utilizzo gratuito con annunci non personalizzati</h4>
+                    <p>Scegliendo questa modalità, visualizzerai annunci generici (non personalizzati) e Google AdMob raccoglierà solo dati minimi necessari per la visualizzazione degli annunci, senza profilazione personalizzata. <strong>Raccolta dati limitata.</strong></p>
                 </div>
                 
                 <div class="highlight-box">
                     <h3><i class="fas fa-hand-paper"></i> Il tuo consenso è sempre libero</h3>
-                    <p>L'accesso alle funzionalità essenziali dell'app non è condizionato alla tua accettazione degli annunci pubblicitari. Puoi sempre optare per la versione a pagamento come alternativa.</p>
+                    <p>Entrambe le opzioni sono completamente gratuite. Puoi scegliere quella che preferisci in base alle tue esigenze di privacy. La scelta della prima opzione ci aiuta a sostenere i costi di sviluppo e mantenimento dell'app.</p>
                 </div>
             </div>
 
@@ -273,8 +276,21 @@
                     <li><strong>Dati di performance degli annunci:</strong> Dati relativi all'efficacia degli annunci, come impressioni e potenziali errori nella visualizzazione</li>
                 </ul>
                 
-                <h3><i class="fas fa-times-circle"></i> Se scegli la versione a pagamento:</h3>
-                <p>Tutti i parametri del Google Consent Mode v2 sono impostati su <strong>"denied" (negato)</strong> e Google AdMob non raccoglie alcun dato dal tuo dispositivo per scopi pubblicitari.</p>
+                <h3><i class="fas fa-chart-bar"></i> Se scegli l'utilizzo gratuito con annunci non personalizzati:</h3>
+                <p>I parametri del Google Consent Mode v2 sono configurati per <strong>limitare la raccolta dati</strong>:</p>
+                <ul>
+                    <li><strong>ad_storage:</strong> CONSENTITO (per visualizzare annunci generici)</li>
+                    <li><strong>analytics_storage:</strong> CONSENTITO (per analisi di base)</li>
+                    <li><strong>ad_user_data:</strong> NEGATO (nessun dato utente per profilazione)</li>
+                    <li><strong>ad_personalization:</strong> NEGATO (nessuna personalizzazione annunci)</li>
+                </ul>
+                
+                <p>In questa modalità Google AdMob raccoglie <strong>solo dati minimi</strong>:</p>
+                <ul>
+                    <li><strong>Informazioni di base del dispositivo:</strong> Indirizzo IP (per targeting geografico base), tipo di dispositivo, lingua</li>
+                    <li><strong>Dati annunci anonimi:</strong> Visualizzazioni e clic su annunci (senza profilazione)</li>
+                    <li><strong>Nessuna profilazione personalizzata:</strong> Non vengono raccolti dati per creare profili pubblicitari individuali</li>
+                </ul>
                 
                 <div class="info-grid">
                     <div class="info-card">
@@ -324,9 +340,11 @@
                     <li><strong>Reporting e misurazione:</strong> Per fornire a sviluppatori come noi report aggregati sull'andamento delle campagne pubblicitarie. La base giuridica è il <strong>legittimo interesse</strong> sia dello sviluppatore che di Google</li>
                 </ul>
                 
-                <h3><i class="fas fa-crown"></i> Per utenti versione a pagamento:</h3>
+                <h3><i class="fas fa-chart-bar"></i> Per utenti versione gratuita con annunci non personalizzati:</h3>
                 <ul>
-                    <li><strong>Nessuna raccolta dati</strong> per scopi pubblicitari da parte di Google AdMob</li>
+                    <li><strong>Visualizzazione annunci generici:</strong> Per mostrare annunci non personalizzati rilevanti per il contesto dell'app. Base giuridica: <strong>consenso limitato</strong> tramite Google Consent Mode v2</li>
+                    <li><strong>Prevenzione frodi e sicurezza:</strong> Per garantire la sicurezza della piattaforma pubblicitaria. Base giuridica: <strong>legittimo interesse</strong></li>
+                    <li><strong>Nessuna profilazione:</strong> Non vengono create profilazioni pubblicitarie individuali</li>
                 </ul>
                 
                 <h3><i class="fas fa-cog"></i> Per tutti gli utenti (dati tecnici sistema Android):</h3>
@@ -346,7 +364,7 @@
                 
                 <div class="warning-box">
                     <i class="fas fa-info-circle icon"></i>
-                    <strong>Nota importante per utenti Premium:</strong> Anche nella versione Premium, alcuni cookie e dati tecnici (sicurezza, prestazioni, crash reporting, telemetria diagnostica) vengono raccolti da Google per garantire il funzionamento dell'app. Tuttavia, non vengono raccolti dati per scopi pubblicitari.
+                    <strong>Nota importante:</strong> Alcuni cookie e dati tecnici (sicurezza, prestazioni, crash reporting, telemetria diagnostica) vengono sempre raccolti da Google per garantire il funzionamento dell'app, ma puoi scegliere se consentire o meno la raccolta di dati per scopi pubblicitari personalizzati.
                 </div>
             </div>
 
@@ -425,8 +443,7 @@
                 <h3><i class="fas fa-mobile-alt"></i> All'interno dell'app "Calcolo Straordinario"</h3>
                 <ul>
                     <li><strong>Cambiare preferenze privacy:</strong> Vai in "Impostazioni" → "Gestisci Preferenze Privacy" → "Cambia Preferenze Privacy"</li>
-                    <li><strong>Passare alla versione premium:</strong> Elimina la raccolta dati pubblicitari acquistando la versione premium</li>
-                    <li><strong>La versione premium è un acquisto definitivo</strong> e non può essere revocata</li>
+                    <li><strong>Scegliere modalità diversa:</strong> Puoi sempre cambiare tra annunci personalizzati e annunci generici</li>
                 </ul>
                 
                 <div class="info-card">
@@ -453,42 +470,6 @@
                     <h4>Contatto Privacy</h4>
                     <p><strong>Email:</strong> appdevmond@gmail.com<br>
                     <strong>Oggetto:</strong> PRIVACY CALCOLO STRAORDINARIO</p>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2><i class="fas fa-crown"></i> 15. Condizioni d'uso della versione Premium</h2>
-                
-                <div class="highlight-box">
-                    <h3><i class="fas fa-gem"></i> Natura dell'acquisto</h3>
-                    <p>L'acquisto della versione Premium di "Calcolo Straordinario" rimuove la pubblicità e la raccolta dati per annunci personalizzati, garantendo maggiore privacy durante l'utilizzo dell'app.</p>
-                </div>
-                
-                <h3><i class="fas fa-exclamation-triangle"></i> Limitazioni e disclaimer</h3>
-                <ul>
-                    <li><strong>Versione corrente:</strong> L'acquisto si riferisce alla versione attuale dell'app e alle sue funzionalità esistenti al momento del pagamento</li>
-                    <li><strong>Manutenzione non garantita:</strong> Non vi è alcuna garanzia che l'app sarà mantenuta, aggiornata o supportata indefinitamente nel tempo</li>
-                    <li><strong>Compatibilità futura:</strong> Non è garantita la compatibilità con future versioni di Android o modifiche delle politiche dei Play Store</li>
-                    <li><strong>Servizi terzi:</strong> Il funzionamento dell'app dipende da servizi di terze parti (Google Play Services, etc.) su cui non abbiamo controllo</li>
-                    <li><strong>Cessazione del servizio:</strong> Ci riserviamo il diritto di cessare lo sviluppo e il supporto dell'app in qualsiasi momento, con preavviso di 30 giorni tramite aggiornamento dell'app o comunicazione email</li>
-                </ul>
-                
-                <h3><i class="fas fa-check-circle"></i> Cosa è garantito</h3>
-                <ul>
-                    <li><strong>Nessuna pubblicità:</strong> Finché l'app funziona, la versione Premium non mostrerà pubblicità</li>
-                    <li><strong>Privacy migliorata:</strong> Nessuna raccolta dati per pubblicità personalizzate</li>
-                    <li><strong>Accesso completo:</strong> Accesso a tutte le funzioni dell'app (identiche a quelle gratuite)</li>
-                    <li><strong>Best effort:</strong> Faremo il possibile per mantenere l'app funzionante e aggiornata, ma senza obblighi legali vincolanti</li>
-                </ul>
-                
-                <div class="warning-box">
-                    <i class="fas fa-info-circle icon"></i>
-                    <strong>Rimborsi:</strong> In caso di cessazione definitiva dell'app, non saranno previsti rimborsi automatici, salvo diversa decisione discrezionale dello sviluppatore o obblighi legali specifici.
-                </div>
-                
-                <div class="info-card">
-                    <h4><i class="fas fa-gavel"></i> Riferimento Termini Completi</h4>
-                    <p>Per i termini completi di utilizzo, consulta i nostri <a href="https://r00kie7.github.io/calcolostraordinario/terms-of-service.html" target="_blank">Termini di Servizio</a></p>
                 </div>
             </div>
 
