@@ -2,7 +2,7 @@
 
 **L'app più semplice per tracciare orari di lavoro e calcolare automaticamente gli straordinari**
 
-[![Download APK](https://play.google.com/store/apps/details?id=com.calcolostraordinario.app)](https://github.com/R00kie7/calcolostraordinario/releases)
+[![Download APK](https://img.shields.io/badge/Download-APK-blue?style=for-the-badge&logo=android)](https://play.google.com/store/apps/details?id=com.calcolostraordinario.app)
 [![Website](https://img.shields.io/badge/Website-Live-green?style=for-the-badge&logo=github-pages)](https://r00kie7.github.io/calcolostraordinario/)
 
 ---
