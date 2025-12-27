@@ -2,7 +2,7 @@
 
 **L'app più semplice per tracciare orari di lavoro e calcolare automaticamente gli straordinari**
 
-[![Download APK](https://img.shields.io/badge/Download-APK-blue?style=for-the-badge&logo=android)](https://play.google.com/store/apps/details?id=com.calcolostraordinario.app)
+[![Download APK](https://img.shields.io/badge/Download-APK-blue?style=for-the-badge&logo=android)](https://github.com/R00kie7/calcolostraordinario/releases)
 [![Website](https://img.shields.io/badge/Website-Live-green?style=for-the-badge&logo=github-pages)](https://r00kie7.github.io/calcolostraordinario/)
 
 ---
@@ -28,8 +28,14 @@ Con un setup iniziale di pochi minuti, potrai **registrare entrata e uscita con 
 🎯 **Calcolo Automatico Straordinari**  
 Inserisci entrata/uscita, l'app calcola tutto secondo le tue impostazioni contrattuali
 
-⚡ **Registrazione Rapida**  
-Un click imposta l'ora corrente, perfetto per registrare quando entri/esci dal lavoro
+⚡ **Registrazione Ultra-Rapida** 🆕  
+Pulsanti fluttuanti per timbrare Entrata/Uscita e Pausa Pranzo con un solo tap! Gestione automatica turni notturni inclusa
+
+🌙 **Turni Notturni Intelligenti**  
+Supporto automatico per turni che superano la mezzanotte con calcoli corretti e indicatori visivi
+
+🧮 **Calcolatrice Oraria Integrata** 🆕  
+Nuova tab dedicata per convertire rapidamente tra formato decimale e ore:minuti
 
 🍽️ **Buono Pasto Intelligente**  
 Configura le soglie e l'app ti dice automaticamente se hai diritto al buono pasto
@@ -74,8 +80,11 @@ Genera report mensili in PDF o CSV per commercialisti o HR
 ## 📱 **Download**
 
 ### 🤖 Android
-- **Google Play Store:** [https://play.google.com/store/apps/details?id=com.calcolostraordinario.app]
+- **APK Diretta:** [Download dall'area releases](https://github.com/R00kie7/calcolostraordinario/releases)
+- **Google Play Store:** Prossimamente
 
+###   iOS
+- **App Store:** In sviluppo
 
 ---
 
@@ -103,7 +112,7 @@ Genera report mensili in PDF o CSV per commercialisti o HR
 - **🌐 Internet:** Solo per AdMob (facoltativo)
 - **🔒 Privacy:** GDPR compliant
 - **📦 Dimensione:** ~15-25 MB
-
+- **🆕 Versione:** 1.2.1 (Dicembre 2025)
 ---
 
 **Sviluppato da Antonio Rota** • **© 2025** • **Gratuita**
