@@ -458,17 +458,18 @@
                             <li><strong>0 minuti (default):</strong> Ogni minuto oltre le 8 ore è straordinario</li>
                         </ul>
                     </div>
-                    
-                    <div class="warning">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        <strong>Attenzione:</strong> Queste opzioni dipendono dal tuo contratto specifico. Consulta HR o il tuo contratto prima di attivarle.
-                    </div>
+                
+                <h4><i class="fas fa-fire"></i> Calcola Tutto Straordinario <span class="optional">NUOVO v1.2.0</span></h4>
+                <p><strong>Cosa fa:</strong> Attivando questo switch nelle opzioni avanzate del giorno, TUTTO il tempo lavorato viene conteggiato come straordinario, ignorando le ore contrattuali.</p>
+                
+                <div class="config-example">
+                    <h4>Quando Usarlo:</h4>
+                    <ul class="feature-list">
+                        <li><strong>Festività:</strong> Lavoro in giorni festivi con retribuzione speciale</li>
+                        <li><strong>Chiamate urgenti:</strong> Interventi straordinari fuori orario contrattuale</li>
+                        <li><strong>Contratti speciali:</strong> Giornate a tariffa completamente maggiorata</li>
+                    </ul>
                 </div>
-            </section>
-
-            <section id="step3" class="section">
-                <div class="step-card">
-                    <div class="step-number">3</div>
                     <h3>Setup Buono Pasto <span class="if-applicable">SE APPLICABILE</span></h3>
                     
                     <p><strong>Quando configurarlo:</strong> Se il tuo contratto prevede buoni pasto legati alle ore lavorate.</p>
@@ -620,9 +621,15 @@
                 
                 <div class="quick-actions">
                     <div class="action-card">
+                        <div class="action-icon"><i class="fas fa-rocket"></i></div>
+                        <h4>🆕 Pulsanti Fluttuanti Rapidi</h4>
+                        <p><strong>Timbratura Ultra-Rapida:</strong> Pulsanti sempre visibili nella home per timbrare con un tap! Registra Entrata/Uscita e Pausa Pranzo istantaneamente. Gestione automatica turni notturni inclusa.</p>
+                    </div>
+                    
+                    <div class="action-card">
                         <div class="action-icon"><i class="fas fa-play"></i></div>
                         <h4>Registrazione Entrata/Uscita</h4>
-                        <p>Un click su "Entrata/Uscita" imposta l'ora corrente. Secondo click per modificare manualmente.</p>
+                        <p>Un click su "Entrata/Uscita" imposta l'ora corrente. Secondo click per modificare manualmente. Oppure usa i pulsanti fluttuanti per timbratura istantanea!</p>
                     </div>
                     
                     <div class="action-card">
@@ -639,8 +646,8 @@
                     
                     <div class="action-card">
                         <div class="action-icon"><i class="fas fa-umbrella-beach"></i></div>
-                        <h4>Ferie e Malattia</h4>
-                        <p>Usa le icone ferie (aereo) e malattia (croce) per contrassegnare i giorni. Aggiungi note per specificare il tipo di permesso.</p>
+                        <h4>🆕 Sistema Ferie Avanzato v1.2.0</h4>
+                        <p><strong>Gestione Completa:</strong> Vai in Impostazioni → Tipi Ferie per creare e gestire permessi personalizzati. Tipi predefiniti: matrimonio (15gg), permessi brevi, ferie ordinarie, anno precedente. Statistiche automatiche per anno/mese con calcolo dinamico giorni/ore usati!</p>
                     </div>
                     
                     <div class="action-card">
@@ -681,6 +688,122 @@
 
             <section id="advanced" class="section">
                 <h2><i class="fas fa-star"></i> Funzioni Avanzate</h2>
+                
+                <div class="step-card">
+                    <div class="step-number">🏖️</div>
+                    <h3>Sistema Ferie Avanzato <span class="optional">🆕 NUOVO v1.2.0</span></h3>
+                    
+                    <p><strong>Cosa fa:</strong> Gestione completa di ferie e permessi con tipi personalizzabili, statistiche automatiche e protezione tipi speciali.</p>
+                    
+                    <h4><i class="fas fa-list"></i> Accesso alla Funzione</h4>
+                    <div class="config-example">
+                        <p><strong>Percorso:</strong> Vai nella schermata principale → Tab "Statistiche" → Scorri verso il basso fino alla sezione "Statistiche Ferie"</p>
+                        <p><strong>Gestione Tipi:</strong> Impostazioni → Gestione Tipi Ferie</p>
+                    </div>
+                    
+                    <h4><i class="fas fa-star"></i> Tipi Ferie Predefiniti</h4>
+                    <div class="usage-examples">
+                        <div class="example-card">
+                            <h4><i class="fas fa-ring"></i> Congedo Matrimoniale</h4>
+                            <p><strong>Configurazione:</strong> 15 giorni, uso unico, periodo annuale</p>
+                            <p><strong>Protezione:</strong> Non cancellabile, si resetta automaticamente dopo l'utilizzo</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h4><i class="fas fa-clock"></i> Permessi Brevi</h4>
+                            <p><strong>Configurazione:</strong> Periodo mensile, personalizzabile in ore</p>
+                            <p><strong>Ideale per:</strong> ROL, permessi orari, recuperi</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h4><i class="fas fa-infinity"></i> Ferie Generiche</h4>
+                            <p><strong>Configurazione:</strong> Senza limite massimo, traccia solo utilizzo</p>
+                            <p><strong>Ideale per:</strong> Situazioni speciali, permessi non pianificati</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h4><i class="fas fa-calendar-alt"></i> Ferie Ordinarie</h4>
+                            <p><strong>Configurazione:</strong> Periodo annuale, totale personalizzabile</p>
+                            <p><strong>Standard:</strong> Il tipo più comune per le ferie contrattuali</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h4><i class="fas fa-history"></i> Ferie Anno Precedente</h4>
+                            <p><strong>Configurazione:</strong> Per ferie residue dall'anno scorso</p>
+                            <p><strong>Protezione:</strong> Non cancellabile, gestione separata dal monte ore corrente</p>
+                        </div>
+                    </div>
+                    
+                    <h4><i class="fas fa-plus-circle"></i> Creare Tipi Personalizzati</h4>
+                    <div class="config-example">
+                        <h4>Opzioni Disponibili:</h4>
+                        <ul class="feature-list">
+                            <li><strong>Nome e Colore:</strong> Personalizza aspetto per identificazione rapida</li>
+                            <li><strong>Totale Disponibile:</strong> Imposta giorni o ore contrattuali</li>
+                            <li><strong>Periodo:</strong> Annuale o Mensile (reset automatico)</li>
+                            <li><strong>Unità:</strong> Giorni o Ore (per permessi frazionati)</li>
+                            <li><strong>Tipo Uso Unico:</strong> Per permessi speciali tipo matrimonio</li>
+                        </ul>
+                    </div>
+                    
+                    <h4><i class="fas fa-chart-line"></i> Statistiche Dinamiche</h4>
+                    <div class="usage-examples">
+                        <div class="example-card">
+                            <h4><i class="fas fa-calendar-check"></i> Calcolo Automatico</h4>
+                            <p>Le statistiche si aggiornano automaticamente in base al periodo visualizzato (mese/anno)</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h4><i class="fas fa-history"></i> Storico Accurato</h4>
+                            <p>Visualizzi Novembre 2024? Vedi i dati di Novembre 2024, non quelli correnti!</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h4><i class="fas fa-sync-alt"></i> Reset Automatico</h4>
+                            <p>Tipi mensili si resettano ogni mese, annuali ogni anno. Zero manutenzione manuale!</p>
+                        </div>
+                    </div>
+                    
+                    <h4><i class="fas fa-user-check"></i> Utilizzo dei Tipi Ferie</h4>
+                    <div class="config-example">
+                        <h4>Come Registrare una Ferie/Permesso:</h4>
+                        <ol>
+                            <li>Apri i dettagli del giorno da segnare come ferie</li>
+                            <li>Attiva lo switch "Ferie/Vacanza" (icona aereo)</li>
+                            <li>Seleziona il tipo di ferie dal menu a tendina</li>
+                            <li>Per permessi a ore: specifica le ore nel campo dedicato</li>
+                            <li>Salva: le statistiche si aggiorneranno automaticamente!</li>
+                        </ol>
+                    </div>
+                    
+                    <h4><i class="fas fa-shield-alt"></i> Protezioni e Sicurezze</h4>
+                    <div class="usage-examples">
+                        <div class="example-card">
+                            <h4><i class="fas fa-lock"></i> Tipi Non Cancellabili</h4>
+                            <p>Matrimonio, permessi brevi, ferie generiche, ordinarie e anno precedente sono protetti</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h4><i class="fas fa-camera"></i> Snapshot Storico</h4>
+                            <p>Ogni giorno salva nome e colore del tipo ferie. Anche se lo cancelli, lo storico rimane!</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h4><i class="fas fa-database"></i> Backup Completo</h4>
+                            <p>Tutti i tipi personalizzati vengono salvati nei backup e negli export PDF/CSV</p>
+                        </div>
+                    </div>
+                    
+                    <div class="success">
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Esempi Pratici:</strong> ROL mensili di 2 ore, 104 ore legge 104 annuali, congedo parentale 6 mesi, permessi studio 150 ore/anno. Tutto personalizzabile!
+                    </div>
+                    
+                    <div class="tip">
+                        <i class="fas fa-lightbulb tip-icon"></i>
+                        <strong>Consiglio Pro:</strong> Crea un tipo per ogni categoria contrattuale. Le statistiche ti mostreranno sempre quanto hai usato e quanto resta!
+                    </div>
+                </div>
                 
                 <div class="step-card">
                     <div class="step-number">📎</div>
@@ -800,6 +923,35 @@
                             <h4><i class="fas fa-share"></i> Condivisione</h4>
                             <p>Invio diretto via email, cloud, WhatsApp per condividere con datori di lavoro</p>
                         </div>
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">🧮</div>
+                    <h3>Calcolatrice Oraria <span class="optional">NUOVO v1.2.0</span></h3>
+                    
+                    <p><strong>Cosa fa:</strong> Nuova tab dedicata per convertimenti rapidi tra formato decimale e ore:minuti.</p>
+                    
+                    <div class="usage-examples">
+                        <div class="example-card">
+                            <h4><i class="fas fa-calculator"></i> Conversione Decimale</h4>
+                            <p>Converti 8.75 ore in 8h 45m o viceversa con un tap. Perfetto per fogli presenza e calcoli veloci</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h4><i class="fas fa-clock"></i> Formato Standard</h4>
+                            <p>Passa da formato 08:45 a decimale 8.75 istantaneamente. Utile per sistemi di timbratura aziendali</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h4><i class="fas fa-bolt"></i> Calcoli Rapidi</h4>
+                            <p>Somme, sottrazioni e verifiche ore lavorate senza aprire altre app. Tutto integrato!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tip">
+                        <i class="fas fa-lightbulb tip-icon"></i>
+                        <strong>Accesso Rapido:</strong> Trovi la calcolatrice nella tab dedicata della schermata principale. Sempre a portata di tap!
                     </div>
                 </div>
                 
