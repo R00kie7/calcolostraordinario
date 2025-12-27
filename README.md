@@ -79,12 +79,7 @@ Genera report mensili in PDF o CSV per commercialisti o HR
 
 ## 📱 **Download**
 
-### 🤖 Android
-- **APK Diretta:** [Download dall'area releases](https://github.com/R00kie7/calcolostraordinario/releases)
-- **Google Play Store:** Prossimamente
-
-###   iOS
-- **App Store:** In sviluppo
+**[🤖 Download Android](https://play.google.com/store/apps/details?id=com.calcolostraordinario.app&hl=it)**
 
 ---
 
@@ -100,8 +95,6 @@ Genera report mensili in PDF o CSV per commercialisti o HR
 ## 📞 **Supporto**
 
 - **📧 Email:** appdevmond@gmail.com
-- **🐛 Bug Report:** [GitHub Issues](https://github.com/R00kie7/calcolostraordinario/issues)
-- **💡 Suggerimenti:** Email diretta
 
 ---
 
